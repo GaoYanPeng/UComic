@@ -14,6 +14,7 @@ import com.lanou3g.you17.base.BaseFragment;
  */
 public class MineFragment extends BaseFragment implements OnClickListener{
     private LinearLayout mSignLayout;
+    //
 
     @Override
     protected int initLayout() {
