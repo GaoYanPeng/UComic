@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">You17</string>
+    <string name="main_vip">VIP充值</string>
+    <string name="mine_consumption">消费记录</string>
+    <string name="mine_top_up">充值</string>
+    <string name="mine_subscribe">我的订阅</string>
+    <string name="main_feedback">问题反馈</string>
+    <string name="mine_author">成为作者</string>
+    <string name="mine_sign">签到</string>
+    <string name="mine_game">游戏</string>
+    <string name="mine_us">关于我们</string>
+    <string name="mine_log">点击登入</string>
+    <string name="mine_log_in_title">登录后可以使用书架功能呦</string>
+</resources>
