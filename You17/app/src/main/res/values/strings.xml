@@ -11,7 +11,26 @@
     <string name="mine_us">关于我们</string>
     <string name="mine_log">点击登入</string>
     <string name="mine_log_in_title">登录后可以使用书架功能呦</string>
+
     <string name="Check_your_private_information">查看你的私密信息</string>
     <string name="Please_login"><u>请登录后, </u></string>
     <string name="What_also_have_no_crying_is_dizzy_in_the_toilet">什么也木有啊,哭晕在厕所</string>
+
+    <string name="setup">设置</string>
+    <string name="setup_update">漫画更新提醒</string>
+    <string name="setup_recommended">漫画推荐提醒</string>
+    <string name="setup_cache">清除缓存</string>
+    <string name="setup_storage">储存设置</string>
+    <string name="setup_within">内置储存空间</string>
+    <string name="setup_outside">外置储存空间</string>
+    <string name="wifi">WIFI自动下载</string>
+    <string name="setup_environment">网络环境提示</string>
+    <string name="setup_wifi">非WIFI环境使用</string>
+    <string name="ranking">排名</string>
+    <string name="signing">签约</string>
+    <string name="project">专题</string>
+    <string name="animation">动画</string>
+    <string name="The_s_class_works_recommended"><![CDATA[原S级作品推荐]]></string>
+    <string name="Strongly_recommend_works">强力推荐作品</string>
+
 </resources>
