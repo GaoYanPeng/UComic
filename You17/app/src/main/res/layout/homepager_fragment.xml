@@ -7,7 +7,7 @@
     <!--轮播图-->
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="200sp"
+        android:layout_height="180sp"
         android:background="#e0ffff"/>
     <!--轮播图下面的标题栏-->
     <LinearLayout
@@ -103,6 +103,10 @@
     </LinearLayout>
     <!--强力推荐-->
     <!--强力推荐 上层标题栏-->
+    <TextView
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
     <RelativeLayout
         android:padding="8sp"
         android:layout_width="match_parent"

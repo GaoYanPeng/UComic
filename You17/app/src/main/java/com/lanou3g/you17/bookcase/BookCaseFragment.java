@@ -47,9 +47,11 @@ public class BookCaseFragment extends BaseFragment {
             public void onTabSelected(Tab tab) {
                 int Position = tab.getPosition();
                 if (Position == 1) {
+                    bookPager.setCurrentItem(1);
                     bookDelete.setVisibility(View.VISIBLE);
                 } else {
                     bookDelete.setVisibility(View.INVISIBLE);
+                    bookPager.setCurrentItem(Position);
                 }
             }
             @Override

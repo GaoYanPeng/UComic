@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:background="@mipmap/u17_layout_show_error_empty"/>
     <TextView
+        android:layout_marginTop="15dp"
         android:id="@+id/Book_download_What_also_have_no_crying_is_dizzy_in_the_toilet"
         android:text="@string/What_also_have_no_crying_is_dizzy_in_the_toilet"
         android:layout_width="wrap_content"
