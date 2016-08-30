@@ -11,4 +11,7 @@
     <string name="mine_us">关于我们</string>
     <string name="mine_log">点击登入</string>
     <string name="mine_log_in_title">登录后可以使用书架功能呦</string>
+    <string name="Check_your_private_information">查看你的私密信息</string>
+    <string name="Please_login"><u>请登录后, </u></string>
+    <string name="What_also_have_no_crying_is_dizzy_in_the_toilet">什么也木有啊,哭晕在厕所</string>
 </resources>

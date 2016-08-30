@@ -34,6 +34,7 @@ import com.lanou3g.you17.mainactivity.MainActivity;
 
 public class Welcome extends BaseActivity{
 
+    //倒计时计时器
     private CountDownTimer timer;
     @Override
     protected int getLayout () {
@@ -47,6 +48,8 @@ public class Welcome extends BaseActivity{
 
     @Override
     protected void initData () {
+        //开启倒计时
+        //参1:倒计时总时长  参2:倒计时时间间隔
         timer= new CountDownTimer (3000,1000) {
             @Override
             public void onTick (long millisUntilFinished) {

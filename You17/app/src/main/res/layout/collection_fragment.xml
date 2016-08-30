@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+   <ImageView
+       android:id="@+id/Book_icon_loading_logout"
+       android:layout_width="50sp"
+       android:layout_height="40sp"
+       android:layout_centerInParent="true"
+       android:background="@mipmap/icon_loading_logout"/>
+    <RelativeLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Book_icon_loading_logout"
+        android:layout_centerHorizontal="true">
     <TextView
-        android:textSize="30dp"
-        android:text="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:id="@+id/Book_Please_login"
+        android:text="@string/Please_login"
+        android:textColor="#435356"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/Book_Check_your_private_information"
+        android:text="@string/Check_your_private_information"
+        android:textColor="#909fa2"
+        android:layout_toRightOf="@+id/Book_Please_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>
