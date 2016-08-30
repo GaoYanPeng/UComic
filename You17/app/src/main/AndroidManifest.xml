@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mainactivity.MainActivity">
+        <activity android:name=".welcome.Welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".mine.SignActivity"></activity>
+        <activity android:name=".mainactivity.MainActivity"/>
     </application>
 
 </manifest>
