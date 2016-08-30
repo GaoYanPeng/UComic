@@ -7,7 +7,7 @@ import com.lanou3g.you17.bookcase.BookCaseFragment;
 import com.lanou3g.you17.homepage.HomepageFragment;
 import com.lanou3g.you17.mine.MineFragment;
 import com.lanou3g.you17.setup.SetupFragment;
-import com.lanou3g.you17.search.SearcFragment;
+import com.lanou3g.you17.search.SearchFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +53,7 @@ public class MainTabInfo {
     public static List<MainTabInfo> getMainTabInfo() {
         List<MainTabInfo> infos = new ArrayList<>();
         infos.add(new MainTabInfo("首页", R.drawable.home_title, new HomepageFragment()));
-        infos.add(new MainTabInfo("收索", R.drawable.searc_title, new SearcFragment()));
+        infos.add(new MainTabInfo("搜索", R.drawable.searc_title, new SearchFragment ()));
         infos.add(new MainTabInfo("书架", R.drawable.book_title, new BookCaseFragment()));
         infos.add(new MainTabInfo("我的", R.drawable.main_title, new MineFragment()));
         infos.add(new MainTabInfo("设置", R.drawable.game_title, new SetupFragment()));
