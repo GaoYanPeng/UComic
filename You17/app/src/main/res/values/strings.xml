@@ -11,4 +11,14 @@
     <string name="mine_us">关于我们</string>
     <string name="mine_log">点击登入</string>
     <string name="mine_log_in_title">登录后可以使用书架功能呦</string>
+    <string name="setup">设置</string>
+    <string name="setup_update">漫画更新提醒</string>
+    <string name="setup_recommended">漫画推荐提醒</string>
+    <string name="setup_cache">清除缓存</string>
+    <string name="setup_storage">储存设置</string>
+    <string name="setup_within">内置储存空间</string>
+    <string name="setup_outside">外置储存空间</string>
+    <string name="wifi">WIFI自动下载</string>
+    <string name="setup_environment">网络环境提示</string>
+    <string name="setup_wifi">非WIFI环境使用</string>
 </resources>
