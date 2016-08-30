@@ -56,9 +56,9 @@
                             android:layout_marginTop="6dp"
                             android:text="@string/setup_update"/>
 
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <com.cl.view.widget.SwitchView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
@@ -80,9 +80,9 @@
                             android:layout_marginTop="6dp"
                             android:text="@string/setup_recommended"/>
 
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <com.cl.view.widget.SwitchView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
@@ -104,10 +104,7 @@
                             android:layout_marginTop="6dp"
                             android:text="@string/setup_cache"/>
 
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"/>
+
                     </RelativeLayout>
                     <!--....................................-->
                 </LinearLayout>
@@ -214,9 +211,9 @@
                             android:layout_marginTop="6dp"
                             android:text="@string/wifi"/>
 
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <com.cl.view.widget.SwitchView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
@@ -238,9 +235,9 @@
                             android:layout_marginTop="6dp"
                             android:text="@string/setup_environment"/>
 
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <com.cl.view.widget.SwitchView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
@@ -263,9 +260,9 @@
                             android:layout_marginTop="6dp"
                             android:text="@string/setup_wifi"/>
 
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <com.cl.view.widget.SwitchView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
