@@ -53,7 +53,11 @@ public class MainTabInfo {
     public static List<MainTabInfo> getMainTabInfo() {
         List<MainTabInfo> infos = new ArrayList<>();
         infos.add(new MainTabInfo("首页", R.drawable.home_title, new HomepageFragment()));
+<<<<<<< HEAD
         infos.add(new MainTabInfo("搜索", R.drawable.searc_title, new SearchFragment ()));
+=======
+        infos.add(new MainTabInfo("搜索", R.drawable.searc_title, new SearcFragment()));
+>>>>>>> a71f7a52d07b1dd3f1ff7e0167e0e0ed3360f1fe
         infos.add(new MainTabInfo("书架", R.drawable.book_title, new BookCaseFragment()));
         infos.add(new MainTabInfo("我的", R.drawable.main_title, new MineFragment()));
         infos.add(new MainTabInfo("设置", R.drawable.game_title, new SetupFragment()));
