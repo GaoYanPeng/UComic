@@ -97,29 +97,37 @@
                             android:layout_marginTop="70sp"
                             android:text="@string/project"
                             android:textColor="#4b1212"/>
+
                     </RelativeLayout>
+                </LinearLayout>
 
-
+                
             </LinearLayout>
-                    <TextView
-                        android:background="#dfdfdf"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"/>
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/all_recyclerview"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    </android.support.v7.widget.RecyclerView>
 
 
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
 
 
     </LinearLayout>
-    </LinearLayout>
 
 
-    </LinearLayout>
+
+
+
+
 
     </ScrollView>
+
 
