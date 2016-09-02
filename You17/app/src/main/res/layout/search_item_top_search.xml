@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/search_top_search_shape"
+          android:paddingLeft="10sp"
+          android:paddingRight="10sp"
+          android:textColor="#505f62"
+          android:paddingTop="7sp"
+          android:paddingBottom="7sp"
+          android:gravity="center"
+          android:text="测试的数据"
+          android:textSize="12sp">
+
+</TextView>

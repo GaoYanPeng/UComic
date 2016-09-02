@@ -33,5 +33,9 @@
     <string name="The_s_class_works_recommended"><![CDATA[原S级作品推荐]]></string>
     <string name="Strongly_recommend_works">强力推荐作品</string>
     <string name="search_authors"> 漫画名 | 作者</string>
+    <string name="Please_input_search_content">请输入搜索内容</string>
+    <string name="Top_search">热门搜索</string>
+    <string name="update">更新</string>
+    <string name="type">类型</string>
 
 </resources>

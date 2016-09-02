@@ -6,6 +6,7 @@
               android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/Search_navigation_bar"
         android:layout_width="330sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

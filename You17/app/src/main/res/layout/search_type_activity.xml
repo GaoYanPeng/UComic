@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp">
+        <ImageView
+            android:id="@+id/search_details_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:background="@mipmap/toolbar_back_normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/type"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@+id/update_ImageView"
+            android:text="@string/update"
+            android:textColor="#909fa2"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/update_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"
+            android:background="@mipmap/spinner_normal"/>
+    </RelativeLayout>
+    <View
+        android:background="#d0dcdf"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+
+    <ListView
+        android:id="@+id/details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfff7"/>
+
+</LinearLayout>
