@@ -1,115 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#FCFFF7"
+<<<<<<< HEAD
               android:layout_height="match_parent"
               android:orientation="vertical">
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+=======
+            android:orientation="vertical">
+>>>>>>> b5ea3387b3ff0b8c0c5de65b6e99796f62f88886
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <!--轮播图-->
-        <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="180sp"
-            android:background="#e0ffff"/>
-        <!--轮播图下面的标题栏-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:orientation="horizontal">
-            <!--排名-->
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/ranking_imageview"
-                    android:layout_width="wrap_content"
+            <!--轮播图-->
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="#e0ffff"/>
+            <!--轮播图下面的标题栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:orientation="horizontal">
+                <!--排名-->
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@mipmap/main_boutique_head_point_ranking"/>
+                    android:layout_weight="1">
 
-                <TextView
-                    android:textColor="#4b1212"
-                    android:id="@+id/ranking"
-                    android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/ranking_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/main_boutique_head_point_ranking"/>
+
+                    <TextView
+                        android:id="@+id/ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="70sp"
+                        android:text="@string/ranking"
+                        android:textColor="#4b1212"/>
+                </RelativeLayout>
+                <!--签约-->
+                <RelativeLayout
+
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="70sp"
-                    android:text="@string/ranking"/>
-            </RelativeLayout>
-            <!--签约-->
-            <RelativeLayout
+                    android:layout_weight="1">
 
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/signing_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/icon_signed"/>
 
-                <ImageView
-                    android:id="@+id/signing_imageview"
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/signing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="70sp"
+                        android:text="@string/signing"
+                        android:textColor="#4b1212"/>
+                </RelativeLayout>
+                <!--专题-->
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@mipmap/icon_signed"/>
+                    android:layout_weight="1">
 
-                <TextView
-                    android:textColor="#4b1212"
-                    android:id="@+id/signing"
-                    android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/project_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/main_boutique_head_point_special"/>
+
+                    <TextView
+                        android:id="@+id/project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="70sp"
+                        android:text="@string/project"
+                        android:textColor="#4b1212"/>
+                </RelativeLayout>
+                <!--动画-->
+                <RelativeLayout
+
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="70sp"
-                    android:text="@string/signing"/>
-            </RelativeLayout>
-            <!--专题-->
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/project_imageview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@mipmap/main_boutique_head_point_special"/>
-
-                <TextView
-                    android:textColor="#4b1212"
-                    android:id="@+id/project"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="70sp"
-                    android:text="@string/project"/>
-            </RelativeLayout>
-            <!--动画-->
-            <RelativeLayout
-
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/animation_imageview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@mipmap/main_boutique_head_point_animation"/>
-
-                <TextView
-                    android:textColor="#4b1212"
-                    android:id="@+id/animation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="70sp"
                     android:text="@string/animation"/>
@@ -121,15 +118,147 @@
             android:background="#dfdfdf"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
+=======
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/animation_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/main_boutique_head_point_animation"/>
+
+                    <TextView
+                        android:id="@+id/animation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="70sp"
+                        android:text="@string/animation"
+                        android:textColor="#4b1212"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <!--强力推荐-->
+            <!--强力推荐 上层标题栏-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dfdfdf"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/homepager_Strongly_recommend_works"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Strongly_recommend_works"
+                        android:textColor="#581111"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/homepager_The_s_class_works_recommended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/homepager_Strongly_recommend_works_more_imageview"
+                        android:text="@string/The_s_class_works_recommended"
+                        android:textSize="13sp"/>
+
+                    <ImageView
+                        android:id="@+id/homepager_Strongly_recommend_works_more_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/u17_more"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_Recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dfdfdf"/>
+
+
+            </LinearLayout>
+
+            <!--强力推荐 下层详情-->
+
+
+        </LinearLayout>
+
+        <!--强力推荐-->
+        <!--强力推荐 上层标题栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp">
+
+            <TextView
+                android:id="@+id/homepager_The_s_class_works_recommended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/homepager_Strongly_recommend_works_more_imageview"
+                android:text="@string/The_s_class_works_recommended"/>
+>>>>>>> b5ea3387b3ff0b8c0c5de65b6e99796f62f88886
+
+            <ImageView
+                android:id="@+id/homepager_Strongly_recommend_works_more_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/u17_more"/>
+        </RelativeLayout>
+        <!--强力推荐 下层详情-->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:background="#787878">
+
+<<<<<<< HEAD
     <android.support.v7.widget.RecyclerView
         android:id="@+id/all_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     </LinearLayout>
+=======
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+>>>>>>> b5ea3387b3ff0b8c0c5de65b6e99796f62f88886
 
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
+<<<<<<< HEAD
 </LinearLayout>
+=======
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
 
 </ScrollView>
+>>>>>>> b5ea3387b3ff0b8c0c5de65b6e99796f62f88886
+
