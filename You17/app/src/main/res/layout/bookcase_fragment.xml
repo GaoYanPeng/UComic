@@ -6,7 +6,7 @@
 
     <LinearLayout
 
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         <ImageView
             android:visibility="invisible"
             android:id="@+id/book_delete"
-            android:paddingLeft="30dp"
+            android:paddingLeft="@dimen/book_paddingLeft"
             android:layout_gravity="center"
             android:src="@mipmap/icon_bookshelf_delete_normal"
             android:layout_weight="1"

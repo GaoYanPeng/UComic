@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -120,69 +121,13 @@
             android:background="#dfdfdf"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
 
-            <RelativeLayout
-                android:padding="8sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:textColor="#581111"
-                    android:textSize="18sp"
-                    android:id="@+id/homepager_Strongly_recommend_works"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Strongly_recommend_works"/>
-
-                <TextView
-                    android:textSize="13sp"
-                    android:id="@+id/homepager_The_s_class_works_recommended"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/homepager_Strongly_recommend_works_more_imageview"
-                    android:text="@string/The_s_class_works_recommended"/>
-
-                <ImageView
-                    android:id="@+id/homepager_Strongly_recommend_works_more_imageview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:background="@mipmap/u17_more"/>
-            </RelativeLayout>
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/home_Recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="220dp">
-            </android.support.v7.widget.RecyclerView>
-
-            <TextView
-                android:background="#dfdfdf"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"/>
-
-
-        </LinearLayout>
-
-        <!--强力推荐 下层详情-->
-
-
-
-
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>

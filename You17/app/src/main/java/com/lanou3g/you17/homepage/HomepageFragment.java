@@ -4,8 +4,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.LayoutManager;
 import android.util.Log;
-import android.widget.RemoteViews.RemoteView;
-
 import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseFragment;
 import com.lanou3g.you17.okhttp.NetTool;
@@ -30,9 +28,9 @@ public class HomepageFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        mHomeRecyclerView = (RecyclerView) getView().findViewById(R.id.home_Recycler_view);
+        mHomeRecyclerView = (RecyclerView) getView().findViewById(R.id.all_recyclerview);
         mHomeAdapter = new HomeAdapter(getContext());
-        LayoutManager lm= new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false);
+        LayoutManager lm= new LinearLayoutManager(getContext());
         mHomeRecyclerView.setLayoutManager(lm);
 
     }

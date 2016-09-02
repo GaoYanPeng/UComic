@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#F3F3F3"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+    <RelativeLayout
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:id="@+id/home_third_image"
+        android:src="@mipmap/small_xin"
+        android:layout_width="@dimen/smal_Licon"
+        android:layout_height="@dimen/smal_Licon"/>
+        <TextView
+            android:id="@+id/third_home_name"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/home_third_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/pic_today_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+<com.lanou3g.you17.tools.MyGridView
+    android:id="@+id/home_third_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</com.lanou3g.you17.tools.MyGridView>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/home_ry_item_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/home_all_cover_image"
+            android:layout_width="@dimen/smal_Licon"
+            android:layout_height="@dimen/smal_Licon"
+
+            android:src="@mipmap/small_xin"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/home_itemTitle"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/home_all_cover_image"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强力推荐作品"/>
+        <TextView
+            android:id="@+id/home_title_description"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="原A级作品推荐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/image_view"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/u17_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_all_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

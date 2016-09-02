@@ -285,8 +285,35 @@ public class HomeBean {
                     private int comicId;
                     private String name;
                     private String cover;
+                    private String chapterNew;
                     private String cornerInfo;
                     private String short_description;
+                    private String description;
+                    private String author_name;
+
+                    public String getAuthor_name() {
+                        return author_name;
+                    }
+
+                    public void setAuthor_name(String author_name) {
+                        this.author_name = author_name;
+                    }
+
+                    public String getDescription() {
+                        return description;
+                    }
+
+                    public void setDescription(String description) {
+                        this.description = description;
+                    }
+
+                    public String getChapterNew() {
+                        return chapterNew;
+                    }
+
+                    public void setChapterNew(String chapterNew) {
+                        this.chapterNew = chapterNew;
+                    }
 
                     public int getComicId() {
                         return comicId;

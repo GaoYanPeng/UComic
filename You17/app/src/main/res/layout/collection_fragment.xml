@@ -6,8 +6,8 @@
 
    <ImageView
        android:id="@+id/Book_icon_loading_logout"
-       android:layout_width="50sp"
-       android:layout_height="40sp"
+       android:layout_width="@dimen/theIcon_width"
+       android:layout_height="@dimen/theIcon_height"
        android:layout_centerInParent="true"
        android:background="@mipmap/icon_loading_logout"/>
     <RelativeLayout

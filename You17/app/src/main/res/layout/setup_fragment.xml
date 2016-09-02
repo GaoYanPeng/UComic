@@ -46,8 +46,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         >
 
                         <TextView
@@ -57,21 +57,21 @@
                             android:text="@string/setup_update"/>
 
                         <com.cl.view.widget.SwitchView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
+                            android:layout_width="@dimen/switch_width"
+                            android:layout_height="@dimen/switch_height"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="@dimen/setup_height"
                         android:background="#ededed"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         >
 
                         <TextView
@@ -81,21 +81,21 @@
                             android:text="@string/setup_recommended"/>
 
                         <com.cl.view.widget.SwitchView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
+                            android:layout_width="@dimen/switch_width"
+                            android:layout_height="@dimen/switch_height"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="@dimen/setup_height"
                         android:background="#ededed"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         >
 
                         <TextView
@@ -124,8 +124,8 @@
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         >
@@ -141,11 +141,11 @@
                     </RelativeLayout>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="@dimen/setup_height"
                         android:background="#ededed"/>
                     <RelativeLayout
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                        >
@@ -161,11 +161,11 @@
                     </RelativeLayout>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="@dimen/setup_height"
                         android:background="#ededed"/>
                     <RelativeLayout
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -201,8 +201,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         >
 
                         <TextView
@@ -212,8 +212,8 @@
                             android:text="@string/wifi"/>
 
                         <com.cl.view.widget.SwitchView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
+                            android:layout_width="@dimen/switch_width"
+                            android:layout_height="@dimen/switch_height"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
@@ -225,8 +225,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         >
 
                         <TextView
@@ -236,22 +236,22 @@
                             android:text="@string/setup_environment"/>
 
                         <com.cl.view.widget.SwitchView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
+                            android:layout_width="@dimen/switch_width"
+                            android:layout_height="@dimen/switch_height"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="@dimen/setup_height"
                         android:background="#ededed"/>
 
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingBottom="@dimen/main_lin_layout_Bottom"
+                        android:paddingTop="@dimen/main_lin_layout_Top"
                         >
 
                         <TextView
@@ -261,8 +261,8 @@
                             android:text="@string/setup_wifi"/>
 
                         <com.cl.view.widget.SwitchView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
+                            android:layout_width="@dimen/switch_width"
+                            android:layout_height="@dimen/switch_height"
                             android:layout_alignParentRight="true"/>
                     </RelativeLayout>
                     <!--....................................-->

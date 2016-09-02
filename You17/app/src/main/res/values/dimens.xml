@@ -6,4 +6,24 @@
     <dimen name="main_lin_layout_Bottom">10dp</dimen>
     <dimen name="main_lin_layout_Lest">15dp</dimen>
     <dimen name="mine_marginLeft">10dp</dimen>
+
+    <dimen name="smal_Licon">30dp</dimen>
+
+    <dimen name="theIcon_width">50dp</dimen>
+    <dimen name="theIcon_height">40dp</dimen>
+    <dimen name="main_layout_Top">15dp</dimen>
+
+    <dimen name="book_paddingLeft">30dp</dimen>
+
+    <!--设置-->
+    <dimen name="setup_height">1dp</dimen>
+    <dimen name="switch_width">50dp</dimen>
+    <dimen name="switch_height">20dp</dimen>
+
+    <dimen name="paddingLeft">10dp</dimen>
+
+
+
+
+
 </resources>
