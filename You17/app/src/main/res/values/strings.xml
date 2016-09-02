@@ -35,7 +35,7 @@
     <string name="search_authors"> 漫画名 | 作者</string>
     <string name="Please_input_search_content">请输入搜索内容</string>
     <string name="Top_search">热门搜索</string>
-    <string name="update">更新</string>
-    <string name="type">类型</string>
+    <string name="search_update">更新</string>
+    <string name="search_type">类型</string>
 
 </resources>

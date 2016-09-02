@@ -4,39 +4,42 @@
               android:layout_height="match_parent"
               android:background="@color/white"
               android:orientation="vertical">
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <RelativeLayout
-<<<<<<< HEAD
-        android:layout_width="370sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="9sp"
-=======
-        android:id="@+id/Search_navigation_bar"
-        android:layout_width="330sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="5sp"
->>>>>>> b5ea3387b3ff0b8c0c5de65b6e99796f62f88886
-        android:background="@drawable/search_shape">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="9sp"
+            android:id="@+id/Search_navigation_bar"
+            android:background="@drawable/search_shape">
 
-        <LinearLayout
-            android:layout_centerInParent="true"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:background="@mipmap/classify_search_normal"
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/search_authors"
-                android:textColor="#848484"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/search_authors"/>
-        </LinearLayout>
-    </RelativeLayout>
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@mipmap/classify_search_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/search_authors"
+                    android:textColor="#848484"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_authors"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
 
     <View
         android:layout_width="match_parent"

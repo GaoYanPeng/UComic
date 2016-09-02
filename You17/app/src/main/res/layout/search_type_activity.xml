@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/type"
+            android:text="@string/search_type"
             android:textSize="18sp"/>
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="5sp"
             android:layout_toLeftOf="@+id/update_ImageView"
-            android:text="@string/update"
+            android:text="@string/search_update"
             android:textColor="#909fa2"
             android:textSize="13sp"/>
 

@@ -11,6 +11,7 @@
         android:layout_height="wrap_content">
 
     <ImageView
+        android:background="@mipmap/main_recycler_image_default"
         android:id="@+id/home_image_carce"
         android:scaleType="fitXY"
         android:src="@mipmap/panpanpan"

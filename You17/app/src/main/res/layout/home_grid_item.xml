@@ -9,6 +9,7 @@
 
 
     <ImageView
+        android:background="@mipmap/main_recycler_image_default"
         android:id="@+id/home_two_image_item"
         android:scaleType="fitXY"
         android:src="@mipmap/panpanpan"

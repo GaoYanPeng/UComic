@@ -8,6 +8,7 @@
 
 
     <ImageView
+        android:background="@mipmap/main_recycler_image_default"
         android:id="@+id/home_item_image"
         android:layout_width="110dp"
         android:layout_height="140dp"
