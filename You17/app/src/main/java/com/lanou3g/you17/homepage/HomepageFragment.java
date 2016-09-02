@@ -43,7 +43,7 @@ public class HomepageFragment extends BaseFragment {
             public void onSuccess(HomeBean response) {
 
 
-                mHomeAdapter.setHomeBean(response);
+                mHomeAdapter.setHomeBean(response.getData().getReturnData());
                 mHomeRecyclerView.setAdapter(mHomeAdapter);
                 Log.d("HomepageFragment", "EEEEEEEEEE00000");
 

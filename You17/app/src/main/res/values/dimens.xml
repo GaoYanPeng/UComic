@@ -21,6 +21,18 @@
     <dimen name="switch_height">20dp</dimen>
 
     <dimen name="paddingLeft">10dp</dimen>
+    <!--首页-->
+    <dimen name="homeTen">10dp</dimen>
+    <dimen name="homeNine">9dp</dimen>
+    <dimen name="homeEight">8dp</dimen>
+    <dimen name="homeSeven">7dp</dimen>
+    <dimen name="homeSix">6dp</dimen>
+    <dimen name="homeFive">5dp</dimen>
+    <dimen name="homeFour">4dp</dimen>
+    <dimen name="homeThree">3dp</dimen>
+    <dimen name="homeTow">2dp</dimen>
+    <dimen name="homeOne">1dp</dimen>
+
 
 
 

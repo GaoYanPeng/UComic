@@ -16,24 +16,27 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import com.lanou3g.you17.R;
+import com.lanou3g.you17.homepage.HomeBean.DataBean.ReturnDataBean;
 import com.lanou3g.you17.homepage.adapter.AllRecyclerAdapter;
 import com.lanou3g.you17.homepage.adapter.HomeGridAdapter;
 import com.lanou3g.you17.homepage.adapter.HomeGridViewAdapter;
 import com.lanou3g.you17.homepage.adapter.HomeThirdAdapter;
+import com.lanou3g.you17.homepage.adapter.TaliGridAdapter;
 import com.lanou3g.you17.homepage.adapter.VipRecyclerAdapter;
+import com.lanou3g.you17.tools.MyGridView;
 
 /**
  * Created by 高延鹏.on 16/8/30.
  */
 public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
     private Context mContext;
-    private HomeBean mHomeBean;
+    private HomeBean.DataBean.ReturnDataBean mHomeBean;
 
     public HomeAdapter(Context context) {
         mContext = context;
     }
 
-    public void setHomeBean(HomeBean homeBean) {
+    public void setHomeBean(ReturnDataBean homeBean) {
         mHomeBean = homeBean;
         notifyDataSetChanged();
     }
@@ -95,6 +98,12 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
                 holder = new AllRecyclerViewHolder(allNineView);
 
                 break;
+            case 10:
+                View tailView = LayoutInflater.from(mContext).inflate
+                        (R.layout.homme_tail_recycler, parent, false);
+                holder = new TailViewHolder(tailView);
+                break;
+
 
         }
         return holder;
@@ -109,49 +118,49 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
                 AllRecyclerViewHolder allRyHolder = (AllRecyclerViewHolder) holder;
                 AllRecyclerAdapter allRyAdapter = new AllRecyclerAdapter(mContext, 0);
                 allRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                allRyAdapter.setAllRyItemBean(mHomeBean.getData().getReturnData());
+                allRyAdapter.setAllRyItemBean(mHomeBean);
                 allRyHolder.myRecyclerView.setAdapter(allRyAdapter);
 
-                allRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(0).getItemTitle());
-                allRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
+                allRyHolder.itemTitle.setText(mHomeBean.getComicLists().get(0).getItemTitle());
+                allRyHolder.description.setText(mHomeBean.getComicLists()
                         .get(0).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
-                        .getComicLists().get(0).getTitleIconUrl()).into(allRyHolder.titleIconUrl);
+                Glide.with(mContext).load(mHomeBean.getComicLists().get(0)
+                        .getTitleIconUrl()).into(allRyHolder.titleIconUrl);
                 break;
             case 1:
                 AllRecyclerViewHolder allOneRyHolder = (AllRecyclerViewHolder) holder;
                 AllRecyclerAdapter allOneRyAdapter = new AllRecyclerAdapter(mContext, 1);
                 allOneRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                allOneRyAdapter.setAllRyItemBean(mHomeBean.getData().getReturnData());
+                allOneRyAdapter.setAllRyItemBean(mHomeBean);
                 allOneRyHolder.myRecyclerView.setAdapter(allOneRyAdapter);
 
-                allOneRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(1).getItemTitle());
-                allOneRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
+                allOneRyHolder.itemTitle.setText(mHomeBean.getComicLists().get(1).getItemTitle());
+                allOneRyHolder.description.setText(mHomeBean.getComicLists()
                         .get(1).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
+                Glide.with(mContext).load(mHomeBean
                         .getComicLists().get(1).getTitleIconUrl()).into(allOneRyHolder.titleIconUrl);
                 break;
             case 2:
                 TwoPicHolder twoPicHolder = (TwoPicHolder) holder;
                 HomeGridViewAdapter adapter = new HomeGridViewAdapter(mContext);
-                adapter.setReturnDataBean(mHomeBean.getData().getReturnData());
+                adapter.setReturnDataBean(mHomeBean);
                 twoPicHolder.mGridView.setAdapter(adapter);
 
-                twoPicHolder.titleItemGrid.setText(mHomeBean.getData().getReturnData().getComicLists().get(2).getItemTitle());
-                twoPicHolder.descriptionGgrid.setText(mHomeBean.getData().getReturnData().getComicLists().get(2).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData().getComicLists()
+                twoPicHolder.titleItemGrid.setText(mHomeBean.getComicLists().get(2).getItemTitle());
+                twoPicHolder.descriptionGgrid.setText(mHomeBean.getComicLists().get(2).getDescription());
+                Glide.with(mContext).load(mHomeBean.getComicLists()
                         .get(2).getTitleIconUrl()).into(twoPicHolder.titleIconUrlTow);
                 break;
             case 3:
                 AllRecyclerViewHolder allThreeRyHolder = (AllRecyclerViewHolder) holder;
                 AllRecyclerAdapter allThreeRyAdapter = new AllRecyclerAdapter(mContext, 3);
                 allThreeRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                allThreeRyAdapter.setAllRyItemBean(mHomeBean.getData().getReturnData());
+                allThreeRyAdapter.setAllRyItemBean(mHomeBean);
                 allThreeRyHolder.myRecyclerView.setAdapter(allThreeRyAdapter);
-                allThreeRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(3).getItemTitle());
-                allThreeRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
+                allThreeRyHolder.itemTitle.setText(mHomeBean.getComicLists().get(3).getItemTitle());
+                allThreeRyHolder.description.setText(mHomeBean.getComicLists()
                         .get(3).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
+                Glide.with(mContext).load(mHomeBean
                         .getComicLists().get(3).getTitleIconUrl()).into(allThreeRyHolder.titleIconUrl);
 
                 break;
@@ -159,45 +168,44 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
                 AllRecyclerViewHolder allFourRyHolder = (AllRecyclerViewHolder) holder;
                 AllRecyclerAdapter allFourRyAdapter = new AllRecyclerAdapter(mContext, 4);
                 allFourRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                allFourRyAdapter.setAllRyItemBean(mHomeBean.getData().getReturnData());
+                allFourRyAdapter.setAllRyItemBean(mHomeBean);
                 allFourRyHolder.myRecyclerView.setAdapter(allFourRyAdapter);
-                allFourRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(4).getItemTitle());
-                allFourRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
+                allFourRyHolder.itemTitle.setText(mHomeBean.getComicLists().get(4).getItemTitle());
+                allFourRyHolder.description.setText(mHomeBean.getComicLists()
                         .get(4).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
+                Glide.with(mContext).load(mHomeBean
                         .getComicLists().get(4).getTitleIconUrl()).into(allFourRyHolder.titleIconUrl);
                 break;
             case 5:
                 TwoPicHolder gridPicHolder = (TwoPicHolder) holder;
                 HomeGridAdapter homeAdapter = new HomeGridAdapter(mContext);
-                homeAdapter.setDataBean(mHomeBean.getData().getReturnData());
+                homeAdapter.setDataBean(mHomeBean);
                 gridPicHolder.mGridView.setAdapter(homeAdapter);
-                gridPicHolder.titleItemGrid.setText(mHomeBean.getData().getReturnData().getComicLists().get(5).getItemTitle());
-                gridPicHolder.descriptionGgrid.setText(mHomeBean.getData().getReturnData().getComicLists().get(5).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData().getComicLists()
+                gridPicHolder.titleItemGrid.setText(mHomeBean.getComicLists().get(5).getItemTitle());
+                gridPicHolder.descriptionGgrid.setText(mHomeBean.getComicLists().get(5).getDescription());
+                Glide.with(mContext).load(mHomeBean.getComicLists()
                         .get(5).getTitleIconUrl()).into(gridPicHolder.titleIconUrlTow);
                 break;
             case 6:
                 AllRecyclerViewHolder allSixRyHolder = (AllRecyclerViewHolder) holder;
                 AllRecyclerAdapter allSixRyAdapter = new AllRecyclerAdapter(mContext, 6);
                 allSixRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                allSixRyAdapter.setAllRyItemBean(mHomeBean.getData().getReturnData());
+                allSixRyAdapter.setAllRyItemBean(mHomeBean);
                 allSixRyHolder.myRecyclerView.setAdapter(allSixRyAdapter);
-                allSixRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(6).getItemTitle());
-                allSixRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
-                        .get(6).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
-                        .getComicLists().get(6).getTitleIconUrl()).into(allSixRyHolder.titleIconUrl);
+                allSixRyHolder.itemTitle.setText(mHomeBean.getComicLists().get(6).getItemTitle());
+                allSixRyHolder.description.setText(mHomeBean.getComicLists().get(6).getDescription());
+                Glide.with(mContext).load(mHomeBean.getComicLists().get(6).getTitleIconUrl()).into
+                        (allSixRyHolder.titleIconUrl);
 
                 break;
             case 7:
                 ThirdHolder thirdPicHolder = (ThirdHolder) holder;
                 HomeThirdAdapter thirdAdapter = new HomeThirdAdapter(mContext);
-                thirdAdapter.setThirdBean(mHomeBean.getData().getReturnData());
+                thirdAdapter.setThirdBean(mHomeBean);
                 thirdPicHolder.homeThirdGrid.setAdapter(thirdAdapter);
 
-                thirdPicHolder.thirdHomeName.setText(mHomeBean.getData().getReturnData().getComicLists().get(7).getItemTitle());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData().getComicLists()
+                thirdPicHolder.thirdHomeName.setText(mHomeBean.getComicLists().get(7).getItemTitle());
+                Glide.with(mContext).load(mHomeBean.getComicLists()
                         .get(7).getTitleIconUrl()).into(thirdPicHolder.thirdImage);
 
                 break;
@@ -205,25 +213,36 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
                 AllRecyclerViewHolder allEiRyHolder = (AllRecyclerViewHolder) holder;
                 VipRecyclerAdapter vipEightRyAdapter = new VipRecyclerAdapter(mContext, 8);
                 allEiRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                vipEightRyAdapter.setVipRyItemBean(mHomeBean.getData().getReturnData());
+                vipEightRyAdapter.setVipRyItemBean(mHomeBean);
                 allEiRyHolder.myRecyclerView.setAdapter(vipEightRyAdapter);
-                allEiRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(8).getItemTitle());
-                allEiRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
+                allEiRyHolder.itemTitle.setText(mHomeBean.getComicLists().get(8).getItemTitle());
+                allEiRyHolder.description.setText(mHomeBean.getComicLists()
                         .get(8).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
+                Glide.with(mContext).load(mHomeBean
                         .getComicLists().get(8).getTitleIconUrl()).into(allEiRyHolder.titleIconUrl);
                 break;
             case 9:
                 AllRecyclerViewHolder allNineRyHolder = (AllRecyclerViewHolder) holder;
                 AllRecyclerAdapter allNineRyAdapter = new AllRecyclerAdapter(mContext, 9);
                 allNineRyHolder.myRecyclerView.setLayoutManager(linearLayoutManager);
-                allNineRyAdapter.setAllRyItemBean(mHomeBean.getData().getReturnData());
+                allNineRyAdapter.setAllRyItemBean(mHomeBean);
                 allNineRyHolder.myRecyclerView.setAdapter(allNineRyAdapter);
-                allNineRyHolder.itemTitle.setText(mHomeBean.getData().getReturnData().getComicLists().get(9).getItemTitle());
-                allNineRyHolder.description.setText(mHomeBean.getData().getReturnData().getComicLists()
-                        .get(9).getDescription());
-                Glide.with(mContext).load(mHomeBean.getData().getReturnData()
+                allNineRyHolder.itemTitle.setText
+                        (mHomeBean.getComicLists().get(9).getItemTitle());
+                allNineRyHolder.description.setText
+                        (mHomeBean.getComicLists().get(9).getDescription());
+                Glide.with(mContext).load(mHomeBean
                         .getComicLists().get(9).getTitleIconUrl()).into(allNineRyHolder.titleIconUrl);
+                break;
+            case 10:
+                TailViewHolder tailViewHolder = (TailViewHolder) holder;
+                TaliGridAdapter taliGridAdapter = new TaliGridAdapter(mContext);
+                taliGridAdapter.setTailBean(mHomeBean);
+                tailViewHolder.taliGridView.setAdapter(taliGridAdapter);
+                tailViewHolder.tailName.setText
+                        (mHomeBean.getComicLists().get(10).getItemTitle());
+
+
                 break;
         }
     }
@@ -254,6 +273,9 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
             return 8;
         } else if (position == 9) {
             return 9;
+
+        } else if (position == 10) {
+            return 10;
         } else {
             return 12;
         }
@@ -262,7 +284,7 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 11;
     }
 
     class AllRecyclerViewHolder extends ViewHolder {
@@ -305,6 +327,17 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
             thirdImage = (ImageView) itemView.findViewById(R.id.home_third_image);
             homeThirdGrid = (GridView) itemView.findViewById(R.id.home_third_grid);
             thirdHomeName = (TextView) itemView.findViewById(R.id.third_home_name);
+        }
+    }
+
+    class TailViewHolder extends ViewHolder {
+        private MyGridView taliGridView;
+        private TextView tailName;
+
+        public TailViewHolder(View itemView) {
+            super(itemView);
+            taliGridView = (MyGridView) itemView.findViewById(R.id.home_tail_grid);
+            tailName = (TextView) itemView.findViewById(R.id.tail_home_name);
         }
     }
 }
