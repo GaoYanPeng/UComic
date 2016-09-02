@@ -56,7 +56,7 @@ public class SearchGridViewAdapter extends BaseAdapter{
             holder= (ViewHolder) convertView.getTag ();
         }
         holder.textView.setText (bean.getData ().getReturnData ().getRankinglist ().get (position).getSortName ());
-        Glide.with (context).load (bean.getData ().getReturnData ().getRankinglist ().get (position).getCover ()).into (holder.imageView);
+        Glide.with (context).load (bean.getData ().getReturnData ().getRankinglist ().get (position).getCover ()).thumbnail (0.5f).into (holder.imageView);
         return convertView;
     }
 

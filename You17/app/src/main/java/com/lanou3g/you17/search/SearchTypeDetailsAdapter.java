@@ -58,7 +58,7 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
         holder.details_type.setText (bean.getData ().getReturnData ().getComics ().get (position).getTags ().toString ());
         holder.details_author.setText (bean.getData ().getReturnData ().getComics ().get (position).getAuthor ());
         holder.details_Introduction.setText (bean.getData ().getReturnData ().getComics ().get (position).getDescription ());
-        Glide.with (context).load (bean.getData ().getReturnData ().getComics ().get (position).getCover ()).into (holder.details_imageview);
+        Glide.with (context).load (bean.getData ().getReturnData ().getComics ().get (position).getCover ()).thumbnail (0.5f).into (holder.details_imageview);
         return convertView;
     }
 

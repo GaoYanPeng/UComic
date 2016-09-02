@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-              android:orientation="vertical"
               android:layout_width="wrap_content"
-              android:layout_height="wrap_content">
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
     <LinearLayout
-        android:paddingLeft="10dp"
-        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
         <RelativeLayout
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:id="@+id/home_ry_item_lin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
             android:weightSum="1">
 
             <ImageView
@@ -27,33 +29,35 @@
                 android:src="@mipmap/small_xin"/>
 
             <TextView
-                android:textSize="16sp"
                 android:id="@+id/home_itemTitle_grid"
-                android:layout_marginTop="5dp"
-                android:layout_toRightOf="@+id/home_grid_cover_image"
-                android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="强力推荐作品"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/home_grid_cover_image"
+                android:text="强力推荐作品"
+                android:textSize="16sp"/>
+
             <TextView
                 android:id="@+id/home_title_description_grid"
-                android:textSize="10sp"
-                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
                 android:text="原A级作品推荐"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textSize="10sp"/>
 
             <ImageView
-                android:layout_marginTop="5dp"
                 android:id="@+id/image_view"
-                android:layout_alignParentRight="true"
-                android:src="@mipmap/u17_more"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/u17_more"/>
 
         </RelativeLayout>
+
         <com.lanou3g.you17.tools.MyGridView
             android:id="@+id/item_grid_view"
             android:layout_width="wrap_content"
@@ -64,9 +68,9 @@
     </LinearLayout>
 
     <TextView
-        android:background="#dfdfdf"
         android:layout_width="match_parent"
-        android:layout_height="0.6dp"/>
+        android:layout_height="0.6dp"
+        android:background="#dfdfdf"/>
 
 
 </LinearLayout>

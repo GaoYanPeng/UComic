@@ -6,18 +6,11 @@
               android:orientation="vertical">
 
     <RelativeLayout
-<<<<<<< HEAD
-        android:layout_width="370sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="9sp"
-=======
         android:id="@+id/Search_navigation_bar"
-        android:layout_width="330sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="5sp"
->>>>>>> b5ea3387b3ff0b8c0c5de65b6e99796f62f88886
+        android:layout_margin="20sp"
         android:background="@drawable/search_shape">
 
         <LinearLayout
