@@ -46,7 +46,7 @@
                 <!--轮播图下面的标题栏-->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100sp"
+                    android:layout_height="90dp"
                     android:orientation="horizontal">
                     <!--排名-->
                     <RelativeLayout
@@ -59,14 +59,15 @@
                             android:id="@+id/ranking_imageview"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/homeFive"
                             android:background="@mipmap/main_boutique_head_point_ranking"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="70sp"
+                            android:layout_marginTop="60sp"
                             android:text="@string/ranking"
                             android:textColor="#4b1212"/>
                     </RelativeLayout>
@@ -81,7 +82,8 @@
                             android:id="@+id/signing_imageview"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/homeFive"
                             android:background="@mipmap/icon_signed"/>
 
                         <TextView
@@ -89,7 +91,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="70sp"
+                            android:layout_marginTop="@dimen/home_number"
                             android:text="@string/signing"
                             android:textColor="#4b1212"/>
                     </RelativeLayout>
@@ -103,7 +105,8 @@
                             android:id="@+id/project_imageview"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/homeFive"
                             android:background="@mipmap/main_boutique_head_point_special"/>
 
                         <TextView
@@ -111,7 +114,31 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="70sp"
+                            android:layout_marginTop="@dimen/home_number"
+                            android:text="@string/project"
+                            android:textColor="#4b1212"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/animation_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/homeFive"
+                            android:background="@mipmap/main_boutique_head_point_animation"/>
+
+                        <TextView
+                            android:id="@+id/animation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/home_number"
                             android:text="@string/project"
                             android:textColor="#4b1212"/>
 

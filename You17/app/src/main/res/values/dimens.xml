@@ -40,6 +40,10 @@
     <dimen name="rank_distance">14dp</dimen>
     <dimen name="rank_number">17dp</dimen>
 
+    <dimen name="home_number">60sp</dimen>
+
+
+
 
 
 
