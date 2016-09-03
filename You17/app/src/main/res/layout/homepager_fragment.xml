@@ -32,6 +32,7 @@
                     android:orientation="horizontal">
                     <!--排名-->
                     <RelativeLayout
+                        android:id="@+id/ranking"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -44,7 +45,6 @@
                             android:background="@mipmap/main_boutique_head_point_ranking"/>
 
                         <TextView
-                            android:id="@+id/ranking"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"

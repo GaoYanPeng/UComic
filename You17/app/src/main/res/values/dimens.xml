@@ -33,6 +33,17 @@
     <dimen name="homeTow">2dp</dimen>
     <dimen name="homeOne">1dp</dimen>
 
+    <dimen name="ranking">15dp</dimen>
+    <dimen name="rankingLin">0.5dp</dimen>
+    <dimen name="rank_word">11dp</dimen>
+    <dimen name="rank_title_word">15dp</dimen>
+    <dimen name="rank_distance">14dp</dimen>
+    <dimen name="rank_number">17dp</dimen>
+
+
+
+
+
 
 
 

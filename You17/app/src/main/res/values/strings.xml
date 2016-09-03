@@ -37,5 +37,7 @@
     <string name="Top_search">热门搜索</string>
     <string name="search_update">更新</string>
     <string name="search_type">类型</string>
+    <string name="anking">排行榜</string>
+    <string name="ticket">月票</string>
 
 </resources>
