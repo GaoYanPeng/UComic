@@ -6,5 +6,7 @@
     <color name="black">#dd000000</color>
     <color name="white">#ffffff</color>
     <color name="home_back">#FCFFF7</color>
+    <color name="home_title_big">#2b4008</color>
+    <color name="home_title_small">#c6c6c6</color>
 
 </resources>

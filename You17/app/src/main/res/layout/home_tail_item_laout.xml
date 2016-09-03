@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:layout_marginBottom="@dimen/homeTen"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/homeTen"
+              android:paddingRight="@dimen/homeTen">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/homeTen"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/home_tail_carce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/main_recycler_image_default"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/home_tail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_rank_first"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/homeTen"
+        android:layout_weight="1"
+        android:background="@color/home_back"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/homeNine"
+        android:paddingLeft="@dimen/homeTen">
+
+        <TextView
+            android:id="@+id/home_third_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/homeEight"
+            android:textColor="#4d1919"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/home_layout_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_third_name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_third_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/homeFour"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:maxLines="2"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/home_third_tow_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homeFive"
+                android:layout_marginTop="@dimen/homeFour"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:maxLines="2"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/home_third_three_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homeFive"
+                android:layout_marginTop="@dimen/homeFour"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:maxLines="2"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/home_third_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_layout_description"
+            android:layout_marginTop="@dimen/homeSix"
+
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_third_author_name"/>
+
+        <ImageView
+
+            android:id="@+id/home_tail_man"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_yaoqiniang_first"/>
+    </RelativeLayout>
+
+</LinearLayout>

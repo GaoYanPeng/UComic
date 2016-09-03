@@ -281,6 +281,8 @@ public class HomeBean {
                     this.comics = comics;
                 }
 
+
+
                 public static class ComicsBean {
                     private int comicId;
                     private String name;
@@ -290,6 +292,15 @@ public class HomeBean {
                     private String short_description;
                     private String description;
                     private String author_name;
+                    private List<String> tags;
+
+                    public List<String> getTags() {
+                        return tags;
+                    }
+
+                    public void setTags(List<String> tags) {
+                        this.tags = tags;
+                    }
 
                     public String getAuthor_name() {
                         return author_name;
