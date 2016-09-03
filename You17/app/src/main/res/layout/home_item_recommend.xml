@@ -13,7 +13,7 @@
         android:layout_width="110dp"
         android:layout_height="140dp"
         android:scaleType="fitXY"
-        android:src="@mipmap/panpanpan"/>
+        />
 <LinearLayout
     android:paddingTop="10dp"
     android:paddingBottom="13dp"

@@ -12,8 +12,7 @@
         android:id="@+id/home_vip_image"
         android:layout_width="110dp"
         android:layout_height="140dp"
-        android:scaleType="fitXY"
-        android:src="@mipmap/panpanpan"/>
+        android:scaleType="fitXY"/>
 <LinearLayout
     android:paddingTop="10dp"
     android:paddingBottom="13dp"
