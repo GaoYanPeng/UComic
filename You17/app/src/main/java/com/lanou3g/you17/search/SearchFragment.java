@@ -17,7 +17,10 @@ import com.lanou3g.you17.tools.API;
 /**
  * Created by dllo on 16/8/26.
  */
-//一级搜索页面
+
+/**
+ * 一级搜索界面
+ */
 public class SearchFragment extends BaseFragment implements OnClickListener{
 
     //搜索导航栏下的GridView

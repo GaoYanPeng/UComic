@@ -16,8 +16,10 @@ import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
 import com.lanou3g.you17.tools.API;
 
-//一级搜索页面不同类型GridView点击后进入的详情Activity
-public class SearchTypeDetailsActivity extends BaseActivity implements OnClickListener{
+/**
+ * 一级搜索页面不同类型GridView点击后进入的详情Activity
+ */
+public class SearchTypeDetailsActivity extends BaseActivity implements OnClickListener {
 
     private ImageView search_details_back;
     private SearchTypeDetailsAdapter adapter;
@@ -30,10 +32,10 @@ public class SearchTypeDetailsActivity extends BaseActivity implements OnClickLi
 
     @Override
     public void initView () {
-        search_details_back= (ImageView) findViewById (R.id.search_details_back);
+        search_details_back = (ImageView) findViewById (R.id.search_details_back);
         search_details_back.setOnClickListener (this);
-        adapter=new SearchTypeDetailsAdapter (this);
-        listView= (ListView) findViewById (R.id.details_listview);
+        adapter = new SearchTypeDetailsAdapter (this);
+        listView = (ListView) findViewById (R.id.details_listview);
 
     }
 
@@ -55,7 +57,7 @@ public class SearchTypeDetailsActivity extends BaseActivity implements OnClickLi
 
     @Override
     public void onClick (View v) {
-        switch (v.getId ()){
+        switch (v.getId ()) {
             case R.id.search_details_back:
                 finish ();
                 break;

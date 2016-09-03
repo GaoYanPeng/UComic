@@ -6,7 +6,9 @@ Created by tliYgTong_刘德强 on 16/9/1.
 
 import java.util.List;
 
-//一级搜索页面不同类型GridView点击后进入的详情的Activity的Bean
+/**
+ * 一级搜索页面不同类型GridView点击后进入的详情的Activity的Bean
+ */
 public class SearchTypeDetailsBean {
 
     /**

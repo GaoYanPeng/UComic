@@ -21,11 +21,28 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <!--轮播图-->
-                <android.support.v4.view.ViewPager
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="180sp"
-                    android:background="#e0ffff"/>
+                    android:layout_height="200sp"
+                    android:orientation="vertical">
+
+                    <!--轮播图-->
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_turn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-25dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </LinearLayout>
+
                 <!--轮播图下面的标题栏-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -123,11 +140,6 @@
     </LinearLayout>
 
 
-
-
-
-
-
-    </ScrollView>
+</ScrollView>
 
 

@@ -16,7 +16,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.lanou3g.you17.R;
 
-//一级搜索页面不同类型GridView的适配器
+/**
+ * 一级搜索页面不同类型GridView的适配器
+ */
+
 public class SearchGridViewAdapter extends BaseAdapter{
 
     private Context context;

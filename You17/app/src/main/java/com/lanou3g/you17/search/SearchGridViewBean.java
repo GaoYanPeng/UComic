@@ -7,7 +7,9 @@ Created by tliYgTong_刘德强 on 16/8/31.
 
 import java.util.List;
 
-//一级搜索页面不同类型GridView的Bean
+/**
+ * 一级搜索页面不同类型GridView的Bean
+ */
 public class SearchGridViewBean {
 
     /**

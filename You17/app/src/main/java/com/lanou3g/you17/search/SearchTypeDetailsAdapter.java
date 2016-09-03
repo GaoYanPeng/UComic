@@ -15,7 +15,9 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.lanou3g.you17.R;
 
-//一级搜索页面不同类型GridView点击后进入的详情的Activity的适配器
+/**
+ * 一级搜索页面不同类型GridView点击后进入的详情的Activity的适配器
+ */
 public class SearchTypeDetailsAdapter extends BaseAdapter {
 
     private Context context;
@@ -46,13 +48,13 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
 
     @Override
     public View getView (int position, View convertView, ViewGroup parent) {
-        ViewHolder holder=null;
-        if (convertView==null){
-            convertView= LayoutInflater.from (context).inflate (R.layout.search_item_type_details,null);
-            holder=new ViewHolder (convertView);
+        ViewHolder holder = null;
+        if (convertView == null) {
+            convertView = LayoutInflater.from (context).inflate (R.layout.search_item_type_details, null);
+            holder = new ViewHolder (convertView);
             convertView.setTag (holder);
-        }else {
-            holder= (ViewHolder) convertView.getTag ();
+        } else {
+            holder = (ViewHolder) convertView.getTag ();
         }
         holder.details_name.setText (bean.getData ().getReturnData ().getComics ().get (position).getName ());
         holder.details_type.setText (bean.getData ().getReturnData ().getComics ().get (position).getTags ().toString ());
@@ -68,11 +70,11 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
 
         private ViewHolder (View view) {
             super ();
-            details_imageview= (ImageView) view.findViewById (R.id.details_imageview);
-            details_name= (TextView) view.findViewById (R.id.details_name);
-            details_type= (TextView) view.findViewById (R.id.details_type);
-            details_author= (TextView) view.findViewById (R.id.details_author);
-            details_Introduction= (TextView) view.findViewById (R.id.details_Introduction);
+            details_imageview = (ImageView) view.findViewById (R.id.details_imageview);
+            details_name = (TextView) view.findViewById (R.id.details_name);
+            details_type = (TextView) view.findViewById (R.id.details_type);
+            details_author = (TextView) view.findViewById (R.id.details_author);
+            details_Introduction = (TextView) view.findViewById (R.id.details_Introduction);
         }
     }
 }

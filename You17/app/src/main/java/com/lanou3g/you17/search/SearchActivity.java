@@ -23,7 +23,9 @@ import com.lanou3g.you17.tools.API;
 
 import java.util.ArrayList;
 
-//点击搜索标题栏后跳转的二级搜索页面Activity
+/**
+ * 点击搜索标题栏后跳转的二级搜索页面Activity
+ */
 public class SearchActivity extends BaseActivity implements OnClickListener {
 
     private boolean isFristTime = true;
