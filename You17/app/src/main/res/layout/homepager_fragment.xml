@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,11 +21,28 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <!--轮播图-->
-                <android.support.v4.view.ViewPager
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="180sp"
-                    android:background="#e0ffff"/>
+                    android:layout_height="200sp"
+                    android:orientation="vertical">
+
+                    <!--轮播图-->
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_turn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-25dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </LinearLayout>
+
                 <!--轮播图下面的标题栏-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -98,46 +116,30 @@
                             android:textColor="#4b1212"/>
 
                     </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <ImageView
-                            android:id="@+id/animation_imageview"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:background="@mipmap/main_boutique_head_point_animation"/>
-
-                        <TextView
-                            android:id="@+id/animation"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="70sp"
-                            android:text="@string/project"
-                            android:textColor="#4b1212"/>
-
-                    </RelativeLayout>
                 </LinearLayout>
-                <TextView
-                    android:background="#dfdfdf"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/setup_height"/>
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/all_recyclerview"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                </android.support.v7.widget.RecyclerView>
 
             </LinearLayout>
+
+
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
     </LinearLayout>
 
-</ScrollView>
 
-    <!---->
+</ScrollView>
 
 

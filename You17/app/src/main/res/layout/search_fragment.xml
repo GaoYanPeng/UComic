@@ -4,55 +4,66 @@
               android:layout_height="match_parent"
               android:background="@color/white"
               android:orientation="vertical">
-    <LinearLayout
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <RelativeLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="9sp"
-            android:id="@+id/Search_navigation_bar"
-            android:background="@drawable/search_shape">
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_centerInParent="true"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:background="@mipmap/classify_search_normal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/search_authors"
-                    android:textColor="#848484"
+            <RelativeLayout
+                android:id="@+id/Search_navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="9sp"
+                android:background="@drawable/search_shape">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/search_authors"/>
-            </LinearLayout>
-        </RelativeLayout>
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/classify_search_normal"/>
+
+                    <TextView
+                        android:id="@+id/search_authors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_authors"
+                        android:textColor="#848484"/>
+                </LinearLayout>
+            </RelativeLayout>
 
 
+        </LinearLayout>
     </LinearLayout>
 
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1sp"
-        android:background="#e9e9e9"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#e9e9e9"/>
 
-    <GridView
-        android:id="@+id/search_gridView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:horizontalSpacing="20dp"
-        android:numColumns="3"
-        android:verticalSpacing="20dp"/>
+        <GridView
+            android:id="@+id/search_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="20dp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp"/>
 
-</LinearLayout>
+    </LinearLayout>

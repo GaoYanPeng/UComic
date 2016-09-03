@@ -16,7 +16,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.lanou3g.you17.R;
 
-//一级搜索页面不同类型GridView的适配器
+/**
+ * 一级搜索页面不同类型GridView的适配器
+ */
+
 public class SearchGridViewAdapter extends BaseAdapter{
 
     private Context context;
@@ -56,7 +59,7 @@ public class SearchGridViewAdapter extends BaseAdapter{
             holder= (ViewHolder) convertView.getTag ();
         }
         holder.textView.setText (bean.getData ().getReturnData ().getRankinglist ().get (position).getSortName ());
-        Glide.with (context).load (bean.getData ().getReturnData ().getRankinglist ().get (position).getCover ()).into (holder.imageView);
+        Glide.with (context).load (bean.getData ().getReturnData ().getRankinglist ().get (position).getCover ()).thumbnail (0.5f).into (holder.imageView);
         return convertView;
     }
 

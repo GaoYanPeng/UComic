@@ -7,7 +7,9 @@ Created by tliYgTong_刘德强 on 16/9/1.
 
 import java.util.List;
 
-//二级搜索页面热门搜索下推荐的Bean
+/**
+ * 二级搜索页面热门搜索下推荐的Bean
+ */
 public class SearchTopSearchBean {
 
     /**

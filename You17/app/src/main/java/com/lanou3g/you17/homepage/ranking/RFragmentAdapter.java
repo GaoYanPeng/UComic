@@ -82,7 +82,7 @@ public class RFragmentAdapter extends BaseAdapter {
                 holder.number.setVisibility(View.VISIBLE);
 
             }
-           
+
         }
 
         return convertView;
