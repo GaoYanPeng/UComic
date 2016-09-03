@@ -20,8 +20,8 @@ import android.widget.LinearLayout;
 
 
 import com.lanou3g.you17.R;
-import com.lanou3g.you17.base.BaseFragment;
 import com.lanou3g.you17.homepage.ranking.RankingActivity;
+import com.lanou3g.you17.homepage.shuffling.ShufflingFigureAdapter;
 import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
 import com.lanou3g.you17.tools.API;
@@ -41,7 +41,7 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
     private ImageView[] tips;
     private LinearLayout llturn;
     private ShufflingFigureAdapter adapter;
-    private ShufflingFigureBean arrays;
+
 
     @Override
     protected int initLayout() {
@@ -56,7 +56,6 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
         mHomeRecyclerView.setLayoutManager(lm);
         rankingLayout = (RelativeLayout) getView().findViewById(R.id.ranking);
         rankingLayout.setOnClickListener(this);
-        arrays = new ShufflingFigureBean ();
         adapter = new ShufflingFigureAdapter (getContext ());
         vp = (ViewPager) getView ().findViewById (R.id.vp);
         llturn = (LinearLayout) getView ().findViewById (R.id.ll_turn);
@@ -110,11 +109,12 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
             mm = false;
         }
 
-        NetTool.getInstance ().startRequest (API.API_SHUFFLING_FIGURE, ShufflingFigureBean.class, new onHttpCallBack<ShufflingFigureBean> () {
+        NetTool.getInstance ().startRequest (API.HOME, HomeBean.class, new onHttpCallBack<HomeBean> () {
             @Override
             //成功时进行:
-            public void onSuccess (final ShufflingFigureBean response) {
-                adapter.setImags (response);
+            public void onSuccess (final HomeBean response) {
+                adapter.setShufflingBean (response);
+
                 vp.addOnPageChangeListener (new OnPageChangeListener () {
                     @Override
                     public void onPageScrolled (int position, float positionOffset, int positionOffsetPixels) {

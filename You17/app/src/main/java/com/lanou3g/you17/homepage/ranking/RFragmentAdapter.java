@@ -50,38 +50,63 @@ public class RFragmentAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(mContext).inflate(R.layout.rank_fm_item, parent, false);
             holder = new rankViewHolder(convertView);
             convertView.setTag(holder);
-        }else {
+        } else {
             holder = (rankViewHolder) convertView.getTag();
             holder.name.setText(mRankingBean.getComics().get(position).getName());
             holder.author.setText(mRankingBean.getComics().get(position).getAuthor());
             holder.conTag.setText(mRankingBean.getComics().get(position).getConTag());
             holder.description.setText(mRankingBean.getComics().get(position).getDescription());
-            holder.tags.setText(mRankingBean.getComics().get(position).getTags().get(0));
             Glide.with(mContext).load(mRankingBean.getComics().get(position).getCover())
-                    .thumbnail(0.5f).into(holder.cover);
-            if (mRankingBean.getComics().get(position).getFlag() == 0){
+                    .thumbnail(0.2f).into(holder.cover);
+
+//.............pan'duan判断Tag类型
+            if (mRankingBean.getComics().get(position).getTags().size() == 1) {
+                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+                holder.tagSecond.setText("");
+                holder.tagThird.setText("");
+                holder.tagFourth.setText("");
+            } else if (mRankingBean.getComics().get(position).getTags().size() == 2) {
+                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+                holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
+                holder.tagThird.setText("");
+                holder.tagFourth.setText("");
+            } else if (mRankingBean.getComics().get(position).getTags().size() == 3) {
+                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+                holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
+                holder.tagThird.setText(mRankingBean.getComics().get(position).getTags().get(2));
+                holder.tagFourth.setText("");
+            } else if (mRankingBean.getComics().get(position).getTags().size() == 4) {
+                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+                holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
+                holder.tagThird.setText(mRankingBean.getComics().get(position).getTags().get(2));
+                holder.tagFourth.setText(mRankingBean.getComics().get(position).getTags().get(3));
+            }
+
+//....................判断ListView第几行显示第几个数
+            if (mRankingBean.getComics().get(position).getFlag() == 0) {
                 holder.flag.setVisibility(View.GONE);
-            }else {
+            } else {
                 holder.flag.setVisibility(View.VISIBLE);
             }
-            if (position ==0){
+            if (position == 0) {
                 holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_first);
-                holder.fu.setVisibility(View.GONE);
+                holder.rank.setVisibility(View.GONE);
                 holder.number.setVisibility(View.GONE);
-            }else if (position == 1){
+            } else if (position == 1) {
                 holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_second);
                 holder.number.setVisibility(View.GONE);
-                holder.fu.setVisibility(View.GONE);
-            }else if (position == 2){
+                holder.rank.setVisibility(View.GONE);
+            } else if (position == 2) {
                 holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_third);
                 holder.number.setVisibility(View.GONE);
-                holder.fu.setVisibility(View.GONE);
+                holder.rank.setVisibility(View.GONE);
 
-            }else {
-                holder.fu.setVisibility(View.VISIBLE);
+            } else {
+                holder.rank.setVisibility(View.VISIBLE);
                 holder.number.setVisibility(View.VISIBLE);
 
             }
+            holder.number.setText(position + 1 + "");
 
         }
 
@@ -89,20 +114,23 @@ public class RFragmentAdapter extends BaseAdapter {
     }
 
     class rankViewHolder {
-        private ImageView cover,flag,ranking_imageview,fu;
-        private TextView name,description,tags,conTag,author,number;
+        private ImageView cover, flag, ranking_imageview, rank;
+        private TextView name, description, tagFirst, conTag, author, number, tagSecond, tagThird, tagFourth;
 
         public rankViewHolder(View view) {
             cover = (ImageView) view.findViewById(R.id.rank_cover);
             name = (TextView) view.findViewById(R.id.rank_name);
             description = (TextView) view.findViewById(R.id.rank_description);
-            tags = (TextView) view.findViewById(R.id.rank_tags);
+            tagFirst = (TextView) view.findViewById(R.id.rank_tags_first);
             conTag = (TextView) view.findViewById(R.id.rank_con_tag);
             author = (TextView) view.findViewById(R.id.rank_author);
             flag = (ImageView) view.findViewById(R.id.rank_flag);
             ranking_imageview = (ImageView) view.findViewById(R.id.ranking_imageview);
             number = (TextView) view.findViewById(R.id.rank_number);
-            fu  = (ImageView) view.findViewById(R.id.rankin_imageview);
+            rank = (ImageView) view.findViewById(R.id.rankin_imageview);
+            tagSecond = (TextView) view.findViewById(R.id.rank_tags_second);
+            tagThird = (TextView) view.findViewById(R.id.rank_tags_third);
+            tagFourth = (TextView) view.findViewById(R.id.rank_tags_fourth);
 
         }
     }

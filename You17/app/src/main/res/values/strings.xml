@@ -39,5 +39,6 @@
     <string name="search_type">类型</string>
     <string name="anking">排行榜</string>
     <string name="ticket">月票</string>
+    <string name="lin">|</string>
 
 </resources>

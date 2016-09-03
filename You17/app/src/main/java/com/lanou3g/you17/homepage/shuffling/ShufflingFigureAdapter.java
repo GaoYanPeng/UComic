@@ -1,4 +1,4 @@
-package com.lanou3g.you17.homepage;
+package com.lanou3g.you17.homepage.shuffling;
  /*
 
 Created by tliYgTong_刘德强 on 16/9/3.
@@ -14,24 +14,24 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.lanou3g.you17.R;
+import com.lanou3g.you17.homepage.HomeBean;
 
 /**
  * 轮播图适配器
  */
 public class ShufflingFigureAdapter extends PagerAdapter {
     private Context context;
-    private ShufflingFigureBean bean;
+   private HomeBean mShufflingBean;
     private int cont = 1;
     private ImageView[] tips;
-
     public void setTips(ImageView[] tips) {
         this.tips = tips;
     }
 
-    public void setImags (ShufflingFigureBean bean) {
-        this.bean = bean;
-        cont = bean.getData().getReturnData ().getGalleryItems ().size ();
-        notifyDataSetChanged ();
+    public void setShufflingBean(HomeBean shufflingBean) {
+        mShufflingBean = shufflingBean;
+        cont = shufflingBean.getData().getReturnData().getGalleryItems().size();
+        notifyDataSetChanged();
     }
 
     public ShufflingFigureAdapter (Context context) {
@@ -40,7 +40,7 @@ public class ShufflingFigureAdapter extends PagerAdapter {
 
     @Override
     public int getCount () {
-        return bean!=null? Integer.MAX_VALUE:0;
+        return mShufflingBean!=null? Integer.MAX_VALUE:0;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class ShufflingFigureAdapter extends PagerAdapter {
     public Object instantiateItem (ViewGroup container, int position) {
         View view= LayoutInflater.from (context).inflate (R.layout.item_shuffling_figure,null);
         ImageView ShufflingFigure_ImageView = (ImageView) view.findViewById(R.id.shuffling_figure_image_view);
-        Glide.with(context).load(bean.getData ().getReturnData ().getGalleryItems ().get (position%cont).getCover ()).into (ShufflingFigure_ImageView);
+        Glide.with(context).load(mShufflingBean.getData ().getReturnData ().getGalleryItems ().get (position%cont).getCover ()).thumbnail(0.2f).into (ShufflingFigure_ImageView);
         container.addView(view);
         return view;
     }
