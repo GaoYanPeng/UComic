@@ -2,6 +2,7 @@ package com.lanou3g.you17.mainactivity;
 
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
+import android.support.design.widget.TabLayout.Tab;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.widget.Toast;
@@ -36,9 +37,12 @@ public class MainActivity extends BaseActivity {
 //        mViewPager.setCurrentItem(1);
         int tabCont = mTabLayout.getTabCount();
         for (int i = 0; i < tabCont; i++) {
-            TabLayout.Tab tab = mTabLayout.getTabAt(i);
+            Tab tab = mTabLayout.getTabAt(i);
 
             tab.setIcon(MainTabInfo.getMainTabInfo().get(i).getImageId());
+//            mTabLayout.setSelectedTabIndicatorHeight();
+            
+            
         }
 
     }

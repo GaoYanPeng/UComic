@@ -49,5 +49,6 @@
     <string name="subscription">付费订阅</string>
     <string name="GanJinDing">您还没有订阅漫画哦</string>
     <string name="Enter_subscription_channel">进入订阅频道观赏订阅漫画</string>
+    <string name="singning">人气签约</string>
 
 </resources>

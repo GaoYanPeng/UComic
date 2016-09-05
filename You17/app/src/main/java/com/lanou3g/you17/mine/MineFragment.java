@@ -16,6 +16,8 @@ public class MineFragment extends BaseFragment implements OnClickListener{
     private  LinearLayout recordsConsumption;
     private LinearLayout Top_up_layout;
     private LinearLayout subscription;
+    private LinearLayout problem_feedback;
+    private LinearLayout mine_author;
 
 
 
@@ -34,6 +36,10 @@ public class MineFragment extends BaseFragment implements OnClickListener{
         Top_up_layout.setOnClickListener (this);
         subscription= (LinearLayout) getView ().findViewById (R.id.subscription);
         subscription.setOnClickListener (this);
+        problem_feedback= (LinearLayout) getView ().findViewById (R.id.problem_feedback);
+        problem_feedback.setOnClickListener (this);
+        mine_author= (LinearLayout) getView ().findViewById (R.id.mine_author);
+        mine_author.setOnClickListener (this);
 
 
     }
@@ -58,6 +64,12 @@ public class MineFragment extends BaseFragment implements OnClickListener{
                 break;
             case R.id.subscription:
                 startActivity (new Intent (getActivity (),SubscriptionActivity.class));
+                break;
+            case R.id.problem_feedback:
+                startActivity (new Intent (getActivity (),FeedbackActivity.class));
+                break;
+            case R.id.mine_author:
+                startActivity (new Intent (getActivity (),AsTheAuthorActivity.class));
                 break;
         }
 

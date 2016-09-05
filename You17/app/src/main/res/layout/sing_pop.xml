@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/homeTen">
+
+    <LinearLayout
+       android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sing_pop_update"
+            android:paddingTop="@dimen/homeTen"
+            android:paddingBottom="@dimen/homeTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="更新"/>
+
+        <TextView
+            android:id="@+id/sing_pop_ticket"
+            android:paddingTop="@dimen/homeTen"
+            android:paddingBottom="@dimen/homeTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="月票"/>
+
+        <TextView
+            android:id="@+id/sing_pop_click"
+            android:paddingTop="@dimen/homeTen"
+            android:paddingBottom="@dimen/homeTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="点击"/>
+
+        <TextView
+            android:id="@+id/sing_pop_young"
+            android:paddingTop="@dimen/homeTen"
+            android:paddingBottom="@dimen/homeTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="少年"/>
+
+        <TextView
+            android:id="@+id/sing_pop_less_nv"
+            android:paddingTop="@dimen/homeTen"
+            android:paddingBottom="@dimen/homeTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="少女"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

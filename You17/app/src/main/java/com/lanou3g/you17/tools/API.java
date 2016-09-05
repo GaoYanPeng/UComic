@@ -45,6 +45,16 @@ public class API {
      * 感动
      */
     public static final String MOVED ="http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=15&argName=sort&page=1&android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=shouji360";
+    /**
+     * 人气签约----更新
+     */
+    public static final String SING_UPDATE ="http://app.u17.com/v3/appV3/android/phone/list/accreditList?argValue=0&argName=sort&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&ke" +
+            "y=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe83197d8e49d56843c97c6b48077919bd6dfd9bb2ae090b23f0e8fba88220aa705a98470be8943e340dd0e16d134555b39e6c8d4801aec377db9f5%253A%253A%253Au17";
+
+    //"我的"-成为作者
+    public static final String MINE_AUTHOR="http://m.u17.com/hd/zzfl/index.html?android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=openqq&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f" +
+            "93340c00b77911af5abc5069b103f3c6e4c6235d475c9774334712b0cd2a5acde3bae17730bf85312fe40d96792b08e8e70ac0468bc0e80c83684ee94c2ca900dd892f7de117851a5%253A%253A%253Au17";
+
 
 
 }

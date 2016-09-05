@@ -29,6 +29,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+/**
+ * 消费记录-Tablayout适配器
+ */
 public class RecordsConsumptionAdapter extends FragmentPagerAdapter{
 
 

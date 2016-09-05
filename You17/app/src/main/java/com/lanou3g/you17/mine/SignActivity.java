@@ -9,7 +9,7 @@ import com.lanou3g.you17.base.BaseActivity;
 import com.lanou3g.you17.tools.API;
 
 /**
- * "我的" - 签到页面
+ * 签到
  */
 public class SignActivity extends BaseActivity {
     private WebView mSignWeb;

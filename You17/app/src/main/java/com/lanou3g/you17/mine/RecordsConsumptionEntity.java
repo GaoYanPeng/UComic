@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * "我的页面"-消费记录下TabLayout实体类
+ * 消费记录下TabLayout实体类
  */
 public class RecordsConsumptionEntity {
 

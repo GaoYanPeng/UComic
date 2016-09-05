@@ -31,6 +31,8 @@
         <activity android:name=".mine.Top_up_Activity"/>
         <activity android:name=".mine.SubscriptionActivity"/>
         <activity android:name=".mine.FeedbackActivity"/>
+        <activity android:name=".homepage.singning.SingningActivity"/>
+        <activity android:name=".mine.AsTheAuthorActivity"/>
     </application>
 
 </manifest>
