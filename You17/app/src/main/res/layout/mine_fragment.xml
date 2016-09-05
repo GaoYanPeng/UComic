@@ -72,6 +72,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/recordsConsumption"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -97,6 +98,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/Top_up_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="1dp"
@@ -123,6 +125,7 @@
 
 
         <LinearLayout
+            android:id="@+id/subscription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="1dp"

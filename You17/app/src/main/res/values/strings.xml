@@ -40,5 +40,14 @@
     <string name="anking">排行榜</string>
     <string name="ticket">月票</string>
     <string name="lin">|</string>
+    <string name="Top_up_demon_money">充值妖气币</string>
+    <string name="Prepaid_phone_number">请选择充值数量</string>
+    <string name="Pay_treasure">支付宝</string>
+    <string name="WeChat_pay">微信支付</string>
+    <string name="Confirm_prepaid_phone">确认充值</string>
+    <string name="Please_select_payment_method">请选择支付方式</string>
+    <string name="subscription">付费订阅</string>
+    <string name="GanJinDing">您还没有订阅漫画哦</string>
+    <string name="Enter_subscription_channel">进入订阅频道观赏订阅漫画</string>
 
 </resources>

@@ -27,6 +27,10 @@
         <activity android:name=".search.SearchActivity"/>
         <activity android:name=".search.SearchTypeDetailsActivity"/>
         <activity android:name=".homepage.ranking.RankingActivity"/>
+        <activity android:name=".mine.RecordsConsumptionActivity"/>
+        <activity android:name=".mine.Top_up_Activity"/>
+        <activity android:name=".mine.SubscriptionActivity"/>
+        <activity android:name=".mine.FeedbackActivity"/>
     </application>
 
 </manifest>

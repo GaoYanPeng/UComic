@@ -1,6 +1,5 @@
 package com.lanou3g.you17.mine;
 
-import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -10,7 +9,7 @@ import com.lanou3g.you17.base.BaseActivity;
 import com.lanou3g.you17.tools.API;
 
 /**
- * Created by dllo on 16/8/27.
+ * "我的" - 签到页面
  */
 public class SignActivity extends BaseActivity {
     private WebView mSignWeb;
