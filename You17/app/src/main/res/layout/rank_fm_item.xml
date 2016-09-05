@@ -130,14 +130,16 @@
             android:layout_width="@dimen/home_icon_width"
             android:layout_height="@dimen/home_icon_height"/>
         <TextView
+            android:paddingTop="@dimen/homeTow"
+            android:text="1"
             android:textColor="@color/home_title_big"
             android:id="@+id/rank_number"
-            android:layout_marginTop="@dimen/homeSix"
+            android:layout_marginTop="@dimen/homeTow"
             android:layout_marginRight="@dimen/rank_distance"
             android:textSize="12sp"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="@dimen/home_icon_height"/>
 
 
 

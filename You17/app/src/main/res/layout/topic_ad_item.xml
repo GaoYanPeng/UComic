@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:paddingRight="@dimen/homeTen"
+              android:paddingLeft="@dimen/homeTen"
+              android:layout_width="match_parent"
+              android:layout_height="290dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/homeTen"
+        android:padding="@dimen/homeTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/top_type"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@mipmap/boutique_special_tag_space"/>
+
+        <TextView
+            android:textColor="@color/rank_title_big"
+            android:id="@+id/top_title"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="@dimen/homeEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_open"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/top_sub_title"
+        android:textSize="11sp"
+        android:padding="@dimen/homeTen"
+        android:text="@string/_2016_08_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/top_cover"
+        android:layout_marginTop="@dimen/homeTen"
+        android:scaleType="fitXY"
+        android:src="@mipmap/main_recycler_image_default"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"/>
+
+
+</LinearLayout>

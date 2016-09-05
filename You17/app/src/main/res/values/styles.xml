@@ -13,4 +13,9 @@
         <item name="android:windowExitAnimation">@anim/out_animation</item>
     </style>
 
+    <style name="AnimationTopic">
+        <item name="android:windowEnterAnimation">@anim/in_animation</item>
+        <item name="android:windowExitAnimation">@anim/out_top_animation</item>
+    </style>
+
 </resources>

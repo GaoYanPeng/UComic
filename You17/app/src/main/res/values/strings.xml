@@ -41,5 +41,17 @@
     <string name="ticket">月票</string>
     <string name="lin">|</string>
     <string name="singning">人气签约</string>
+    <string name="alltop">全部专题</string>
+    <string name="top_open">开学季</string>
+    <string name="_2016_08_30">2016-08-30至今</string>
+    <string name="top_item">队长 , 到底部了呦</string>
+    <string name="top_all">全部专题</string>
+    <string name="top_commic">漫画推荐</string>
+    <string name="top_space">次元空间</string>
+    <string name="sing_update">更新</string>
+    <string name="sing_ticket">月票</string>
+    <string name="sing_click">点击</string>
+    <string name="sing_young">少年</string>
+    <string name="sing_gril">少女</string>
 
 </resources>
