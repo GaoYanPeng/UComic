@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="10dp">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/homeSix"
+    android:paddingLeft="@dimen/homeFive">
 
     <ImageView
-        android:id="@+id/home_item_image"
+        android:id="@+id/sing_item_image"
         android:layout_width="110dp"
         android:layout_height="140dp"
         android:background="@mipmap/main_recycler_image_default"
@@ -15,22 +17,18 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_below="@+id/home_item_image"
+        android:layout_below="@+id/sing_item_image"
         android:paddingBottom="13dp"
-        android:paddingTop="10dp">
+        android:paddingTop="@dimen/homeTen">
 
         <TextView
-            android:id="@+id/home_item_text"
+            android:id="@+id/sing_item_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxEms="6"
             android:maxLines="1"
-            android:text="你哈"
             android:textColor="#591616"
-            android:textSize="13sp"/>
+            android:textSize="15sp"/>
     </LinearLayout>
-
-
 </RelativeLayout>

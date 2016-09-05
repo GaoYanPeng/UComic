@@ -22,6 +22,7 @@ import android.widget.LinearLayout;
 import com.lanou3g.you17.R;
 import com.lanou3g.you17.homepage.ranking.RankingActivity;
 import com.lanou3g.you17.homepage.shuffling.ShufflingFigureAdapter;
+import com.lanou3g.you17.homepage.singning.SingningActivity;
 import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
 import com.lanou3g.you17.tools.API;
@@ -30,7 +31,7 @@ import com.lanou3g.you17.tools.API;
  * Created by dllo on 16/8/26.
  */
 public class HomepageFragment extends BaseFragment implements OnClickListener {
-    private RecyclerView mHomeRecyclerView;
+    private RecyclerView mHomeRecyclerView;        private RelativeLayout mSigning;
     private HomeAdapter mHomeAdapter;
     private RelativeLayout rankingLayout;
     private Intent mIntent;
@@ -55,11 +56,17 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
         LayoutManager lm = new LinearLayoutManager(getContext());
         mHomeRecyclerView.setLayoutManager(lm);
         rankingLayout = (RelativeLayout) getView().findViewById(R.id.ranking);
-        rankingLayout.setOnClickListener(this);
+        mSigning = (RelativeLayout) getView().findViewById(R.id.home_signing);
+
         adapter = new ShufflingFigureAdapter (getContext ());
         vp = (ViewPager) getView ().findViewById (R.id.vp);
         llturn = (LinearLayout) getView ().findViewById (R.id.ll_turn);
         vp.setAdapter (adapter);
+
+
+
+        rankingLayout.setOnClickListener(this);
+        mSigning.setOnClickListener(this);
     }
 
 
@@ -176,6 +183,10 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
         switch (v.getId()) {
             case R.id.ranking:
                 mIntent = new Intent(getActivity(), RankingActivity.class);
+                startActivity(mIntent);
+                break;
+            case R.id.home_signing:
+                mIntent = new Intent(getActivity(),SingningActivity.class);
                 startActivity(mIntent);
                 break;
         }

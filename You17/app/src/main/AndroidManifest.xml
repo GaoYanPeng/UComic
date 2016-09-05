@@ -27,6 +27,7 @@
         <activity android:name=".search.SearchActivity"/>
         <activity android:name=".search.SearchTypeDetailsActivity"/>
         <activity android:name=".homepage.ranking.RankingActivity"/>
+        <activity android:name=".homepage.singning.SingningActivity"/>
     </application>
 
 </manifest>
