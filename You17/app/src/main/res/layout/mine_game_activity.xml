@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/game_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"/>
+
+        <RelativeLayout
+            android:id="@+id/Recommend_title"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@+id/game_viewPager">
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="20sp"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="@string/Recommend_title"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gamelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Recommend_title"
+            android:layout_marginBottom="15sp"
+            android:gravity="center"
+            android:orientation="horizontal"/>
+
+        <com.lanou3g.you17.tools.MyGridView
+            android:id="@+id/game_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Recommend_title"
+            android:horizontalSpacing="20dp"
+            android:layout_marginBottom="20sp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,4 +1,4 @@
-package com.lanou3g.you17.mine;
+package com.lanou3g.you17.mine.records;
  /*
                    _ooOoo_
                   o8888888o

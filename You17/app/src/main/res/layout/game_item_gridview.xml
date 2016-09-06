@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/game_girdview_imageview"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/homeFive"
+        android:id="@+id/game_girdview_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/game_girdview_imageview"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/homeFour"
+        android:id="@+id/game_type_layout"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/game_girdview_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/game_type"
+        android:textSize="10sp"
+        android:layout_marginRight="@dimen/homeTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡牌养成"/>
+
+    <TextView
+        android:id="@+id/game_size"
+        android:textSize="@dimen/homeTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="472.2MB"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/homeFive"
+        android:layout_width="50sp"
+        android:layout_height="20sp"
+        android:layout_below="@+id/game_type_layout"
+        android:background="@drawable/game_download_shape"
+        android:gravity="center"
+        android:text="下载"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

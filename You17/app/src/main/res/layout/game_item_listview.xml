@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_margin="15sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/gameImg"
+            android:background="@mipmap/ic_launcher"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/gameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/homeFive"
+            android:text="少女咖啡枪"/>
+
+        <TextView
+            android:id="@+id/gameNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gameName"
+            android:text="2087"
+            android:textSize="@dimen/homeTen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/gameNum"
+            android:layout_toRightOf="@+id/gameNum"
+            android:text="次下载"
+            android:textSize="@dimen/homeTen"/>
+
+        <TextView
+            android:id="@+id/gameSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gameNum"
+            android:layout_marginTop="@dimen/homeFive"
+            android:text="删档封测"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:background="@drawable/game_download_shape"
+            android:text="下载"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

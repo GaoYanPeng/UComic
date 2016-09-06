@@ -7,6 +7,8 @@ import android.widget.LinearLayout;
 
 import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseFragment;
+import com.lanou3g.you17.mine.game.GameActivity;
+import com.lanou3g.you17.mine.records.RecordsConsumptionActivity;
 
 /**
  * "我的"页面
@@ -18,6 +20,7 @@ public class MineFragment extends BaseFragment implements OnClickListener{
     private LinearLayout subscription;
     private LinearLayout problem_feedback;
     private LinearLayout mine_author;
+    private LinearLayout game;
 
 
 
@@ -40,6 +43,8 @@ public class MineFragment extends BaseFragment implements OnClickListener{
         problem_feedback.setOnClickListener (this);
         mine_author= (LinearLayout) getView ().findViewById (R.id.mine_author);
         mine_author.setOnClickListener (this);
+        game= (LinearLayout) getView ().findViewById (R.id.game);
+        game.setOnClickListener (this);
 
 
     }
@@ -70,6 +75,9 @@ public class MineFragment extends BaseFragment implements OnClickListener{
                 break;
             case R.id.mine_author:
                 startActivity (new Intent (getActivity (),AsTheAuthorActivity.class));
+                break;
+            case R.id.game:
+                startActivity (new Intent (getActivity (),GameActivity.class));
                 break;
         }
 

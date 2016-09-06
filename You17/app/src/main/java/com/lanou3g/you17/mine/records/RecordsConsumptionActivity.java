@@ -1,4 +1,4 @@
-package com.lanou3g.you17.mine;
+package com.lanou3g.you17.mine.records;
  /*
 Created by tliYgTong_刘德强 on 16/9/3.
 */
@@ -39,8 +39,8 @@ public class RecordsConsumptionActivity extends BaseActivity implements OnClickL
 
     @Override
     protected void initData () {
-        RecordsConsumptionAdapter adapter
-                =new RecordsConsumptionAdapter (getSupportFragmentManager ());
+        com.lanou3g.you17.mine.records.RecordsConsumptionAdapter adapter
+                =new com.lanou3g.you17.mine.records.RecordsConsumptionAdapter (getSupportFragmentManager ());
         viewpager.setAdapter (adapter);
         tablayout.setupWithViewPager (viewpager);
         int tabCount= tablayout.getTabCount ();

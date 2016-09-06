@@ -58,8 +58,8 @@ public class SearchActivity extends BaseActivity implements OnClickListener {
 
     @Override
     public void initView () {
-        container = (ViewGroup) findViewById (R.id.container);
-        search_back = (ImageView) findViewById (R.id.search_back);
+        container =  findView (R.id.container);
+        search_back = findView (R.id.search_back);
         search_back.setOnClickListener (this);
 
     }
