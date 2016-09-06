@@ -29,6 +29,7 @@
         <activity android:name=".homepage.ranking.RankingActivity"/>
         <activity android:name=".homepage.singning.SingningActivity"/>
         <activity android:name=".homepage.topic.TopicActivity"/>
+        <activity android:name=".homepage.animation.AnimationActivity"/>
     </application>
 
 </manifest>

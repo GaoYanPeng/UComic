@@ -77,4 +77,8 @@ public class API {
      * 专题------次元空间
      */
     public static final String TOP_SPACE = "http://app.u17.com/v3/appV3/android/phone/comic/special?argCon=4&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe831979905ea3cbd0641bde2c82dac4dbd533efc61098398c62d226d4cf05836ea730140c1061e48f996df332fc6fcdf69ede8d1180bdb05fda002%253A%253A%253Au17";
+    /**
+     * 动画
+     */
+    public static final String TOP_ANIMATION = "http://m.u17.com/cartoon/list?page=1&pageSize=9";
 }

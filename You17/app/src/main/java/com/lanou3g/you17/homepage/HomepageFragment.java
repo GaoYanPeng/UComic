@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 
 
 import com.lanou3g.you17.R;
+import com.lanou3g.you17.homepage.animation.AnimationActivity;
 import com.lanou3g.you17.homepage.ranking.RankingActivity;
 import com.lanou3g.you17.homepage.shuffling.ShufflingFigureAdapter;
 import com.lanou3g.you17.homepage.singning.SingningActivity;
@@ -34,7 +35,7 @@ import com.lanou3g.you17.tools.API;
 public class HomepageFragment extends BaseFragment implements OnClickListener {
     private RecyclerView mHomeRecyclerView;        private RelativeLayout mSigning;
     private HomeAdapter mHomeAdapter;               private RelativeLayout mTopic;
-    private RelativeLayout rankingLayout;
+    private RelativeLayout rankingLayout;              private RelativeLayout anim;
     private Intent mIntent;
     private ViewPager vp;
     private boolean mm = true;
@@ -59,6 +60,7 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
         rankingLayout = (RelativeLayout) getView().findViewById(R.id.ranking);
         mSigning = (RelativeLayout) getView().findViewById(R.id.home_signing);
         mTopic = (RelativeLayout) getView().findViewById(R.id.home_topic);
+        anim = (RelativeLayout) getView().findViewById(R.id.home_animation);
 
         adapter = new ShufflingFigureAdapter (getContext ());
         vp = (ViewPager) getView ().findViewById (R.id.vp);
@@ -70,6 +72,7 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
         rankingLayout.setOnClickListener(this);
         mSigning.setOnClickListener(this);
         mTopic.setOnClickListener(this);
+        anim.setOnClickListener(this);
     }
 
 
@@ -201,6 +204,10 @@ public class HomepageFragment extends BaseFragment implements OnClickListener {
                 break;
             case R.id.home_topic:
                 mIntent = new Intent(getActivity(), TopicActivity.class);
+                startActivity(mIntent);
+                break;
+            case R.id.home_animation:
+                mIntent = new Intent(getActivity(), AnimationActivity.class);
                 startActivity(mIntent);
                 break;
         }
