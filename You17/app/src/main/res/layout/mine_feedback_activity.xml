@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/toolbar_back_pressed"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="使用反馈"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提交"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homeOne"
+        android:background="@color/colorLineAsh"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLineAshYellow">
+
+        <EditText
+            android:id="@+id/footprints"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_margin="15sp"
+            android:background="@drawable/feedback_shape"
+            android:gravity="top"
+            android:hint="请留下宝贵的脚印..."
+            android:padding="@dimen/homeTen"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_below="@+id/footprints"
+            android:layout_margin="15sp"
+            android:background="@drawable/feedback_shape"
+            android:gravity="top"
+            android:hint="手机号码/QQ"
+            android:padding="@dimen/homeTen"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/phone_number"
+            android:layout_margin="15sp"
+            android:textSize="10sp"
+            android:text="查看历史记录"/>
+    </RelativeLayout>
+
+</LinearLayout>

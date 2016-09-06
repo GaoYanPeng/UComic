@@ -48,7 +48,19 @@ public class API {
     /**
      * 人气签约----更新
      */
-    public static final String SING_UPDATE = "http://app.u17.com/v3/appV3/android/phone/list/accreditList?argValue=0&argName=sort&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&ke" + "y=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe83197d8e49d56843c97c6b48077919bd6dfd9bb2ae090b23f0e8fba88220aa705a98470be8943e340dd0e16d134555b39e6c8d4801aec377db9f5%253A%253A%253Au17";
+
+    public static final String SING_UPDATE ="http://app.u17.com/v3/appV3/android/phone/list/accreditList?argValue=0&argName=sor" +
+            "t&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from" +
+            "=u17&ke" +
+            "y=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe83197d8e49d56843c97c6b48077919bd6dfd9bb2ae090b23f0e8fba88220aa705a98470be8943e340dd0e16d134555b39e6c8d4801aec377db9f5%253A%253A%253Au17";
+
+    //"我的"-成为作者
+    public static final String MINE_AUTHOR="http://m.u17.com/hd/zzfl/index.html?android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=openqq&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f" +
+            "93340c00b77911af5abc5069b103f3c6e4c6235d475c9774334712b0cd2a5acde3bae17730bf85312fe40d96792b08e8e70ac0468bc0e80c83684ee94c2ca900dd892f7de117851a5%253A%253A%253Au17";
+    //"我的"-游戏
+    public static final String MINE_GAME="http://game.u17.com/game/mobile/v3/appIndex?page=1&android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=openqq&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3" +
+            "c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6e4c6235d475c97743c3fcc0bad61aaf3b2387060b345da5ce737c4893308bc0c4db71250788a81681454c5bfe12cf077024e67d12bf23eca8%253A%253A%253Au17\n";
+
     /**
      * 人气签约----月票
      */
@@ -77,8 +89,10 @@ public class API {
      * 专题------次元空间
      */
     public static final String TOP_SPACE = "http://app.u17.com/v3/appV3/android/phone/comic/special?argCon=4&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe831979905ea3cbd0641bde2c82dac4dbd533efc61098398c62d226d4cf05836ea730140c1061e48f996df332fc6fcdf69ede8d1180bdb05fda002%253A%253A%253Au17";
+
     /**
      * 动画
      */
     public static final String TOP_ANIMATION = "http://m.u17.com/cartoon/list?page=1&pageSize=9";
+
 }

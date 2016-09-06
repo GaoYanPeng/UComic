@@ -1,20 +1,23 @@
 package com.lanou3g.you17.mine;
 
-import android.webkit.WebChromeClient;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.RelativeLayout;
 
 import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseActivity;
 import com.lanou3g.you17.tools.API;
 
 /**
- * Created by dllo on 16/8/27.
+ * 签到
  */
-public class SignActivity extends BaseActivity {
+public class SignActivity extends BaseActivity implements OnClickListener{
     private WebView mSignWeb;
     private WebViewClient mWebViewClient;
+    private RelativeLayout sign_back;
 
 
     @Override
@@ -31,6 +34,8 @@ public class SignActivity extends BaseActivity {
         WebSettings webSettings = mSignWeb.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mSignWeb.loadUrl(API.API_SIGN);
+        sign_back=findView (R.id.sign_back);
+        sign_back.setOnClickListener (this);
     }
 
 
@@ -40,5 +45,14 @@ public class SignActivity extends BaseActivity {
     protected void initData() {
 
 
+    }
+
+    @Override
+    public void onClick (View v) {
+        switch (v.getId ()){
+            case R.id.sign_back:
+                finish ();
+                break;
+        }
     }
 }

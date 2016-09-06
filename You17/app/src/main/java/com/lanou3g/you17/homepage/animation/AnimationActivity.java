@@ -23,7 +23,7 @@ public class AnimationActivity extends BaseActivity {
     public void initView() {
 
         animList = findView(R.id.anim_ls_view);
-        mAnimationAdapter = new AnimationAdapter(this);
+//        mAnimationAdapter = new AnimationAdapter(this);
     }
 
     @Override
@@ -31,8 +31,8 @@ public class AnimationActivity extends BaseActivity {
         NetTool.getInstance().startRequest(API.TOP_ANIMATION, AnimationBean.class, new onHttpCallBack<AnimationBean>() {
             @Override
             public void onSuccess(AnimationBean response) {
-                mAnimationAdapter.setAnimationBean(response);
-                animList.setAdapter(mAnimationAdapter);
+//                mAnimationAdapter.setAnimationBean(response);
+//                animList.setAdapter(mAnimationAdapter);
             }
 
             @Override
