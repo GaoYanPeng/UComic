@@ -52,64 +52,62 @@ public class RFragmentAdapter extends BaseAdapter {
             convertView.setTag(holder);
         } else {
             holder = (rankViewHolder) convertView.getTag();
-            holder.name.setText(mRankingBean.getComics().get(position).getName());
-            holder.author.setText(mRankingBean.getComics().get(position).getAuthor());
-            holder.conTag.setText(mRankingBean.getComics().get(position).getConTag());
-            holder.description.setText(mRankingBean.getComics().get(position).getDescription());
-            Glide.with(mContext).load(mRankingBean.getComics().get(position).getCover())
-                    .thumbnail(0.2f).into(holder.cover);
+        }
+        holder.name.setText(mRankingBean.getComics().get(position).getName());
+        holder.author.setText(mRankingBean.getComics().get(position).getAuthor());
+        holder.conTag.setText(mRankingBean.getComics().get(position).getConTag());
+        holder.description.setText(mRankingBean.getComics().get(position).getDescription());
+        Glide.with(mContext).load(mRankingBean.getComics().get(position).getCover())
+                .thumbnail(0.2f).into(holder.cover);
 
 //.............pan'duan判断Tag类型
-            if (mRankingBean.getComics().get(position).getTags().size() == 1) {
-                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
-                holder.tagSecond.setText("");
-                holder.tagThird.setText("");
-                holder.tagFourth.setText("");
-            } else if (mRankingBean.getComics().get(position).getTags().size() == 2) {
-                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
-                holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
-                holder.tagThird.setText("");
-                holder.tagFourth.setText("");
-            } else if (mRankingBean.getComics().get(position).getTags().size() == 3) {
-                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
-                holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
-                holder.tagThird.setText(mRankingBean.getComics().get(position).getTags().get(2));
-                holder.tagFourth.setText("");
-            } else if (mRankingBean.getComics().get(position).getTags().size() == 4) {
-                holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
-                holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
-                holder.tagThird.setText(mRankingBean.getComics().get(position).getTags().get(2));
-                holder.tagFourth.setText(mRankingBean.getComics().get(position).getTags().get(3));
-            }
-
-//....................判断ListView第几行显示第几个数
-            if (mRankingBean.getComics().get(position).getFlag() == 0) {
-                holder.flag.setVisibility(View.GONE);
-            } else {
-                holder.flag.setVisibility(View.VISIBLE);
-            }
-            if (position == 0) {
-                holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_first);
-                holder.rank.setVisibility(View.GONE);
-                holder.number.setVisibility(View.GONE);
-            } else if (position == 1) {
-                holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_second);
-                holder.number.setVisibility(View.GONE);
-                holder.rank.setVisibility(View.GONE);
-            } else if (position == 2) {
-                holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_third);
-                holder.number.setVisibility(View.GONE);
-                holder.rank.setVisibility(View.GONE);
-
-            } else {
-                holder.rank.setVisibility(View.VISIBLE);
-                holder.number.setVisibility(View.VISIBLE);
-
-            }
-            holder.number.setText(position + 1 + "");
-
+        if (mRankingBean.getComics().get(position).getTags().size() == 1) {
+            holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+            holder.tagSecond.setText("");
+            holder.tagThird.setText("");
+            holder.tagFourth.setText("");
+        } else if (mRankingBean.getComics().get(position).getTags().size() == 2) {
+            holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+            holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
+            holder.tagThird.setText("");
+            holder.tagFourth.setText("");
+        } else if (mRankingBean.getComics().get(position).getTags().size() == 3) {
+            holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+            holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
+            holder.tagThird.setText(mRankingBean.getComics().get(position).getTags().get(2));
+            holder.tagFourth.setText("");
+        } else if (mRankingBean.getComics().get(position).getTags().size() == 4) {
+            holder.tagFirst.setText(mRankingBean.getComics().get(position).getTags().get(0));
+            holder.tagSecond.setText(mRankingBean.getComics().get(position).getTags().get(1));
+            holder.tagThird.setText(mRankingBean.getComics().get(position).getTags().get(2));
+            holder.tagFourth.setText(mRankingBean.getComics().get(position).getTags().get(3));
         }
 
+//....................判断ListView第几行显示第几个数
+        if (mRankingBean.getComics().get(position).getFlag() == 0) {
+            holder.flag.setVisibility(View.GONE);
+        } else {
+            holder.flag.setVisibility(View.VISIBLE);
+        }
+        if (position == 0) {
+            holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_first);
+            holder.rank.setVisibility(View.GONE);
+            holder.number.setVisibility(View.GONE);
+        } else if (position == 1) {
+            holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_second);
+            holder.number.setVisibility(View.GONE);
+            holder.rank.setVisibility(View.GONE);
+        } else if (position == 2) {
+            holder.ranking_imageview.setImageResource(R.mipmap.icon_comic_third);
+            holder.number.setVisibility(View.GONE);
+            holder.rank.setVisibility(View.GONE);
+
+        } else {
+            holder.rank.setVisibility(View.VISIBLE);
+            holder.number.setVisibility(View.VISIBLE);
+
+        }
+        holder.number.setText(position + 1 + "");
         return convertView;
     }
 

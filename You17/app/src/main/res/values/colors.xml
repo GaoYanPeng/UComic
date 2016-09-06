@@ -9,5 +9,6 @@
     <color name="home_title_big">#2b4008</color>
     <color name="rank_title_big">#3d4039</color>
     <color name="home_title_small">#c6c6c6</color>
+    <color name="home_top_title_small">#fafafa</color>
 
 </resources>

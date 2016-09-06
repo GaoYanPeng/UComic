@@ -1,6 +1,8 @@
 package com.lanou3g.you17.homepage.ranking;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.util.Log;
 import android.widget.ListView;
 
@@ -9,6 +11,7 @@ import com.lanou3g.you17.base.BaseFragment;
 import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
 import com.lanou3g.you17.tools.API;
+import com.lanou3g.you17.tools.MyListView;
 
 /**
  * Created by 高延鹏.on 16/9/2.
@@ -42,6 +45,30 @@ public class RankingFragment extends BaseFragment {
 
     @Override
     protected void initData() {
+//        rankingList.setonRefreshListener(new OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                new AsyncTask<Void,Void,Void>(){
+//
+//                    @Override
+//                    protected Void doInBackground(Void... params) {
+//                        try {
+//                            Thread.sleep(1900);
+//                        } catch (InterruptedException e) {
+//                            e.printStackTrace();
+//                        }
+//                        return null;
+//                    }
+//
+//                    @Override
+//                    protected void onPostExecute(Void aVoid) {
+//                        mRFmAdapter.notifyDataSetChanged();
+//                        rankingList.onRefreshComplete();
+//                    }
+//                }.execute(null,null,null);
+//
+//            }
+//        });
         mRFmAdapter = new RFragmentAdapter(getContext());
         int position = 0;
         //获取传入Bundle 的位置信息,并取出

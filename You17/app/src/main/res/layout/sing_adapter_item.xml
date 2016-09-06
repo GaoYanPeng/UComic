@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
               android:orientation="horizontal"
               android:paddingLeft="@dimen/ranking"
               android:paddingBottom="@dimen/ranking"
               android:paddingTop="@dimen/ranking"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
+
+
     <ImageView
         android:scaleType="fitXY"
-        android:id="@+id/rank_cover"
+        android:id="@+id/sing_cover"
         android:background="@mipmap/main_recycler_image_default"
         android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="140dp"/>
+        android:layout_weight="0.6"
+        android:layout_height="145dp"/>
     <RelativeLayout
         android:layout_marginTop="@dimen/ranking"
         android:layout_marginLeft="@dimen/ranking"
@@ -20,65 +23,64 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content">
         <LinearLayout
-        android:id="@+id/rank_first"
+            android:id="@+id/sing_first"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/rank_name"
+                android:text="妙手仙丹"
+                android:id="@+id/sing_name"
                 android:textColor="@color/rank_title_big"
                 android:textSize="@dimen/rank_title_word"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-            <ImageView
-                android:id="@+id/rank_flag"
-                android:layout_marginLeft="@dimen/homeFour"
-                android:layout_gravity="center"
-                android:src="@mipmap/icon_comic_vip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
         </LinearLayout>
         <!---->
         <LinearLayout
-            android:id="@+id/rank_second"
+            android:id="@+id/sing_second"
             android:layout_marginTop="@dimen/rank_distance"
-            android:layout_below="@+id/rank_first"
+            android:layout_below="@+id/sing_first"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/rank_tags_first"
+                android:text="少女"
+                android:layout_marginRight="@dimen/homeFive"
+                android:id="@+id/sing_tags_first"
                 android:textSize="@dimen/rank_word"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:text="魔幻"
                 android:layout_marginRight="@dimen/homeFive"
-                android:id="@+id/rank_tags_second"
+                android:id="@+id/sing_tags_second"
                 android:textSize="@dimen/rank_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="动作"
+                android:layout_marginRight="@dimen/homeFive"
+                android:id="@+id/sing_tags_third"
+                android:textSize="@dimen/rank_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="搞笑"
+                android:layout_marginRight="@dimen/homeFive"
+                android:id="@+id/sing_tags_fourth"
+                android:textSize="@dimen/rank_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_marginRight="@dimen/homeFive"
-                android:id="@+id/rank_tags_third"
-                android:textSize="@dimen/rank_word"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_marginRight="@dimen/homeFive"
-                android:id="@+id/rank_tags_fourth"
-                android:textSize="@dimen/rank_word"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
                 android:layout_marginLeft="@dimen/homeSix"
                 android:text="@string/lin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/rank_author"
+                android:text="玉麒麟"
+                android:id="@+id/sing_author"
                 android:textSize="@dimen/rank_word"
                 android:layout_marginLeft="@dimen/homeSix"
                 android:layout_width="wrap_content"
@@ -86,61 +88,36 @@
         </LinearLayout>
         <!---->
         <TextView
-            android:id="@+id/rank_description"
+            android:text="无敌怪力女的修仙之路.....虽说是少女漫画,但还是有不少斗格元素的"
+            android:id="@+id/sing_description"
             android:textSize="@dimen/rank_word"
-            android:maxEms="12"
+            android:maxEms="15"
             android:maxLines="2"
             android:ellipsize="end"
             android:layout_marginTop="@dimen/homeTen"
-            android:layout_below="@+id/rank_second"
+            android:layout_below="@+id/sing_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <LinearLayout
             android:layout_marginTop="@dimen/rank_distance"
-            android:layout_below="@+id/rank_description"
+            android:layout_below="@+id/sing_description"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-        <TextView
-            android:textSize="@dimen/rank_word"
-            android:text="@string/ticket"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/rank_con_tag"
+                android:id="@+id/sing_con_name"
+                android:textSize="@dimen/rank_word"
+                android:text="2小时更新"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/sing_con_tag"
                 android:layout_marginLeft="@dimen/homeTen"
                 android:textSize="@dimen/rank_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-            <ImageView
-
-                android:layout_marginTop="@dimen/homeTow"
-                android:id="@+id/ranking_imageview"
-                android:layout_alignParentRight="true"
-                android:src="@mipmap/icon_comic_first"
-                android:layout_width="@dimen/home_icon_width"
-                android:layout_height="@dimen/home_icon_height"/>
-        <ImageView
-            android:layout_marginTop="@dimen/homeTow"
-            android:id="@+id/rankin_imageview"
-            android:layout_alignParentRight="true"
-            android:src="@mipmap/icon_comic_forth"
-            android:layout_width="@dimen/home_icon_width"
-            android:layout_height="@dimen/home_icon_height"/>
-        <TextView
-            android:paddingTop="@dimen/homeTow"
-            android:text="1"
-            android:textColor="@color/home_title_big"
-            android:id="@+id/rank_number"
-            android:layout_marginTop="@dimen/homeTow"
-            android:layout_marginRight="@dimen/rank_distance"
-            android:textSize="12sp"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/home_icon_height"/>
-
 
 
     </RelativeLayout>
