@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="更新"/>
+            android:text="@string/sing_update"/>
 
         <TextView
             android:id="@+id/sing_pop_ticket"
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="月票"/>
+            android:text="@string/sing_ticket"/>
 
         <TextView
             android:id="@+id/sing_pop_click"
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="点击"/>
+            android:text="@string/sing_click"/>
 
         <TextView
             android:id="@+id/sing_pop_young"
@@ -47,16 +47,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="少年"/>
+            android:text="@string/sing_young"/>
 
         <TextView
-            android:id="@+id/sing_pop_less_nv"
+            android:id="@+id/sing_pop_gril"
             android:paddingTop="@dimen/homeTen"
             android:paddingBottom="@dimen/homeTen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="少女"/>
+            android:text="@string/sing_gril"/>
 
 
     </LinearLayout>

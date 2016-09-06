@@ -50,6 +50,21 @@
     <string name="GanJinDing">您还没有订阅漫画哦</string>
     <string name="Enter_subscription_channel">进入订阅频道观赏订阅漫画</string>
     <string name="singning">人气签约</string>
+<<<<<<< HEAD
     <string name="Recommend_title">热门推荐</string>
+=======
+    <string name="alltop">全部专题</string>
+    <string name="top_open">开学季</string>
+    <string name="_2016_08_30">2016-08-30至今</string>
+    <string name="top_item">队长 , 到底部了呦</string>
+    <string name="top_all">全部专题</string>
+    <string name="top_commic">漫画推荐</string>
+    <string name="top_space">次元空间</string>
+    <string name="sing_update">更新</string>
+    <string name="sing_ticket">月票</string>
+    <string name="sing_click">点击</string>
+    <string name="sing_young">少年</string>
+    <string name="sing_gril">少女</string>
+>>>>>>> 3b76f4dd09966d1ceb4c18790102aa94bec20736
 
 </resources>

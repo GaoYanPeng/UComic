@@ -54,6 +54,8 @@ public class SingAdapter extends BaseAdapter {
             convertView.setTag(holder);
         }else {
             holder = (SingViewHolder) convertView.getTag();
+
+        }
             holder.name.setText(mSingBean.getComics().get(position).getName());
             holder.author.setText(mSingBean.getComics().get(position).getAuthor());
             holder.description.setText(mSingBean.getComics().get(position).getDescription());
@@ -83,7 +85,7 @@ public class SingAdapter extends BaseAdapter {
 
 
             }
-        }
+
         return convertView;
     }
     class SingViewHolder{

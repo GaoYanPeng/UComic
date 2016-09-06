@@ -34,6 +34,8 @@
         <activity android:name=".homepage.singning.SingningActivity"/>
         <activity android:name=".mine.AsTheAuthorActivity"/>
         <activity android:name=".mine.game.GameActivity"/>
+        <activity android:name=".homepage.topic.TopicActivity"/>
+
     </application>
 
 </manifest>
