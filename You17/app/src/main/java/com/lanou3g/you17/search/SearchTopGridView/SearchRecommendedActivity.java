@@ -1,4 +1,4 @@
-package com.lanou3g.you17.search;
+package com.lanou3g.you17.search.SearchTopGridView;
  /*
                    _ooOoo_
                   o8888888o
@@ -36,10 +36,11 @@ import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseActivity;
 import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
+import com.lanou3g.you17.search.SearchGridViewBean;
 import com.lanou3g.you17.tools.API;
 
 //一级搜索界面点击上方GridView进入详情
-public class SearchRecommendedActivity extends BaseActivity implements OnClickListener{
+public class SearchRecommendedActivity extends BaseActivity implements OnClickListener {
 
     private ImageView search_recommended_back;
     private TextView Gridview_recommended_type;
@@ -53,16 +54,16 @@ public class SearchRecommendedActivity extends BaseActivity implements OnClickLi
 
     @Override
     public void initView () {
-        search_recommended_back= (ImageView) findViewById (R.id.search_recommended_back);
+        search_recommended_back = (ImageView) findViewById (R.id.search_recommended_back);
         search_recommended_back.setOnClickListener (this);
-        Gridview_recommended_type= (TextView) findViewById (R.id.Gridview_recommended_type);
-        tabLayout= (TabLayout) findViewById (R.id.recommended_tablayout);
-        viewPager= (ViewPager) findViewById (R.id.recommended_viewpager);
+        Gridview_recommended_type = (TextView) findViewById (R.id.Gridview_recommended_type);
+        tabLayout = (TabLayout) findViewById (R.id.recommended_tablayout);
+        viewPager = (ViewPager) findViewById (R.id.recommended_viewpager);
     }
 
     @Override
     protected void initData () {
-        SearchRecommendedAdapter adapter=new SearchRecommendedAdapter (getSupportFragmentManager ());
+        SearchRecommendedAdapter adapter = new SearchRecommendedAdapter (getSupportFragmentManager ());
         viewPager.setAdapter (adapter);
         tabLayout.setupWithViewPager (viewPager);
         //参1: 未选中标题颜色  参2:选中标题颜色
@@ -75,7 +76,8 @@ public class SearchRecommendedActivity extends BaseActivity implements OnClickLi
         NetTool.getInstance ().startRequest (API.API_SEARCH_GRIDVIEW, SearchGridViewBean.class, new onHttpCallBack<SearchGridViewBean> () {
             @Override
             public void onSuccess (SearchGridViewBean response) {
-                String type=getIntent ().getStringExtra ("recommended_type");
+//                String tabTitle = response.getData ().getReturnData ().getTopList ().get (0).getExtra ().getTabList ().get (0).getTabTitle ();
+                String type = getIntent ().getStringExtra ("recommended_type");
                 Gridview_recommended_type.setText (type);
             }
 
@@ -89,7 +91,7 @@ public class SearchRecommendedActivity extends BaseActivity implements OnClickLi
 
     @Override
     public void onClick (View v) {
-        switch (v.getId ()){
+        switch (v.getId ()) {
             case R.id.search_recommended_back:
                 finish ();
                 break;

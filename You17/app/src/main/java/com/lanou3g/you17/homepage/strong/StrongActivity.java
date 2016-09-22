@@ -1,9 +1,6 @@
 package com.lanou3g.you17.homepage.strong;
 
 import android.content.Intent;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -17,11 +14,10 @@ import com.lanou3g.you17.tools.API;
 /**
  * Created by 高延鹏.on 16/9/6.
  */
-public class StrongActivity extends BaseActivity implements OnClickListener{
+public class StrongActivity extends BaseActivity{
     private ListView strongList;
     private StrongAdapter mStrongAdapter;
     private TextView titleType;
-    private ImageView comicClose;
     private PopupWindow strongPop;
     @Override
     protected int getLayout() {
@@ -33,8 +29,6 @@ public class StrongActivity extends BaseActivity implements OnClickListener{
         strongList = findView(R.id.atrong_lst_view);
         mStrongAdapter = new StrongAdapter(this);
         titleType = findView(R.id.title_type);
-        comicClose = findView(R.id.search_details_back);
-        comicClose.setOnClickListener(this);
 
     }
 
@@ -58,14 +52,5 @@ public class StrongActivity extends BaseActivity implements OnClickListener{
         });
 
 
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.search_details_back:
-                finish();
-                break;
-        }
     }
 }

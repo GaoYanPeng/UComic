@@ -19,7 +19,6 @@
 
 
             <ImageView
-                android:id="@+id/topic_close"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/toolbar_back_normal"/>

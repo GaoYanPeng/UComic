@@ -1,4 +1,4 @@
-package com.lanou3g.you17.search;
+package com.lanou3g.you17.search.SearchTopGridView;
  /*
 
 Created by tliYgTong_刘德强 on 16/8/31.
@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.lanou3g.you17.R;
+import com.lanou3g.you17.search.SearchGridViewBean;
 
 /**
  * 一级搜索页面不同类型GridView的适配器

@@ -1,9 +1,6 @@
 package com.lanou3g.you17.homepage.finished;
 
 import android.content.Intent;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,11 +15,10 @@ import com.lanou3g.you17.tools.API;
 /**
  * Created by 高延鹏.on 16/9/21.
  */
-public class FinishedActivity extends BaseActivity implements OnClickListener {
+public class FinishedActivity extends BaseActivity {
     private ListView strongList;
     private StrongAdapter mStrongAdapter;
     private TextView titleType;
-    private ImageView comicClose;
     @Override
     protected int getLayout() {
         return R.layout.atrong_activity;
@@ -33,8 +29,7 @@ public class FinishedActivity extends BaseActivity implements OnClickListener {
         strongList = findView(R.id.atrong_lst_view);
         mStrongAdapter = new StrongAdapter(this);
         titleType = findView(R.id.title_type);
-        comicClose = findView(R.id.search_details_back);
-        comicClose.setOnClickListener(this);
+
     }
 
     @Override
@@ -55,14 +50,5 @@ public class FinishedActivity extends BaseActivity implements OnClickListener {
             }
         });
 
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.search_details_back:
-                finish();
-                break;
-        }
     }
 }

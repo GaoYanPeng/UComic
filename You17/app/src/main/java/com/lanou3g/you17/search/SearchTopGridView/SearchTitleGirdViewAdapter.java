@@ -1,4 +1,4 @@
-package com.lanou3g.you17.search;
+package com.lanou3g.you17.search.SearchTopGridView;
  /*
                    _ooOoo_
                   o8888888o
@@ -34,6 +34,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.lanou3g.you17.R;
+import com.lanou3g.you17.search.SearchGridViewBean;
 
 //一级搜索界面中间四个ImageView的GridView适配器
 public class SearchTitleGirdViewAdapter extends BaseAdapter {
@@ -76,8 +77,6 @@ public class SearchTitleGirdViewAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag ();
         }
         Glide.with (context).load (bean.getData ().getReturnData ().getTopList ().get (position).getCover ()).into (holder.imageView);
-//        holder.title = bean.getData ().getReturnData ().getTopList ().get (position).getExtra ().getTabList ().get (position).getTabTitle ();
-//        intent.putExtra ("Typetitle", holder.title);
         return convertView;
     }
 
