@@ -4,10 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
-
-
-
-
     <application
         android:name=".MyApp.MyApp"
         android:allowBackup="true"
@@ -36,6 +32,14 @@
         <activity android:name=".mine.game.GameActivity"/>
         <activity android:name=".homepage.topic.TopicActivity"/>
         <activity android:name=".homepage.animation.AnimationActivity"/>
+        <activity android:name=".homepage.strong.StrongActivity"/>
+        <activity android:name=".homepage.sentiment.SentimentActivity"/>
+        <activity android:name=".homepage.upadte.UpdateItemActivity"/>
+        <activity android:name=".homepage.comic.ComicActivity"/>
+        <activity android:name=".homepage.hot.HotActivity"/>
+        <activity android:name=".homepage.finished.FinishedActivity"/>
+        <activity android:name=".homepage.diffuse.DiffuseActivity"/>
+        <activity android:name=".homepage.vip.VipActivity"/>
 
         
     </application>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="220dp"
+              android:background="@color/home_back"
+              android:orientation="vertical"
+              android:paddingBottom="11dp"
+              android:paddingLeft="@dimen/homeTen"
+              android:paddingRight="@dimen/homeTen"
+              android:paddingTop="11dp">
+    <ImageView
+        android:id="@+id/dif_item_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/main_recycler_image_default"
+        android:scaleType="fitXY"/>
+    <RelativeLayout
+        android:background="#44000000"
+        android:paddingRight="@dimen/homeTen"
+        android:paddingLeft="@dimen/homeTen"
+        android:paddingBottom="@dimen/homeTen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/dif_item_description"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="奔波小漫画"/>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/dif_item_grade"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

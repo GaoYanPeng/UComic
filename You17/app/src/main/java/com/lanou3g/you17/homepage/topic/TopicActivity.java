@@ -1,5 +1,6 @@
 package com.lanou3g.you17.homepage.topic;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -67,6 +68,7 @@ public class TopicActivity extends BaseActivity implements OnClickListener,OnRef
 
     @Override
     protected void initData() {
+
         getTopAll();
 
 
