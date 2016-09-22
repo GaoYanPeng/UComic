@@ -5,6 +5,7 @@
               android:background="@color/white"
               android:orientation="vertical">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,18 +53,44 @@
     </LinearLayout>
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:background="#e9e9e9"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <GridView
-            android:id="@+id/search_gridView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:horizontalSpacing="20dp"
-            android:numColumns="3"
-            android:verticalSpacing="20dp"/>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.lanou3g.you17.tools.MyGridView
+                android:id="@+id/search_title_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homeTen"
+                android:layout_marginRight="@dimen/homeTen"
+                android:horizontalSpacing="@dimen/homeTen"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/homeTen"/>
+
+
+            <ImageView
+                android:layout_width="120sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="@dimen/homeTen"
+                android:background="@mipmap/icon_classify_bottom_top_image"/>
+
+            <com.lanou3g.you17.tools.MyGridView
+                android:id="@+id/search_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/homeTen"
+                android:layout_marginRight="@dimen/homeTen"
+                android:horizontalSpacing="@dimen/homeTen"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/homeTen"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -36,6 +36,7 @@
         <activity android:name=".mine.game.GameActivity"/>
         <activity android:name=".homepage.topic.TopicActivity"/>
         <activity android:name=".homepage.animation.AnimationActivity"/>
+        <activity android:name=".search.SearchRecommendedActivity"/>
 
         
     </application>

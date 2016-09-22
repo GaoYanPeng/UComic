@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseActivity;
@@ -24,6 +25,7 @@ public class SearchTypeDetailsActivity extends BaseActivity implements OnClickLi
     private ImageView search_details_back;
     private SearchTypeDetailsAdapter adapter;
     private ListView listView;
+    private TextView type;
 
     @Override
     protected int getLayout () {
@@ -36,16 +38,20 @@ public class SearchTypeDetailsActivity extends BaseActivity implements OnClickLi
         search_details_back.setOnClickListener (this);
         adapter = new SearchTypeDetailsAdapter (this);
         listView = (ListView) findViewById (R.id.details_listview);
+        type = (TextView) findViewById (R.id.Gridview_type);
 
     }
 
     @Override
     protected void initData () {
+
         NetTool.getInstance ().startRequest (API.API_SEARCH_GRIDVIEW_DETAILS, SearchTypeDetailsBean.class, new onHttpCallBack<SearchTypeDetailsBean> () {
             @Override
             public void onSuccess (SearchTypeDetailsBean response) {
                 adapter.setBean (response);
                 listView.setAdapter (adapter);
+                String assignmentType = getIntent ().getStringExtra ("type");
+                type.setText (assignmentType);
             }
 
             @Override

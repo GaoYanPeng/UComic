@@ -29,11 +29,12 @@ public class SignActivity extends BaseActivity implements OnClickListener{
     public void initView() {
 
         mSignWeb = findView(R.id.sign__web);
-        mWebViewClient = new WebViewClient();
         mSignWeb.setWebViewClient(mWebViewClient);
+        mSignWeb.loadUrl(API.API_SIGN);
+
+        mWebViewClient = new WebViewClient();
         WebSettings webSettings = mSignWeb.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mSignWeb.loadUrl(API.API_SIGN);
         sign_back=findView (R.id.sign_back);
         sign_back.setOnClickListener (this);
     }

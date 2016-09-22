@@ -46,7 +46,7 @@ public class MainActivity extends BaseActivity {
         }
 
     }
-    //第二中退出程序
+    //第二种退出程序
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode) {

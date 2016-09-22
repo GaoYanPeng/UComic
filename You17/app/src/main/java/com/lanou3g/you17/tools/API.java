@@ -6,11 +6,11 @@ package com.lanou3g.you17.tools;
 public class API {
     public static final String API_SIGN = "http://web.app.u17.com/activity/2.html?";
     //搜索界面下层GridView接口
-    public static final String API_SEARCH_GRIDVIEW = "http://app.u17.com/v3/appV3/android/phone/sort/list?android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=openqq";
+    public static final String API_SEARCH_GRIDVIEW = "http://app.u17.com/v3/appV3/android/phone/sort/mobileCateList?android_id=3d6f8f613d878af1&v=3120100&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6ee78e380e49581b8beb43bc3b5944b3ad6d602bcb719b960e7da072284057dbf8ea27f88b54d7c16d4994453d38e6d921fbead2e24a9a7b92%253A%253A%253Au17&version=2";
     //搜索界面热门搜索下的推荐
     public static final String API_TOP_SEARCH_URL = "http://app.u17.com/v3/appV3/android/phone/search/hotkeywords?android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&t=1472626633&come_from=openqq";
-    //搜索界面下层GridView详情接口
-    public static final String API_SEARCH_GRIDVIEW_DETAILS = "http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=5&argName=theme&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=openqq";
+    //搜索界面下层GridView详情接口()
+    public static final String API_SEARCH_GRIDVIEW_DETAILS = "http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=117&argName=special&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120100&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6ee78e380e49581b8bb84a29a407ea4ab013cf220afe4e2023a7983d43a0528d372851c3e3223d2edd543108dbc7a27b27d945eaa5919eeffa%253A%253A%253Au17";
 
     public static final String HOME = "http://app.u17.com/v3/appV3/android/phone/comic/boutiqueListNew?android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=shouji360&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe831971b56c7e25ce7f16e1e51974feadd1da813bd70d86590efbaf0deacbdd0a4824ee179ae3fbbc0" + "89913559b6cf6e4da37587b212717e08ed56%253A%253A%253Au17";
     /**

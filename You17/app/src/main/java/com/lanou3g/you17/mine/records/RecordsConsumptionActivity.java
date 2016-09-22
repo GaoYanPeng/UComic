@@ -16,7 +16,7 @@ import com.lanou3g.you17.base.BaseActivity;
 /**
  * "我的"页面 - 消费记录
  */
-public class RecordsConsumptionActivity extends BaseActivity implements OnClickListener{
+public class RecordsConsumptionActivity extends BaseActivity implements OnClickListener {
 
     private ImageView recordsConsumption_back;
     private TabLayout tablayout;
@@ -30,35 +30,34 @@ public class RecordsConsumptionActivity extends BaseActivity implements OnClickL
 
     @Override
     public void initView () {
-        recordsConsumption_back= (ImageView) findViewById (R.id.recordsConsumption_back);
+        recordsConsumption_back = (ImageView) findViewById (R.id.recordsConsumption_back);
         recordsConsumption_back.setOnClickListener (this);
-        tablayout= (TabLayout) findViewById (R.id.consumption_tablayout);
-        viewpager= (ViewPager) findViewById (R.id.consumption_viewpager);
+        tablayout = (TabLayout) findViewById (R.id.consumption_tablayout);
+        viewpager = (ViewPager) findViewById (R.id.consumption_viewpager);
 
     }
 
     @Override
     protected void initData () {
-        com.lanou3g.you17.mine.records.RecordsConsumptionAdapter adapter
-                =new com.lanou3g.you17.mine.records.RecordsConsumptionAdapter (getSupportFragmentManager ());
+        RecordsConsumptionAdapter adapter = new RecordsConsumptionAdapter (getSupportFragmentManager ());
+
         viewpager.setAdapter (adapter);
         tablayout.setupWithViewPager (viewpager);
-        int tabCount= tablayout.getTabCount ();
+        int tabCount = tablayout.getTabCount ();
         for (int i = 0; i < tabCount; i++) {
-            TabLayout.Tab tab =tablayout.getTabAt (i);
+            TabLayout.Tab tab = tablayout.getTabAt (i);
         }
         //参1: 未选中标题颜色  参2:选中标题颜色
-        tablayout.setTabTextColors (Color.GRAY,Color.BLACK);
+        tablayout.setTabTextColors (Color.GRAY, Color.BLACK);
         //导航下划线颜色
         tablayout.setSelectedTabIndicatorColor (Color.BLACK);
-
 
 
     }
 
     @Override
     public void onClick (View v) {
-        switch (v.getId ()){
+        switch (v.getId ()) {
             case R.id.recordsConsumption_back:
                 finish ();
                 break;
