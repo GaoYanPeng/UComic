@@ -52,7 +52,7 @@ public class HomeAdapter extends RecyclerView.Adapter<ViewHolder> {
         mHomeBean = homeBean;
         notifyDataSetChanged();
     }
-
+//
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ViewHolder holder = null;//100
