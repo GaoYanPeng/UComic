@@ -1,5 +1,8 @@
 package com.lanou3g.you17.homepage.animation;
 
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ListView;
 
 import com.lanou3g.you17.R;
@@ -12,8 +15,7 @@ import com.lanou3g.you17.tools.API;
  * Created by 高延鹏.on 16/9/6.
  */
 public class AnimationActivity extends BaseActivity {
-    private ListView animList;
-    private AnimationAdapter mAnimationAdapter;
+    private WebView mWebView;
     @Override
     protected int getLayout() {
         return R.layout.anim_activity;
@@ -22,24 +24,18 @@ public class AnimationActivity extends BaseActivity {
     @Override
     public void initView() {
 
-        animList = findView(R.id.anim_ls_view);
-//        mAnimationAdapter = new AnimationAdapter(this);
+
+        mWebView = findView(R.id.web_view);
+        WebViewClient webViewClient = new WebViewClient();
+        mWebView.setWebViewClient(webViewClient);
+        WebSettings wSet =  mWebView.getSettings();
+        wSet.setJavaScriptEnabled(true);
+
     }
 
     @Override
     protected void initData() {
-        NetTool.getInstance().startRequest(API.TOP_ANIMATION, AnimationBean.class, new onHttpCallBack<AnimationBean>() {
-            @Override
-            public void onSuccess(AnimationBean response) {
-//                mAnimationAdapter.setAnimationBean(response);
-//                animList.setAdapter(mAnimationAdapter);
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-            }
-        });
+        mWebView.loadUrl(API.TOP_ANIMATION);
 
     }
 }

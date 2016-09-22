@@ -48,11 +48,11 @@ public class SearchRecommendedAdapter extends FragmentPagerAdapter {
         return SearchRecommendedEntity.getSearchRecommendedEntity ().size ();
     }
     //设置标题
-    @Override
-    public CharSequence getPageTitle (int position) {
+//    @Override
+//    public CharSequence getPageTitle (int position) {
 //        return SearchRecommendedEntity.getSearchRecommendedEntity ().get (position).getTitle ();
-        return bean.getData ().getReturnData ().getTopList ().
-                get (position).getExtra ().getTabList ().get (position).getTabTitle ();
-    }
+//        return bean.getData ().getReturnData ().getTopList ().
+//                get (position).getExtra ().getTabList ().get (position).getTabTitle ();
+//    }
 
 }
