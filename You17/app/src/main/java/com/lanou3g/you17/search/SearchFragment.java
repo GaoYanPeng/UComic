@@ -13,9 +13,15 @@ import com.lanou3g.you17.base.BaseFragment;
 import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
 import com.lanou3g.you17.search.SearchTopGridView.SearchRecommendedActivity;
+<<<<<<< HEAD
 import com.lanou3g.you17.search.SearchGridView.SearchGridViewAdapter;
 import com.lanou3g.you17.search.SearchTopGridView.SearchTitleGirdViewAdapter;
 import com.lanou3g.you17.search.SearchGridView.SearchTypeDetailsActivity;
+=======
+import com.lanou3g.you17.search.SearchTopGridView.SearchGridViewAdapter;
+import com.lanou3g.you17.search.SearchTopGridView.SearchTitleGirdViewAdapter;
+import com.lanou3g.you17.search.SearchTopGridView.SearchTypeDetailsActivity;
+>>>>>>> adc0523afdd7bca7918995ed3c022124752e70c2
 import com.lanou3g.you17.tools.API;
 
 /**
