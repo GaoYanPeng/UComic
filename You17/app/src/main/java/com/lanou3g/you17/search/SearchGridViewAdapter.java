@@ -22,8 +22,13 @@ import com.lanou3g.you17.R;
 
 public class SearchGridViewAdapter extends BaseAdapter{
 
+
+
     private Context context;
     private SearchGridViewBean bean;
+
+
+
 
     public SearchGridViewAdapter (Context context) {
         this.context = context;
@@ -35,12 +40,12 @@ public class SearchGridViewAdapter extends BaseAdapter{
 
     @Override
     public int getCount () {
-        return bean.getData ().getReturnData ().getRankinglist ().size ();
+        return bean.getData ().getReturnData ().getRankingList ().size ();
     }
 
     @Override
     public Object getItem (int position) {
-        return bean.getData ().getReturnData ().getRankinglist ().get (position);
+        return bean.getData ().getReturnData ().getRankingList ().get (position);
     }
 
     @Override
@@ -58,8 +63,8 @@ public class SearchGridViewAdapter extends BaseAdapter{
         }else {
             holder= (ViewHolder) convertView.getTag ();
         }
-        holder.textView.setText (bean.getData ().getReturnData ().getRankinglist ().get (position).getSortName ());
-        Glide.with (context).load (bean.getData ().getReturnData ().getRankinglist ().get (position).getCover ()).thumbnail (0.5f).into (holder.imageView);
+        holder.textView.setText (bean.getData ().getReturnData ().getRankingList ().get (position).getSortName ());
+        Glide.with (context).load (bean.getData ().getReturnData ().getRankingList ().get (position).getCover ()).thumbnail (0.5f).into (holder.imageView);
         return convertView;
     }
 

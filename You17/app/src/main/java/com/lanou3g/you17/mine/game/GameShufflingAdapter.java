@@ -72,7 +72,7 @@ public class GameShufflingAdapter extends PagerAdapter{
     public Object instantiateItem (ViewGroup container, int position) {
         View view= LayoutInflater.from (context).inflate (R.layout.mine_game_shuffling,null);
         ImageView gameShufflingImageView = (ImageView) view.findViewById(R.id.gameShufflingImageView);
-        Glide.with(context).load(bean.getData ().getReturnData ().getGameheader ().getBanner ().get (position%cont).getCoverUrl ()).into (gameShufflingImageView);
+        Glide.with(context).load(bean.getData ().getReturnData ().getGameheader ().getBanner ().get (position%cont).getCoverUrl ()).thumbnail (0.5f).into (gameShufflingImageView);
         container.addView(view);
 
         return view;

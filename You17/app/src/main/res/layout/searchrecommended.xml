@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+              android:layout_height="match_parent">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60sp">
         <ImageView
-            android:id="@+id/search_details_back"
+            android:id="@+id/search_recommended_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -16,25 +17,25 @@
             android:background="@mipmap/toolbar_back_normal"/>
 
         <TextView
-            android:id="@+id/Gridview_type"
+            android:id="@+id/Gridview_recommended_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textSize="18sp"/>
 
         <TextView
-            android:id="@+id/update"
+            android:id="@+id/recommended_update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="5sp"
-            android:layout_toLeftOf="@+id/update_ImageView"
+            android:layout_toLeftOf="@+id/update_recommended_ImageView"
             android:text="@string/search_update"
             android:textColor="#909fa2"
             android:textSize="13sp"/>
 
         <ImageView
-            android:id="@+id/update_ImageView"
+            android:id="@+id/update_recommended_ImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -47,10 +48,18 @@
         android:layout_width="match_parent"
         android:layout_height="1sp"/>
 
-    <ListView
-        android:id="@+id/details_listview"
+    <!--<ListView-->
+        <!--android:id="@+id/details_recommended_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#fcfff7"/>-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/recommended_tablayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fcfff7"/>
+        android:layout_height="wrap_content"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/recommended_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

@@ -28,6 +28,11 @@ public class SearchFragment extends BaseFragment implements OnClickListener{
     //搜索导航栏下的Adapter
     private SearchGridViewAdapter adapter;
     private RelativeLayout SearchNavigationBar;
+    private SearchTitleGirdViewAdapter mAdapter;
+    private GridView mGridView;
+
+
+
     @Override
     protected int initLayout() {
         return R.layout.search_fragment;
@@ -39,15 +44,42 @@ public class SearchFragment extends BaseFragment implements OnClickListener{
         adapter=new SearchGridViewAdapter(getContext ());
         SearchNavigationBar= (RelativeLayout) getView ().findViewById (R.id.Search_navigation_bar);
         SearchNavigationBar.setOnClickListener (this);
+        mAdapter=new SearchTitleGirdViewAdapter(getContext ());
+        mGridView= (GridView) getView ().findViewById (R.id.search_title_gridView);
     }
 
     @Override
     protected void initData() {
         NetTool.getInstance ().startRequest (API.API_SEARCH_GRIDVIEW, SearchGridViewBean.class, new onHttpCallBack<SearchGridViewBean> () {
             @Override
-            public void onSuccess (SearchGridViewBean response) {
+            public void onSuccess (final SearchGridViewBean response) {
+
                 adapter.setBean (response);
                 gridView.setAdapter (adapter);
+                mAdapter.setBean (response);
+                mGridView.setAdapter (mAdapter);
+
+                //搜索页面上方四个标题类型GridView,点击进入详情
+                mGridView.setOnItemClickListener (new OnItemClickListener () {
+                    @Override
+                    public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent=new Intent (getActivity (),SearchRecommendedActivity.class);
+                        String titleType=response.getData ().getReturnData ().getTopList ().get (position).getSortName ();
+                        intent.putExtra ("recommended_type",titleType);
+                        startActivity (intent);
+                    }
+                });
+
+                //搜索页面不同类型的girdview 点击跳转详情
+                gridView.setOnItemClickListener (new OnItemClickListener () {
+                    @Override
+                    public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent=new Intent (getActivity (),SearchTypeDetailsActivity.class);
+                        String type = response.getData ().getReturnData ().getRankingList ().get (position).getSortName ();
+                        intent.putExtra ("type",type);
+                        startActivity (intent);
+                    }
+                });
             }
 
             @Override
@@ -56,16 +88,7 @@ public class SearchFragment extends BaseFragment implements OnClickListener{
             }
         });
 
-        //搜索页面不同类型的girdview 点击跳转详情
-        gridView.setOnItemClickListener (new OnItemClickListener () {
-            @Override
-            public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
-                Intent intent=new Intent (getActivity (),SearchTypeDetailsActivity.class);
 
-
-                startActivity (intent);
-            }
-        });
     }
 
 

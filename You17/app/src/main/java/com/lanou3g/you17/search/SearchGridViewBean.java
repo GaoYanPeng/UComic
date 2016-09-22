@@ -1,27 +1,50 @@
 package com.lanou3g.you17.search;
  /*
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         佛祖保佑       永无BUG
 
-Created by tliYgTong_刘德强 on 16/8/31.
+Created by tliYgTong_刘德强 on 16/9/6.
 */
 
 
 import java.util.List;
 
+
 /**
- * 一级搜索页面不同类型GridView的Bean
+ * 一级搜索界面的bean
  */
+
 public class SearchGridViewBean {
+
 
     /**
      * code : 1
-     * data : {"stateCode":1,"message":"成功","returnData":{"rankinglist":[{"sortId":"63","sortName":"魔幻","icon":"http://image.mylife.u17t.com/","iconSortName":"魔幻","cover":"http://image.mylife.u17t.com/2016/05/26/1464233634_JUtneIe1PCEb.png","argCon":"2","argName":"theme","argValue":"2","replaceComic":[],"description":"","isRules":"1"},{"sortId":"64","sortName":"动作","icon":"http://image.mylife.u17t.com/","iconSortName":"动作","cover":"http://image.mylife.u17t.com/2016/05/26/1464233646_fwQUANQ4GE41.png","argCon":"3","argName":"theme","argValue":"5","replaceComic":[],"description":"","isRules":"1"},{"sortId":"65","sortName":"搞笑","icon":"http://image.mylife.u17t.com/","iconSortName":"搞笑","cover":"http://image.mylife.u17t.com/2016/05/26/1464239478_D0rO0Rt0ZB08.png","argCon":"3","argName":"theme","argValue":"1","replaceComic":[],"description":"","isRules":"1"},{"sortId":"66","sortName":"恐怖","icon":"http://image.mylife.u17t.com/","iconSortName":"恐怖","cover":"http://image.mylife.u17t.com/2016/05/26/1464239490_BJQqsq2WzzVj.png","argCon":"3","argName":"theme","argValue":"11","replaceComic":[],"description":"","isRules":"1"},{"sortId":"67","sortName":"生活","icon":"http://image.mylife.u17t.com/","iconSortName":"生活","cover":"http://image.mylife.u17t.com/2016/05/26/1464239513_0B6By470041E.png","argCon":"3","argName":"theme","argValue":"3","replaceComic":[],"description":"","isRules":"1"},{"sortId":"68","sortName":"科幻","icon":"http://image.mylife.u17t.com/","iconSortName":"科幻","cover":"http://image.mylife.u17t.com/2016/05/26/1464239529_O86BA1Fqa8OF.png","argCon":"3","argName":"theme","argValue":"6","replaceComic":[],"description":"","isRules":"1"},{"sortId":"71","sortName":"同人","icon":"http://image.mylife.u17t.com/","iconSortName":"同人","cover":"http://image.mylife.u17t.com/2016/05/26/1464239580_2FG8d8GDgdg7.png","argCon":"3","argName":"theme","argValue":"12","replaceComic":[],"description":"","isRules":"1"},{"sortId":"72","sortName":"恋爱","icon":"http://image.mylife.u17t.com/","iconSortName":"恋爱","cover":"http://image.mylife.u17t.com/2016/05/26/1464239594_hPY67H9X9Z7Y.png","argCon":"3","argName":"theme","argValue":"4","replaceComic":[],"description":"","isRules":"1"},{"sortId":"74","sortName":"耽美","icon":"http://image.mylife.u17t.com/","iconSortName":"耽美","cover":"http://image.mylife.u17t.com/2016/05/26/1464239615_6AWUxEPW6445.png","argCon":"3","argName":"theme","argValue":"10","replaceComic":[],"description":"","isRules":"1"},{"sortId":"77","sortName":"少年","icon":"http://image.mylife.u17t.com/","iconSortName":"少年","cover":"http://image.mylife.u17t.com/2016/05/26/1464239632_c833d8uxol8U.png","argCon":"3","argName":"cate","argValue":"1","replaceComic":[],"description":"","isRules":"1"},{"sortId":"78","sortName":"少女","icon":"http://image.mylife.u17t.com/","iconSortName":"少女","cover":"http://image.mylife.u17t.com/2016/05/26/1464239648_tXXpkmMKSGtx.png","argCon":"3","argName":"cate","argValue":"2","replaceComic":[],"description":"","isRules":"1"},{"sortId":"79","sortName":"四格绘本","icon":"http://image.mylife.u17t.com/","iconSortName":"四格绘本","cover":"http://image.mylife.u17t.com/2016/05/26/1464239662_419rD3Vbl2b1.png","argCon":"3","argName":"cate","argValue":"4","replaceComic":[],"description":"","isRules":"1"},{"sortId":"81","sortName":"小说改编","icon":"http://image.mylife.u17t.com/","iconSortName":"小说改编","cover":"http://image.mylife.u17t.com/2016/07/15/1468569389_vIruM6bf86a4.png","argCon":0,"argName":"special","argValue":"81","replaceComic":[],"description":"","isRules":"0"},{"sortId":"82","sortName":"古风","icon":"http://image.mylife.u17t.com/","iconSortName":"古风","cover":"http://image.mylife.u17t.com/2016/07/15/1468569459_t4polzPpNL4p.png","argCon":0,"argName":"special","argValue":"82","replaceComic":[],"description":"","isRules":"0"},{"sortId":"112","sortName":"穿越","icon":"http://image.mylife.u17t.com/","iconSortName":"穿越","cover":"http://image.mylife.u17t.com/2016/07/15/1468569496_rVM88oVrmHZe.png","argCon":0,"argName":"special","argValue":"112","replaceComic":[],"description":"","isRules":"0"},{"sortId":"113","sortName":"独家","icon":"http://image.mylife.u17t.com/","iconSortName":"独家","cover":"http://image.mylife.u17t.com/2016/07/15/1468569557_fK1J8AJFAj1W.png","argCon":"3","argName":"topic","argValue":"15","replaceComic":[],"description":"","isRules":"1"},{"sortId":"114","sortName":"彩漫","icon":"http://image.mylife.u17t.com/","iconSortName":"彩漫","cover":"http://image.mylife.u17t.com/2016/07/15/1468569689_A9ayTKFafAa6.png","argCon":"3","argName":"topic","argValue":"7","replaceComic":[],"description":"","isRules":"1"},{"sortId":"115","sortName":"完结","icon":"http://image.mylife.u17t.com/","iconSortName":"完结","cover":"http://image.mylife.u17t.com/2016/07/15/1468569780_3j4tZZcZcIlv.png","argCon":"4","argName":"serial","argValue":"1","replaceComic":[],"description":"","isRules":"1"}]}}
+     * data : {"stateCode":1,"message":"成功","returnData":{"rankingList":[{"sortName":"古风","cover":"http://image.mylife.u17t.com/2016/08/22/1471856799_g34OsbI4PSeb.jpg","argName":"special","argValue":121,"argCon":0},{"sortName":"穿越","cover":"http://image.mylife.u17t.com/2016/08/22/1471856751_ss0I63WCzdkN.jpg","argName":"special","argValue":117,"argCon":0},{"sortName":"耽美","cover":"http://image.mylife.u17t.com/2016/08/22/1471858681_PikE4P2b4R29.jpg","argName":"theme","argValue":10},{"sortName":"恐怖","cover":"http://image.mylife.u17t.com/2016/08/22/1471857028_F78hO8o9dbuW.jpg","argName":"theme","argValue":11},{"sortName":"小说改编","cover":"http://image.mylife.u17t.com/2016/08/22/1471856898_l2y4rVvpr225.jpg","argName":"special","argValue":128,"argCon":0},{"sortName":"恋爱","cover":"http://image.mylife.u17t.com/2016/08/22/1471860696_4D98T4m08984.jpg","argName":"theme","argValue":4},{"sortName":"魔幻","cover":"http://image.mylife.u17t.com/2016/08/22/1471856737_F60y496YfAS4.jpg","argName":"theme","argValue":2},{"sortName":"搞笑","cover":"http://image.mylife.u17t.com/2016/08/22/1471858264_ttzW85KDmZgw.jpg","argName":"theme","argValue":1},{"sortName":"动作","cover":"http://image.mylife.u17t.com/2016/08/22/1471856769_Hcqqj695V911.jpg","argName":"theme","argValue":5},{"sortName":"少女","cover":"http://image.mylife.u17t.com/2016/08/22/1471856885_EMUYMYcd1zcc.jpg","argName":"cate","argValue":2},{"sortName":"科幻","cover":"http://image.mylife.u17t.com/2016/08/22/1471856818_7Gg6526tYG62.jpg","argName":"theme","argValue":6},{"sortName":"同人","cover":"http://image.mylife.u17t.com/2016/08/22/1471856871_o5VKzWWNI4Pm.jpg","argName":"theme","argValue":12},{"sortName":"生活","cover":"http://image.mylife.u17t.com/2016/08/22/1471856830_02bblPzwP5P5.jpg","argName":"theme","argValue":3},{"sortName":"少年","cover":"http://image.mylife.u17t.com/2016/08/22/1471858828_59HmtKlz999X.jpg","argName":"cate","argValue":1},{"sortName":"四格","cover":"http://image.mylife.u17t.com/2016/08/22/1471856914_aDtATdb2DT2A.jpg","argName":"cate","argValue":4}],"topList":[{"sortId":"127","sortName":"完结作品","cover":"http://image.mylife.u17t.com/2016/08/23/1471921671_A4WaVwI8A38c.png","extra":{"title":"完结作品","tabList":[{"argName":"serial","argValue":1,"argCon":4,"tabTitle":"今日最热"},{"argName":"serial","argValue":1,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"133","sortName":"彩漫作品","cover":"http://image.mylife.u17t.com/2016/08/23/1471921691_Gi5s85U5UR5n.png","extra":{"title":"彩漫作品","tabList":[{"argName":"topic","argValue":7,"argCon":4,"tabTitle":"今日最热"},{"argName":"topic","argValue":7,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"134","sortName":"订阅漫画","cover":"http://image.mylife.u17t.com/2016/08/23/1471921741_2k8z8K88DCl8.png","extra":{"title":"订阅漫画","tabList":[{"argName":"topic","argValue":12,"argCon":2,"tabTitle":"近日更新"},{"argName":"topic","argValue":12,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"119","sortName":"独家签约","cover":"http://image.mylife.u17t.com/2016/08/23/1471921651_lYgt19Ly3PsJ.png","extra":{"title":"独家签约","tabList":[{"argName":"topic","argValue":15,"argCon":4,"tabTitle":"今日最热"},{"argName":"topic","argValue":15,"argCon":1,"tabTitle":"人气总榜"}]}}],"recommendSearch":"镇魂街"}}
      */
 
     private int code;
     /**
      * stateCode : 1
      * message : 成功
-     * returnData : {"rankinglist":[{"sortId":"63","sortName":"魔幻","icon":"http://image.mylife.u17t.com/","iconSortName":"魔幻","cover":"http://image.mylife.u17t.com/2016/05/26/1464233634_JUtneIe1PCEb.png","argCon":"2","argName":"theme","argValue":"2","replaceComic":[],"description":"","isRules":"1"},{"sortId":"64","sortName":"动作","icon":"http://image.mylife.u17t.com/","iconSortName":"动作","cover":"http://image.mylife.u17t.com/2016/05/26/1464233646_fwQUANQ4GE41.png","argCon":"3","argName":"theme","argValue":"5","replaceComic":[],"description":"","isRules":"1"},{"sortId":"65","sortName":"搞笑","icon":"http://image.mylife.u17t.com/","iconSortName":"搞笑","cover":"http://image.mylife.u17t.com/2016/05/26/1464239478_D0rO0Rt0ZB08.png","argCon":"3","argName":"theme","argValue":"1","replaceComic":[],"description":"","isRules":"1"},{"sortId":"66","sortName":"恐怖","icon":"http://image.mylife.u17t.com/","iconSortName":"恐怖","cover":"http://image.mylife.u17t.com/2016/05/26/1464239490_BJQqsq2WzzVj.png","argCon":"3","argName":"theme","argValue":"11","replaceComic":[],"description":"","isRules":"1"},{"sortId":"67","sortName":"生活","icon":"http://image.mylife.u17t.com/","iconSortName":"生活","cover":"http://image.mylife.u17t.com/2016/05/26/1464239513_0B6By470041E.png","argCon":"3","argName":"theme","argValue":"3","replaceComic":[],"description":"","isRules":"1"},{"sortId":"68","sortName":"科幻","icon":"http://image.mylife.u17t.com/","iconSortName":"科幻","cover":"http://image.mylife.u17t.com/2016/05/26/1464239529_O86BA1Fqa8OF.png","argCon":"3","argName":"theme","argValue":"6","replaceComic":[],"description":"","isRules":"1"},{"sortId":"71","sortName":"同人","icon":"http://image.mylife.u17t.com/","iconSortName":"同人","cover":"http://image.mylife.u17t.com/2016/05/26/1464239580_2FG8d8GDgdg7.png","argCon":"3","argName":"theme","argValue":"12","replaceComic":[],"description":"","isRules":"1"},{"sortId":"72","sortName":"恋爱","icon":"http://image.mylife.u17t.com/","iconSortName":"恋爱","cover":"http://image.mylife.u17t.com/2016/05/26/1464239594_hPY67H9X9Z7Y.png","argCon":"3","argName":"theme","argValue":"4","replaceComic":[],"description":"","isRules":"1"},{"sortId":"74","sortName":"耽美","icon":"http://image.mylife.u17t.com/","iconSortName":"耽美","cover":"http://image.mylife.u17t.com/2016/05/26/1464239615_6AWUxEPW6445.png","argCon":"3","argName":"theme","argValue":"10","replaceComic":[],"description":"","isRules":"1"},{"sortId":"77","sortName":"少年","icon":"http://image.mylife.u17t.com/","iconSortName":"少年","cover":"http://image.mylife.u17t.com/2016/05/26/1464239632_c833d8uxol8U.png","argCon":"3","argName":"cate","argValue":"1","replaceComic":[],"description":"","isRules":"1"},{"sortId":"78","sortName":"少女","icon":"http://image.mylife.u17t.com/","iconSortName":"少女","cover":"http://image.mylife.u17t.com/2016/05/26/1464239648_tXXpkmMKSGtx.png","argCon":"3","argName":"cate","argValue":"2","replaceComic":[],"description":"","isRules":"1"},{"sortId":"79","sortName":"四格绘本","icon":"http://image.mylife.u17t.com/","iconSortName":"四格绘本","cover":"http://image.mylife.u17t.com/2016/05/26/1464239662_419rD3Vbl2b1.png","argCon":"3","argName":"cate","argValue":"4","replaceComic":[],"description":"","isRules":"1"},{"sortId":"81","sortName":"小说改编","icon":"http://image.mylife.u17t.com/","iconSortName":"小说改编","cover":"http://image.mylife.u17t.com/2016/07/15/1468569389_vIruM6bf86a4.png","argCon":0,"argName":"special","argValue":"81","replaceComic":[],"description":"","isRules":"0"},{"sortId":"82","sortName":"古风","icon":"http://image.mylife.u17t.com/","iconSortName":"古风","cover":"http://image.mylife.u17t.com/2016/07/15/1468569459_t4polzPpNL4p.png","argCon":0,"argName":"special","argValue":"82","replaceComic":[],"description":"","isRules":"0"},{"sortId":"112","sortName":"穿越","icon":"http://image.mylife.u17t.com/","iconSortName":"穿越","cover":"http://image.mylife.u17t.com/2016/07/15/1468569496_rVM88oVrmHZe.png","argCon":0,"argName":"special","argValue":"112","replaceComic":[],"description":"","isRules":"0"},{"sortId":"113","sortName":"独家","icon":"http://image.mylife.u17t.com/","iconSortName":"独家","cover":"http://image.mylife.u17t.com/2016/07/15/1468569557_fK1J8AJFAj1W.png","argCon":"3","argName":"topic","argValue":"15","replaceComic":[],"description":"","isRules":"1"},{"sortId":"114","sortName":"彩漫","icon":"http://image.mylife.u17t.com/","iconSortName":"彩漫","cover":"http://image.mylife.u17t.com/2016/07/15/1468569689_A9ayTKFafAa6.png","argCon":"3","argName":"topic","argValue":"7","replaceComic":[],"description":"","isRules":"1"},{"sortId":"115","sortName":"完结","icon":"http://image.mylife.u17t.com/","iconSortName":"完结","cover":"http://image.mylife.u17t.com/2016/07/15/1468569780_3j4tZZcZcIlv.png","argCon":"4","argName":"serial","argValue":"1","replaceComic":[],"description":"","isRules":"1"}]}
+     * returnData : {"rankingList":[{"sortName":"古风","cover":"http://image.mylife.u17t.com/2016/08/22/1471856799_g34OsbI4PSeb.jpg","argName":"special","argValue":121,"argCon":0},{"sortName":"穿越","cover":"http://image.mylife.u17t.com/2016/08/22/1471856751_ss0I63WCzdkN.jpg","argName":"special","argValue":117,"argCon":0},{"sortName":"耽美","cover":"http://image.mylife.u17t.com/2016/08/22/1471858681_PikE4P2b4R29.jpg","argName":"theme","argValue":10},{"sortName":"恐怖","cover":"http://image.mylife.u17t.com/2016/08/22/1471857028_F78hO8o9dbuW.jpg","argName":"theme","argValue":11},{"sortName":"小说改编","cover":"http://image.mylife.u17t.com/2016/08/22/1471856898_l2y4rVvpr225.jpg","argName":"special","argValue":128,"argCon":0},{"sortName":"恋爱","cover":"http://image.mylife.u17t.com/2016/08/22/1471860696_4D98T4m08984.jpg","argName":"theme","argValue":4},{"sortName":"魔幻","cover":"http://image.mylife.u17t.com/2016/08/22/1471856737_F60y496YfAS4.jpg","argName":"theme","argValue":2},{"sortName":"搞笑","cover":"http://image.mylife.u17t.com/2016/08/22/1471858264_ttzW85KDmZgw.jpg","argName":"theme","argValue":1},{"sortName":"动作","cover":"http://image.mylife.u17t.com/2016/08/22/1471856769_Hcqqj695V911.jpg","argName":"theme","argValue":5},{"sortName":"少女","cover":"http://image.mylife.u17t.com/2016/08/22/1471856885_EMUYMYcd1zcc.jpg","argName":"cate","argValue":2},{"sortName":"科幻","cover":"http://image.mylife.u17t.com/2016/08/22/1471856818_7Gg6526tYG62.jpg","argName":"theme","argValue":6},{"sortName":"同人","cover":"http://image.mylife.u17t.com/2016/08/22/1471856871_o5VKzWWNI4Pm.jpg","argName":"theme","argValue":12},{"sortName":"生活","cover":"http://image.mylife.u17t.com/2016/08/22/1471856830_02bblPzwP5P5.jpg","argName":"theme","argValue":3},{"sortName":"少年","cover":"http://image.mylife.u17t.com/2016/08/22/1471858828_59HmtKlz999X.jpg","argName":"cate","argValue":1},{"sortName":"四格","cover":"http://image.mylife.u17t.com/2016/08/22/1471856914_aDtATdb2DT2A.jpg","argName":"cate","argValue":4}],"topList":[{"sortId":"127","sortName":"完结作品","cover":"http://image.mylife.u17t.com/2016/08/23/1471921671_A4WaVwI8A38c.png","extra":{"title":"完结作品","tabList":[{"argName":"serial","argValue":1,"argCon":4,"tabTitle":"今日最热"},{"argName":"serial","argValue":1,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"133","sortName":"彩漫作品","cover":"http://image.mylife.u17t.com/2016/08/23/1471921691_Gi5s85U5UR5n.png","extra":{"title":"彩漫作品","tabList":[{"argName":"topic","argValue":7,"argCon":4,"tabTitle":"今日最热"},{"argName":"topic","argValue":7,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"134","sortName":"订阅漫画","cover":"http://image.mylife.u17t.com/2016/08/23/1471921741_2k8z8K88DCl8.png","extra":{"title":"订阅漫画","tabList":[{"argName":"topic","argValue":12,"argCon":2,"tabTitle":"近日更新"},{"argName":"topic","argValue":12,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"119","sortName":"独家签约","cover":"http://image.mylife.u17t.com/2016/08/23/1471921651_lYgt19Ly3PsJ.png","extra":{"title":"独家签约","tabList":[{"argName":"topic","argValue":15,"argCon":4,"tabTitle":"今日最热"},{"argName":"topic","argValue":15,"argCon":1,"tabTitle":"人气总榜"}]}}],"recommendSearch":"镇魂街"}
      */
 
     private DataBean data;
@@ -45,6 +68,12 @@ public class SearchGridViewBean {
     public static class DataBean {
         private int stateCode;
         private String message;
+        /**
+         * rankingList : [{"sortName":"古风","cover":"http://image.mylife.u17t.com/2016/08/22/1471856799_g34OsbI4PSeb.jpg","argName":"special","argValue":121,"argCon":0},{"sortName":"穿越","cover":"http://image.mylife.u17t.com/2016/08/22/1471856751_ss0I63WCzdkN.jpg","argName":"special","argValue":117,"argCon":0},{"sortName":"耽美","cover":"http://image.mylife.u17t.com/2016/08/22/1471858681_PikE4P2b4R29.jpg","argName":"theme","argValue":10},{"sortName":"恐怖","cover":"http://image.mylife.u17t.com/2016/08/22/1471857028_F78hO8o9dbuW.jpg","argName":"theme","argValue":11},{"sortName":"小说改编","cover":"http://image.mylife.u17t.com/2016/08/22/1471856898_l2y4rVvpr225.jpg","argName":"special","argValue":128,"argCon":0},{"sortName":"恋爱","cover":"http://image.mylife.u17t.com/2016/08/22/1471860696_4D98T4m08984.jpg","argName":"theme","argValue":4},{"sortName":"魔幻","cover":"http://image.mylife.u17t.com/2016/08/22/1471856737_F60y496YfAS4.jpg","argName":"theme","argValue":2},{"sortName":"搞笑","cover":"http://image.mylife.u17t.com/2016/08/22/1471858264_ttzW85KDmZgw.jpg","argName":"theme","argValue":1},{"sortName":"动作","cover":"http://image.mylife.u17t.com/2016/08/22/1471856769_Hcqqj695V911.jpg","argName":"theme","argValue":5},{"sortName":"少女","cover":"http://image.mylife.u17t.com/2016/08/22/1471856885_EMUYMYcd1zcc.jpg","argName":"cate","argValue":2},{"sortName":"科幻","cover":"http://image.mylife.u17t.com/2016/08/22/1471856818_7Gg6526tYG62.jpg","argName":"theme","argValue":6},{"sortName":"同人","cover":"http://image.mylife.u17t.com/2016/08/22/1471856871_o5VKzWWNI4Pm.jpg","argName":"theme","argValue":12},{"sortName":"生活","cover":"http://image.mylife.u17t.com/2016/08/22/1471856830_02bblPzwP5P5.jpg","argName":"theme","argValue":3},{"sortName":"少年","cover":"http://image.mylife.u17t.com/2016/08/22/1471858828_59HmtKlz999X.jpg","argName":"cate","argValue":1},{"sortName":"四格","cover":"http://image.mylife.u17t.com/2016/08/22/1471856914_aDtATdb2DT2A.jpg","argName":"cate","argValue":4}]
+         * topList : [{"sortId":"127","sortName":"完结作品","cover":"http://image.mylife.u17t.com/2016/08/23/1471921671_A4WaVwI8A38c.png","extra":{"title":"完结作品","tabList":[{"argName":"serial","argValue":1,"argCon":4,"tabTitle":"今日最热"},{"argName":"serial","argValue":1,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"133","sortName":"彩漫作品","cover":"http://image.mylife.u17t.com/2016/08/23/1471921691_Gi5s85U5UR5n.png","extra":{"title":"彩漫作品","tabList":[{"argName":"topic","argValue":7,"argCon":4,"tabTitle":"今日最热"},{"argName":"topic","argValue":7,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"134","sortName":"订阅漫画","cover":"http://image.mylife.u17t.com/2016/08/23/1471921741_2k8z8K88DCl8.png","extra":{"title":"订阅漫画","tabList":[{"argName":"topic","argValue":12,"argCon":2,"tabTitle":"近日更新"},{"argName":"topic","argValue":12,"argCon":1,"tabTitle":"人气总榜"}]}},{"sortId":"119","sortName":"独家签约","cover":"http://image.mylife.u17t.com/2016/08/23/1471921651_lYgt19Ly3PsJ.png","extra":{"title":"独家签约","tabList":[{"argName":"topic","argValue":15,"argCon":4,"tabTitle":"今日最热"},{"argName":"topic","argValue":15,"argCon":1,"tabTitle":"人气总榜"}]}}]
+         * recommendSearch : 镇魂街
+         */
+
         private ReturnDataBean returnData;
 
         public int getStateCode () {
@@ -72,42 +101,107 @@ public class SearchGridViewBean {
         }
 
         public static class ReturnDataBean {
+            private String recommendSearch;
             /**
-             * sortId : 63
-             * sortName : 魔幻
-             * icon : http://image.mylife.u17t.com/
-             * iconSortName : 魔幻
-             * cover : http://image.mylife.u17t.com/2016/05/26/1464233634_JUtneIe1PCEb.png
-             * argCon : 2
-             * argName : theme
-             * argValue : 2
-             * replaceComic : []
-             * description :
-             * isRules : 1
+             * sortName : 古风
+             * cover : http://image.mylife.u17t.com/2016/08/22/1471856799_g34OsbI4PSeb.jpg
+             * argName : special
+             * argValue : 121
+             * argCon : 0
              */
 
-            private List<RankinglistBean> rankinglist;
+            private List<RankingListBean> rankingList;
+            /**
+             * sortId : 127
+             * sortName : 完结作品
+             * cover : http://image.mylife.u17t.com/2016/08/23/1471921671_A4WaVwI8A38c.png
+             * extra : {"title":"完结作品","tabList":[{"argName":"serial","argValue":1,"argCon":4,"tabTitle":"今日最热"},{"argName":"serial","argValue":1,"argCon":1,"tabTitle":"人气总榜"}]}
+             */
 
-            public List<RankinglistBean> getRankinglist () {
-                return rankinglist;
+            private List<TopListBean> topList;
+
+            public String getRecommendSearch () {
+                return recommendSearch;
             }
 
-            public void setRankinglist (List<RankinglistBean> rankinglist) {
-                this.rankinglist = rankinglist;
+            public void setRecommendSearch (String recommendSearch) {
+                this.recommendSearch = recommendSearch;
             }
 
-            public static class RankinglistBean {
+            public List<RankingListBean> getRankingList () {
+                return rankingList;
+            }
+
+            public void setRankingList (List<RankingListBean> rankingList) {
+                this.rankingList = rankingList;
+            }
+
+            public List<TopListBean> getTopList () {
+                return topList;
+            }
+
+            public void setTopList (List<TopListBean> topList) {
+                this.topList = topList;
+            }
+
+            public static class RankingListBean {
+                private String sortName;
+                private String cover;
+                private String argName;
+                private int argValue;
+                private int argCon;
+
+                public String getSortName () {
+                    return sortName;
+                }
+
+                public void setSortName (String sortName) {
+                    this.sortName = sortName;
+                }
+
+                public String getCover () {
+                    return cover;
+                }
+
+                public void setCover (String cover) {
+                    this.cover = cover;
+                }
+
+                public String getArgName () {
+                    return argName;
+                }
+
+                public void setArgName (String argName) {
+                    this.argName = argName;
+                }
+
+                public int getArgValue () {
+                    return argValue;
+                }
+
+                public void setArgValue (int argValue) {
+                    this.argValue = argValue;
+                }
+
+                public int getArgCon () {
+                    return argCon;
+                }
+
+                public void setArgCon (int argCon) {
+                    this.argCon = argCon;
+                }
+            }
+
+            public static class TopListBean {
                 private String sortId;
                 private String sortName;
-                private String icon;
-                private String iconSortName;
                 private String cover;
-                private String argCon;
-                private String argName;
-                private String argValue;
-                private String description;
-                private String isRules;
-                private List<?> replaceComic;
+                /**
+                 * title : 完结作品
+                 * tabList : [{"argName":"serial","argValue":1,"argCon":4,"tabTitle":"今日最热"},{"argName":"serial","argValue":1,"argCon":1,"tabTitle":"人气总榜"}]
+                 */
+
+                private ExtraBean extra;
 
                 public String getSortId () {
                     return sortId;
@@ -125,22 +219,6 @@ public class SearchGridViewBean {
                     this.sortName = sortName;
                 }
 
-                public String getIcon () {
-                    return icon;
-                }
-
-                public void setIcon (String icon) {
-                    this.icon = icon;
-                }
-
-                public String getIconSortName () {
-                    return iconSortName;
-                }
-
-                public void setIconSortName (String iconSortName) {
-                    this.iconSortName = iconSortName;
-                }
-
                 public String getCover () {
                     return cover;
                 }
@@ -149,52 +227,79 @@ public class SearchGridViewBean {
                     this.cover = cover;
                 }
 
-                public String getArgCon () {
-                    return argCon;
+                public ExtraBean getExtra () {
+                    return extra;
                 }
 
-                public void setArgCon (String argCon) {
-                    this.argCon = argCon;
+                public void setExtra (ExtraBean extra) {
+                    this.extra = extra;
                 }
 
-                public String getArgName () {
-                    return argName;
-                }
+                public static class ExtraBean {
+                    private String title;
+                    /**
+                     * argName : serial
+                     * argValue : 1
+                     * argCon : 4
+                     * tabTitle : 今日最热
+                     */
 
-                public void setArgName (String argName) {
-                    this.argName = argName;
-                }
+                    private List<TabListBean> tabList;
 
-                public String getArgValue () {
-                    return argValue;
-                }
+                    public String getTitle () {
+                        return title;
+                    }
 
-                public void setArgValue (String argValue) {
-                    this.argValue = argValue;
-                }
+                    public void setTitle (String title) {
+                        this.title = title;
+                    }
 
-                public String getDescription () {
-                    return description;
-                }
+                    public List<TabListBean> getTabList () {
+                        return tabList;
+                    }
 
-                public void setDescription (String description) {
-                    this.description = description;
-                }
+                    public void setTabList (List<TabListBean> tabList) {
+                        this.tabList = tabList;
+                    }
 
-                public String getIsRules () {
-                    return isRules;
-                }
+                    public static class TabListBean {
+                        private String argName;
+                        private int argValue;
+                        private int argCon;
+                        private String tabTitle;
 
-                public void setIsRules (String isRules) {
-                    this.isRules = isRules;
-                }
+                        public String getArgName () {
+                            return argName;
+                        }
 
-                public List<?> getReplaceComic () {
-                    return replaceComic;
-                }
+                        public void setArgName (String argName) {
+                            this.argName = argName;
+                        }
 
-                public void setReplaceComic (List<?> replaceComic) {
-                    this.replaceComic = replaceComic;
+                        public int getArgValue () {
+                            return argValue;
+                        }
+
+                        public void setArgValue (int argValue) {
+                            this.argValue = argValue;
+                        }
+
+                        public int getArgCon () {
+                            return argCon;
+                        }
+
+                        public void setArgCon (int argCon) {
+                            this.argCon = argCon;
+                        }
+
+                        public String getTabTitle () {
+                            return tabTitle;
+                        }
+
+                        public void setTabTitle (String tabTitle) {
+                            this.tabTitle = tabTitle;
+                        }
+                    }
                 }
             }
         }

@@ -83,6 +83,7 @@ public class GameActivity extends BaseActivity{
 
     @Override
     protected void initData () {
+
         //        发送消息,给页数+1
         handler = new Handler (new Handler.Callback () {
             @Override

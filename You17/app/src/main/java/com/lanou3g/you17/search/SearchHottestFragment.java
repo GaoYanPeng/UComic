@@ -1,4 +1,4 @@
-package com.lanou3g.you17.mine.records;
+package com.lanou3g.you17.search;
  /*
                    _ooOoo_
                   o8888888o
@@ -21,21 +21,18 @@ package com.lanou3g.you17.mine.records;
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
          佛祖保佑       永无BUG
 
-Created by tliYgTong_刘德强 on 16/9/3.
+Created by Android_刘德强 on 16/9/21.
 */
+
 
 import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseFragment;
 
-
-
-/**
- * "我的"-消费记录-TabLayout-妖气币记录
- */
-public class RCCoinRecordsFragment extends BaseFragment {
+//一级界面点击推荐GridView进入详情Tablayout中今日最热的Fragment
+public class SearchHottestFragment extends BaseFragment{
     @Override
     protected int initLayout () {
-        return R.layout.mine_coin_records;
+        return R.layout.search_hottest_fragment;
     }
 
     @Override

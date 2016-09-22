@@ -1,4 +1,4 @@
-package com.lanou3g.you17.mine.records;
+package com.lanou3g.you17.search;
  /*
                    _ooOoo_
                   o8888888o
@@ -21,7 +21,7 @@ package com.lanou3g.you17.mine.records;
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
          佛祖保佑       永无BUG
 
-Created by tliYgTong_刘德强 on 16/9/3.
+Created by Android_刘德强 on 16/9/21.
 */
 
 
@@ -29,31 +29,30 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-/**
- * 消费记录-Tablayout适配器
- */
-public class RecordsConsumptionAdapter extends FragmentPagerAdapter{
+//一级搜索几面点击推荐GridView进入详情 Tablayout的适配器
+public class SearchRecommendedAdapter extends FragmentPagerAdapter {
 
+    private SearchGridViewBean bean;
 
-    public RecordsConsumptionAdapter (FragmentManager fm) {
+    public SearchRecommendedAdapter (FragmentManager fm) {
         super (fm);
     }
 
     @Override
     public Fragment getItem (int position) {
-        //Viewpager对应的页面显示对应的Fragment
-        return RecordsConsumptionEntity.getRecordsConsumptionEntity ().get (position).getFragment ();
+        return SearchRecommendedEntity.getSearchRecommendedEntity ().get (position).getFragment ();
     }
 
     @Override
     public int getCount () {
-        //决定ViewPager对应的页显示对应的Fragment页数
-        return RecordsConsumptionEntity.getRecordsConsumptionEntity ().size ();
+        return SearchRecommendedEntity.getSearchRecommendedEntity ().size ();
     }
+    //设置标题
+//    @Override
+//    public CharSequence getPageTitle (int position) {
+//        return SearchRecommendedEntity.getSearchRecommendedEntity ().get (position).getTitle ();
+//        return bean.getData ().getReturnData ().getTopList ().
+//                get (position).getExtra ().getTabList ().get (position).getTabTitle ();
+//    }
 
-    @Override
-    public CharSequence getPageTitle (int position) {
-        //决定对应的标题
-        return RecordsConsumptionEntity.getRecordsConsumptionEntity ().get (position).getTitle ();
-    }
 }
