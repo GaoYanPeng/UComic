@@ -19,11 +19,11 @@
         <activity android:name=".mine.SignActivity"></activity>
         <activity android:name=".mainactivity.MainActivity"/>
         <activity android:name=".search.SearchActivity"/>
-<<<<<<< HEAD
+
         <activity android:name=".search.SearchGridView.SearchTypeDetailsActivity"/>
-=======
+
         <activity android:name=".search.SearchTopGridView.SearchTypeDetailsActivity"/>
->>>>>>> adc0523afdd7bca7918995ed3c022124752e70c2
+
         <activity android:name=".homepage.ranking.RankingActivity"/>
         <activity android:name=".mine.records.RecordsConsumptionActivity"/>
         <activity android:name=".mine.Top_up_Activity"/>
