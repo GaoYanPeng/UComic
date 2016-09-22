@@ -21,9 +21,11 @@ import com.lanou3g.you17.homepage.HomeBean;
  */
 public class ShufflingFigureAdapter extends PagerAdapter {
     private Context context;
-   private HomeBean mShufflingBean;
+    private HomeBean mShufflingBean;
     private int cont = 1;
+
     private ImageView[] tips;
+
     public void setTips(ImageView[] tips) {
         this.tips = tips;
     }
@@ -34,31 +36,31 @@ public class ShufflingFigureAdapter extends PagerAdapter {
         notifyDataSetChanged();
     }
 
-    public ShufflingFigureAdapter (Context context) {
+    public ShufflingFigureAdapter(Context context) {
         this.context = context;
     }
 
     @Override
-    public int getCount () {
-        return mShufflingBean!=null? Integer.MAX_VALUE:0;
+    public int getCount() {
+        return mShufflingBean != null ? Integer.MAX_VALUE : 0;
     }
 
     @Override
-    public boolean isViewFromObject (View view, Object object) {
-        return view==object;
+    public boolean isViewFromObject(View view, Object object) {
+        return view == object;
     }
 
     @Override
-    public Object instantiateItem (ViewGroup container, int position) {
-        View view= LayoutInflater.from (context).inflate (R.layout.item_shuffling_figure,null);
+    public Object instantiateItem(ViewGroup container, int position) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_shuffling_figure, null);
         ImageView ShufflingFigure_ImageView = (ImageView) view.findViewById(R.id.shuffling_figure_image_view);
-        Glide.with(context).load(mShufflingBean.getData ().getReturnData ().getGalleryItems ().get (position%cont).getCover ()).thumbnail(0.2f).into (ShufflingFigure_ImageView);
+        Glide.with(context).load(mShufflingBean.getData().getReturnData().getGalleryItems().get(position % cont).getCover()).thumbnail(0.2f).into(ShufflingFigure_ImageView);
         container.addView(view);
         return view;
     }
 
     @Override
-    public void destroyItem (ViewGroup container, int position, Object object) {
+    public void destroyItem(ViewGroup container, int position, Object object) {
 
     }
 }

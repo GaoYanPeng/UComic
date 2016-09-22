@@ -1,6 +1,8 @@
 package com.lanou3g.you17.homepage.vip;
 
 import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -16,10 +18,11 @@ import com.lanou3g.you17.tools.API;
 /**
  * Created by 高延鹏.on 16/9/21.
  */
-public class VipActivity extends BaseActivity {
+public class VipActivity extends BaseActivity implements OnClickListener{
     private ListView strongList;
     private VipAdapter mVipAdapter;
     private TextView titleType;
+    private ImageView comicClose;
 
     @Override
     protected int getLayout() {
@@ -31,6 +34,8 @@ public class VipActivity extends BaseActivity {
         strongList = findView(R.id.atrong_lst_view);
         mVipAdapter = new VipAdapter(this);
         titleType = findView(R.id.title_type);
+        comicClose = findView(R.id.search_details_back);
+        comicClose.setOnClickListener(this);
 
 
 
@@ -56,5 +61,14 @@ public class VipActivity extends BaseActivity {
         });
 
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.search_details_back:
+                finish();
+                break;
+        }
     }
 }

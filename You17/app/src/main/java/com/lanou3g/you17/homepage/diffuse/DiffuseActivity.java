@@ -1,5 +1,8 @@
 package com.lanou3g.you17.homepage.diffuse;
 
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.lanou3g.you17.R;
@@ -11,9 +14,10 @@ import com.lanou3g.you17.tools.API;
 /**
  * Created by 高延鹏.on 16/9/21.
  */
-public class DiffuseActivity extends BaseActivity {
+public class DiffuseActivity extends BaseActivity implements OnClickListener{
     private ListView difList;
     private DiffuseAdapter mDiffuseAdapter;
+    private ImageView difClose;
 
     @Override
     protected int getLayout() {
@@ -24,6 +28,8 @@ public class DiffuseActivity extends BaseActivity {
     public void initView() {
         difList= findView(R.id.dif_list);
         mDiffuseAdapter = new DiffuseAdapter(this);
+        difClose = findView(R.id.diffuse_details_back);
+        difClose.setOnClickListener(this);
 
     }
 
@@ -41,6 +47,16 @@ public class DiffuseActivity extends BaseActivity {
 
             }
         });
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.diffuse_details_back:
+                finish();
+                break;
+        }
 
     }
 }

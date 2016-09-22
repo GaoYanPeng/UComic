@@ -13,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -33,6 +34,7 @@ public class TopicActivity extends BaseActivity implements OnClickListener,OnRef
     private TopicAdapter mTopicAdapter;
     private RelativeLayout topPop;
     private PopupWindow mTopPop;
+    private ImageView topicClose;
 
     private SwipeRefreshLayout mTopSwi;
     private TextView topAll,topComm,topSpace;
@@ -48,6 +50,8 @@ public class TopicActivity extends BaseActivity implements OnClickListener,OnRef
         topList = findView(R.id.topic_ls_view);
         mTopSwi = findView(R.id.top_sw);
         mTopicAdapter = new TopicAdapter(this);
+        topicClose = findView(R.id.topic_close);
+        topicClose.setOnClickListener(this);
       View  view = LayoutInflater.from(this).inflate(R.layout.top_tali,null,false);
         mPopView = LayoutInflater.from(this).inflate(R.layout.top_pop,null,false);
 
@@ -180,6 +184,9 @@ public class TopicActivity extends BaseActivity implements OnClickListener,OnRef
                 getSpace();
                 mTopPop.dismiss();
                 backgroundAlpha(1f);
+                break;
+            case R.id.topic_close:
+                finish();
                 break;
         }
 
