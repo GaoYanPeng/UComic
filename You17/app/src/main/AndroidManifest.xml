@@ -19,7 +19,7 @@
         <activity android:name=".mine.SignActivity"></activity>
         <activity android:name=".mainactivity.MainActivity"/>
         <activity android:name=".search.SearchActivity"/>
-        <activity android:name=".search.SearchTopGridView.SearchTypeDetailsActivity"/>
+        <activity android:name=".search.SearchGridView.SearchTypeDetailsActivity"/>
         <activity android:name=".homepage.ranking.RankingActivity"/>
         <activity android:name=".mine.records.RecordsConsumptionActivity"/>
         <activity android:name=".mine.Top_up_Activity"/>

@@ -1,4 +1,4 @@
-package com.lanou3g.you17.search.SearchTopGridView;
+package com.lanou3g.you17.search.SearchGridView;
  /*
 
 Created by tliYgTong_刘德强 on 16/9/1.
