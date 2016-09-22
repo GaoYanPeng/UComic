@@ -1,4 +1,4 @@
-package com.lanou3g.you17.search;
+package com.lanou3g.you17.search.SearchTopGridView;
  /*
                    _ooOoo_
                   o8888888o
@@ -26,6 +26,8 @@ Created by Android_刘德强 on 16/9/21.
 
 import android.support.v4.app.Fragment;
 
+import com.lanou3g.you17.search.SearchGridViewBean;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,15 +35,22 @@ import java.util.List;
 public class SearchRecommendedEntity {
 
     private String title;
+    private String type;
     private Fragment fragment;
+    private SearchGridViewBean bean;
 
 
-    public SearchRecommendedEntity (
-//            String title,
-            Fragment fragment) {
-//        this.title = title;
+    public SearchRecommendedEntity (String title, Fragment fragment) {
+        this.title = title;
         this.fragment = fragment;
     }
+
+
+//    public String getType () {
+//        bean.getData ().getReturnData ().getTopList ().
+//                get (position).getExtra ().getTabList ().get (position).getTabTitle ();
+//        return type;
+//    }
 
     public String getTitle () {
         return title;
@@ -51,13 +60,10 @@ public class SearchRecommendedEntity {
         return fragment;
     }
 
-
-
-
     public static List<SearchRecommendedEntity> getSearchRecommendedEntity () {
         List<SearchRecommendedEntity> searchRecommendedEntities = new ArrayList<> ();
-        searchRecommendedEntities.add (new SearchRecommendedEntity (new SearchHottestFragment ()));
-        searchRecommendedEntities.add (new SearchRecommendedEntity (new SearchSentimentFragment ()));
+        searchRecommendedEntities.add (new SearchRecommendedEntity ("123",new SearchHottestFragment ()));
+        searchRecommendedEntities.add (new SearchRecommendedEntity ("465",new SearchSentimentFragment ()));
         return searchRecommendedEntities;
 
     }

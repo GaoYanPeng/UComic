@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.lanou3g.you17">
-
     <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:name=".MyApp.MyApp"
         android:allowBackup="true"
@@ -21,7 +19,7 @@
         <activity android:name=".mine.SignActivity"></activity>
         <activity android:name=".mainactivity.MainActivity"/>
         <activity android:name=".search.SearchActivity"/>
-        <activity android:name=".search.SearchTypeDetailsActivity"/>
+        <activity android:name=".search.SearchTopGridView.SearchTypeDetailsActivity"/>
         <activity android:name=".homepage.ranking.RankingActivity"/>
         <activity android:name=".mine.records.RecordsConsumptionActivity"/>
         <activity android:name=".mine.Top_up_Activity"/>
@@ -32,9 +30,7 @@
         <activity android:name=".mine.game.GameActivity"/>
         <activity android:name=".homepage.topic.TopicActivity"/>
         <activity android:name=".homepage.animation.AnimationActivity"/>
-<<<<<<< HEAD
-        <activity android:name=".search.SearchRecommendedActivity"/>
-=======
+        <activity android:name=".search.SearchTopGridView.SearchRecommendedActivity"/>
         <activity android:name=".homepage.strong.StrongActivity"/>
         <activity android:name=".homepage.sentiment.SentimentActivity"/>
         <activity android:name=".homepage.upadte.UpdateItemActivity"/>
@@ -43,9 +39,6 @@
         <activity android:name=".homepage.finished.FinishedActivity"/>
         <activity android:name=".homepage.diffuse.DiffuseActivity"/>
         <activity android:name=".homepage.vip.VipActivity"/>
->>>>>>> 536bef556506e53e06087c7b5ea5a0015c9a7a16
-
-        
     </application>
 
 </manifest>

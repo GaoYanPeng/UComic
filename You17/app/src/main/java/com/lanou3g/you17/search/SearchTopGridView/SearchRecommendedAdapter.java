@@ -1,4 +1,4 @@
-package com.lanou3g.you17.search;
+package com.lanou3g.you17.search.SearchTopGridView;
  /*
                    _ooOoo_
                   o8888888o
@@ -29,7 +29,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-//一级搜索几面点击推荐GridView进入详情 Tablayout的适配器
+import com.lanou3g.you17.search.SearchGridViewBean;
+
+//一级搜索页面点击推荐GridView进入详情 Tablayout的适配器
 public class SearchRecommendedAdapter extends FragmentPagerAdapter {
 
     private SearchGridViewBean bean;
@@ -48,11 +50,12 @@ public class SearchRecommendedAdapter extends FragmentPagerAdapter {
         return SearchRecommendedEntity.getSearchRecommendedEntity ().size ();
     }
     //设置标题
-//    @Override
-//    public CharSequence getPageTitle (int position) {
-//        return SearchRecommendedEntity.getSearchRecommendedEntity ().get (position).getTitle ();
+    @Override
+    public CharSequence getPageTitle (int position) {
+        return SearchRecommendedEntity.getSearchRecommendedEntity ().get (position).getTitle ();
 //        return bean.getData ().getReturnData ().getTopList ().
 //                get (position).getExtra ().getTabList ().get (position).getTabTitle ();
-//    }
+
+    }
 
 }

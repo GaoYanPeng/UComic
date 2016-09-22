@@ -12,6 +12,10 @@ import com.lanou3g.you17.R;
 import com.lanou3g.you17.base.BaseFragment;
 import com.lanou3g.you17.okhttp.NetTool;
 import com.lanou3g.you17.okhttp.onHttpCallBack;
+import com.lanou3g.you17.search.SearchTopGridView.SearchRecommendedActivity;
+import com.lanou3g.you17.search.SearchTopGridView.SearchGridViewAdapter;
+import com.lanou3g.you17.search.SearchTopGridView.SearchTitleGirdViewAdapter;
+import com.lanou3g.you17.search.SearchTopGridView.SearchTypeDetailsActivity;
 import com.lanou3g.you17.tools.API;
 
 /**
