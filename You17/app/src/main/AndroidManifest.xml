@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.lanou3g.you17">
+
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".MyApp.MyApp"
         android:allowBackup="true"
@@ -16,14 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".mine.SignActivity"></activity>
+        <activity android:name=".mine.SignActivity"/>
         <activity android:name=".mainactivity.MainActivity"/>
         <activity android:name=".search.SearchActivity"/>
-
         <activity android:name=".search.SearchGridView.SearchTypeDetailsActivity"/>
-
-        <activity android:name=".search.SearchTopGridView.SearchTypeDetailsActivity"/>
-
+        <activity android:name=".search.SearchGridView.SearchTypeDetailsActivity"/>
         <activity android:name=".homepage.ranking.RankingActivity"/>
         <activity android:name=".mine.records.RecordsConsumptionActivity"/>
         <activity android:name=".mine.Top_up_Activity"/>
@@ -43,6 +42,13 @@
         <activity android:name=".homepage.finished.FinishedActivity"/>
         <activity android:name=".homepage.diffuse.DiffuseActivity"/>
         <activity android:name=".homepage.vip.VipActivity"/>
+
+        <service
+            android:name=".base.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
     </application>
 
 </manifest>

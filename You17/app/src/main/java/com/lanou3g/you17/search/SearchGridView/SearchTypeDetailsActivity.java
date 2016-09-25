@@ -5,6 +5,7 @@ Created by tliYgTong_刘德强 on 16/8/31.
 */
 
 
+import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -44,8 +45,13 @@ public class SearchTypeDetailsActivity extends BaseActivity implements OnClickLi
 
     @Override
     protected void initData () {
+        Intent intent=getIntent ();
+        String classificationargValue=intent.getStringExtra ("classificationargValue");
+        String classificationargCon=intent.getStringExtra ("classificationargCon");
+        String classificationargName=intent.getStringExtra ("classificationargName");
+        String Url=API.ClassificationargValue+classificationargValue+API.ClassificationArgName+classificationargName+API.ClassificationargCon+classificationargCon+API.Classification;
 
-        NetTool.getInstance ().startRequest (API.API_SEARCH_GRIDVIEW_DETAILS, SearchTypeDetailsBean.class, new onHttpCallBack<SearchTypeDetailsBean> () {
+        NetTool.getInstance ().startRequest (Url, SearchTypeDetailsBean.class, new onHttpCallBack<SearchTypeDetailsBean> () {
             @Override
             public void onSuccess (SearchTypeDetailsBean response) {
                 adapter.setBean (response);

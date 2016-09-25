@@ -7,6 +7,8 @@ import com.lanou3g.you17.base.BaseFragment;
  * Created by dllo on 16/8/27.
  */
 public class SetupFragment extends BaseFragment {
+
+
     @Override
     protected int initLayout() {
         return R.layout.setup_fragment;

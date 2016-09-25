@@ -69,16 +69,13 @@ public class SearchRecommendedActivity extends BaseActivity implements OnClickLi
         //参1: 未选中标题颜色  参2:选中标题颜色
         tabLayout.setTabTextColors (Color.GRAY, Color.GREEN);
         //导航下划线颜色
-        tabLayout.setSelectedTabIndicatorColor (Color.GREEN);
-        //MODE_SCROLLABLE模式
-        //tabLayout.setTabMode (TabLayout.MODE_SCROLLABLE);
-
+        tabLayout.setSelectedTabIndicatorColor (0xFFFFFFF);
         NetTool.getInstance ().startRequest (API.API_SEARCH_GRIDVIEW, SearchGridViewBean.class, new onHttpCallBack<SearchGridViewBean> () {
             @Override
             public void onSuccess (SearchGridViewBean response) {
-//                String tabTitle = response.getData ().getReturnData ().getTopList ().get (0).getExtra ().getTabList ().get (0).getTabTitle ();
                 String type = getIntent ().getStringExtra ("recommended_type");
                 Gridview_recommended_type.setText (type);
+
             }
 
             @Override

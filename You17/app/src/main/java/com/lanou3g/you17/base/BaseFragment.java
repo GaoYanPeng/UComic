@@ -2,11 +2,12 @@ package com.lanou3g.you17.base;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Created by dllo on 16/8/2.
@@ -37,6 +38,8 @@ public abstract  class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         initView();
     }
+
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

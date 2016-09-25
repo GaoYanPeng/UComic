@@ -30,7 +30,6 @@ public class SearchGridViewAdapter extends BaseAdapter{
 
 
 
-
     public SearchGridViewAdapter (Context context) {
         this.context = context;
     }

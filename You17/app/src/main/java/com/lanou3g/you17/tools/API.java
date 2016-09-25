@@ -5,8 +5,8 @@ package com.lanou3g.you17.tools;
  */
 public class API {
     public static final String API_SIGN = "http://web.app.u17.com/activity/2.html?";
-    //搜索界面下层GridView接口
-    public static final String API_SEARCH_GRIDVIEW = "http://app.u17.com/v3/appV3/android/phone/sort/mobileCateList?android_id=3d6f8f613d878af1&v=3120100&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6ee78e380e49581b8beb43bc3b5944b3ad6d602bcb719b960e7da072284057dbf8ea27f88b54d7c16d4994453d38e6d921fbead2e24a9a7b92%253A%253A%253Au17&version=2";
+    //搜索界面GridView接口
+    public static final String API_SEARCH_GRIDVIEW = "http://app.u17.com/v3/appV3/android/phone/sort/mobileCateList?android_id=3d6f8f613d878af1&v=3120100&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6ee99560a6f98ab609f7cf512df9918c1cf7e9ba27ca03040dbd8c3dc34b656282fff385b0ddd1adf970a8166296e08b474bd5829ccefefe6e%253A%253A%253Au17&version=2";
     //搜索界面热门搜索下的推荐
     public static final String API_TOP_SEARCH_URL = "http://app.u17.com/v3/appV3/android/phone/search/hotkeywords?android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&t=1472626633&come_from=openqq";
     //搜索界面下层GridView详情接口()
@@ -59,7 +59,7 @@ public class API {
             "93340c00b77911af5abc5069b103f3c6e4c6235d475c9774334712b0cd2a5acde3bae17730bf85312fe40d96792b08e8e70ac0468bc0e80c83684ee94c2ca900dd892f7de117851a5%253A%253A%253Au17";
     //"我的"-游戏
     public static final String MINE_GAME = "http://game.u17.com/game/mobile/v3/appIndex?page=1&android_id=3d6f8f613d878af1&v=3110099&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=openqq&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3" +
-            "c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6e4c6235d475c97743c3fcc0bad61aaf3b2387060b345da5ce737c4893308bc0c4db71250788a81681454c5bfe12cf077024e67d12bf23eca8%253A%253A%253Au17\n";
+            "c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6e4c6235d475c97743c3fcc0bad61aaf3b2387060b345da5ce737c4893308bc0c4db71250788a81681454c5bfe12cf077024e67d12bf23eca8%253A%253A%253Au17";
 
     /**
      * 人气签约----月票
@@ -93,7 +93,6 @@ public class API {
     /**
      * 动画
      */
-//    public static final String TOP_ANIMATION = "http://m.u17.com/cartoon/list?page=1&pageSize=9";
     public static final String TOP_ANIMATION = "http://m.u17.com/app?url=http%3A%2F%2Fm.u17.com%2Fcartoon.html&sm=android&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe83197d7dcbd363cfb22c3e54351cc975453d56985b370d22c3915f5026a1004ecbb0c20531462c98632319e2ffd2b622ce988121968380e2c95a3%253A%253A%253Au17";
     //强力推荐
     public static final String STRONG = "http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=8&argName=topic&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe83197ac9b424a6f5d0ff51e3cd1fb455d2673314e47752565eb1719087d27118482a72e68e9e5f3ebe7af9b5cf67a478672be19e992357c2aa34c%253A%253A%253Au17";
@@ -109,4 +108,21 @@ public class API {
     public static final String VIP = "http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=14&argName=topic&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe83197d7dcbd363cfb22c3e54351cc975453d56985b370d22c3915f5026a1004ecbb0c20531462c98632319e2ffd2b622ce988121968380e2c95a3%253A%253A%253Au17";
     //完结
     public static final String FinISHed = "http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=1&argName=serial&argCon=2&page=1&android_id=3d6f8f613d878af1&v=3120027&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=6d785a6a482c2cc66517a5d09013c229dbd145e4f4b34e8ebc04b0c04a4836f8781a2df660e4d74643aa584acfe831979f0c0499e3562da324f27fc86fb9186963b05793fd516b1b7807847efa3d98f535258fcfad5078f66f5cd1d2746052a46754308ac681db34%253A%253A%253Au17";
+    //搜索-上层GridView-Tablayout拼接前半段
+    public static final String HottestargValue="http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=";
+    //搜索-上层GridView-Tablayout拼接argName段
+    public static final String HottestArgName="&argName=";
+    //搜索-上层GridView-Tablayout拼接中半段
+    public static final String HottestargCon="&argCon=";
+    //搜索-上层GridView-Tablayout拼接后半段
+    public static final String Hottest="&page=1&android_id=3d6f8f613d878af1&v=3120100&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6ee99560a6f98ab609e83aeca39820cbafe7b8bbe3a1f0aa99c70e1e46011c94ebd63cc396775e66c71b37fbe7458835839ebd79e027a4b7c3%253A%253A%253Au17";
+    //搜索-下层GridView 详情拼接前半段
+    public static final String ClassificationargValue="http://app.u17.com/v3/appV3/android/phone/list/commonComicList?argValue=";
+    //搜索-下层GridView 详情拼接argName段
+    public static final String ClassificationArgName="&argName=";
+    //搜索-下层GridView 详情拼接
+    public static final String ClassificationargCon="&argCon=";
+    //搜索-下层GridView 详情拼接前后段
+    public static final String Classification="&page=1&android_id=3d6f8f613d878af1&v=3120100&model=Google+Nexus+5+-+4.4.4+-+API+19+-+1080x1920&come_from=u17&key=0f646c6e429fce30b464bb7953e7e38e7afab48506167b3c5ac9579dfe4795f93340c00b77911af5abc5069b103f3c6ee99560a6f98ab609e83aeca39820cbafe7b8bbe3a1f0aa99c70e1e46011c94ebd63cc396775e66c71b37fbe7458835839ebd79e027a4b7c3%253A%253A%253Au17";
+
 }

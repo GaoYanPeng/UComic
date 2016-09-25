@@ -26,6 +26,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     //初始化数据
     protected abstract void initData();
 
+    //findViewById方法
     public <T extends View>T findView(int id){
         return (T) findViewById(id);
     }

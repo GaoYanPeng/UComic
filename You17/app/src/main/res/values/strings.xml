@@ -65,6 +65,8 @@
     <string name="sing_click">点击</string>
     <string name="sing_young">少年</string>
     <string name="sing_gril">少女</string>
+    <string name="Click_on_the_quantity">总点击:</string>
+    <string name="Ten_thousand">万</string>
 
 
 </resources>

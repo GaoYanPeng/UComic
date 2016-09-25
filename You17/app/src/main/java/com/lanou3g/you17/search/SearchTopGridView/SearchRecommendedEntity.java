@@ -46,12 +46,6 @@ public class SearchRecommendedEntity {
     }
 
 
-//    public String getType () {
-//        bean.getData ().getReturnData ().getTopList ().
-//                get (position).getExtra ().getTabList ().get (position).getTabTitle ();
-//        return type;
-//    }
-
     public String getTitle () {
         return title;
     }
@@ -62,8 +56,8 @@ public class SearchRecommendedEntity {
 
     public static List<SearchRecommendedEntity> getSearchRecommendedEntity () {
         List<SearchRecommendedEntity> searchRecommendedEntities = new ArrayList<> ();
-        searchRecommendedEntities.add (new SearchRecommendedEntity ("123",new SearchHottestFragment ()));
-        searchRecommendedEntities.add (new SearchRecommendedEntity ("465",new SearchSentimentFragment ()));
+        searchRecommendedEntities.add (new SearchRecommendedEntity ("今日最热",new SearchHottestFragment ()));
+        searchRecommendedEntities.add (new SearchRecommendedEntity ("人气推荐",new SearchSentimentFragment ()));
         return searchRecommendedEntities;
 
     }

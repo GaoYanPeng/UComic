@@ -76,7 +76,7 @@ public class SearchTitleGirdViewAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag ();
         }
-        Glide.with (context).load (bean.getData ().getReturnData ().getTopList ().get (position).getCover ()).into (holder.imageView);
+        Glide.with (context).load (bean.getData ().getReturnData ().getTopList ().get (position).getCover ()).thumbnail (0.5f).into (holder.imageView);
         return convertView;
     }
 
