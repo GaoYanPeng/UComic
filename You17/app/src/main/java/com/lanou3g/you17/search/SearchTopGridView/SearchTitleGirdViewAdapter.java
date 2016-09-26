@@ -48,6 +48,7 @@ public class SearchTitleGirdViewAdapter extends BaseAdapter {
 
     public void setBean (SearchGridViewBean bean) {
         this.bean = bean;
+        notifyDataSetChanged ();
     }
 
     @Override

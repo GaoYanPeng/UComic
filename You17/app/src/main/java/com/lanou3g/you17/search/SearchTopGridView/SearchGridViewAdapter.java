@@ -23,13 +23,8 @@ import com.lanou3g.you17.search.SearchGridViewBean;
 
 public class SearchGridViewAdapter extends BaseAdapter{
 
-
-
     private Context context;
     private SearchGridViewBean bean;
-
-
-
 
     public SearchGridViewAdapter (Context context) {
         this.context = context;
@@ -37,6 +32,7 @@ public class SearchGridViewAdapter extends BaseAdapter{
 
     public void setBean (SearchGridViewBean bean) {
         this.bean = bean;
+        notifyDataSetChanged ();
     }
 
     @Override

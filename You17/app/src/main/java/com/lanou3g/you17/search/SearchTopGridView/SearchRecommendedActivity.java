@@ -84,6 +84,8 @@ public class SearchRecommendedActivity extends BaseActivity implements OnClickLi
             }
         });
 
+
+
     }
 
     @Override

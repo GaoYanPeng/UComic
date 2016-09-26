@@ -39,7 +39,7 @@ import com.lanou3g.you17.search.SearchGridViewBean;
 
 import java.math.BigDecimal;
 
-//一级界面点击上方四个GridView进入详情后Adapter|
+//一级界面点击上方四个GridView进入详情后Adapter
 //今日最热
 public class SearchHottestAdapter extends BaseAdapter {
 
@@ -54,6 +54,7 @@ public class SearchHottestAdapter extends BaseAdapter {
 
     public void setBean (SearchHottestBean bean) {
         this.bean = bean;
+        notifyDataSetChanged ();
     }
 
     public void setmBean (SearchGridViewBean mBean) {
@@ -78,7 +79,8 @@ public class SearchHottestAdapter extends BaseAdapter {
     @Override
     public View getView (int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
-        String species = "45";
+        String species ;
+        int flag;
         if (convertView == null) {
             convertView = LayoutInflater.from (context).inflate (R.layout.search_item_sentiment, null);
             holder = new ViewHolder (convertView);
@@ -91,23 +93,45 @@ public class SearchHottestAdapter extends BaseAdapter {
         holder.Sentiment_author.setText (bean.getData ().getReturnData ().getComics ().get (position).getAuthor ());
         holder.Sentiment_Introduction.setText (bean.getData ().getReturnData ().getComics ().get (position).getDescription ());
         holder.Sentiment_type.setText (bean.getData ().getReturnData ().getComics ().get (position).getTags ().toString ());
-//        species=mBean.getData ().getReturnData ().getTopList ().get (position).getExtra ().getTabList ().get (position).getTabTitle ();
+//        species=mBean.getData ().getReturnData ().getTopList ().get (position).getExtra ().getTabList ().get (0).getTabTitle ();
 //        if (species=="近日更新"){
 //            holder.ClickOnTheQuantity.setText ("");
 //        }else {
-        float i=Float.parseFloat (bean.getData ().getReturnData ().getComics ().get (position).getConTag ())/10000;
-        BigDecimal b=new BigDecimal (i);
-        i=b.setScale (2,BigDecimal.ROUND_HALF_UP).floatValue ();
-        String p=Float.toString (i);
+        float ConTag = Float.parseFloat (bean.getData ().getReturnData ().getComics ().get (position).getConTag ()) / 10000;
+        BigDecimal b = new BigDecimal (ConTag);
+        ConTag = b.setScale (2, BigDecimal.ROUND_HALF_UP).floatValue ();
+        String p = Float.toString (ConTag);
         holder.Click_on_quantity.setText ("总点击");
         holder.Ten_thousand.setText ("万");
         holder.ClickOnTheQuantity.setText (p);
-//        }
+        flag = bean.getData ().getReturnData ().getComics ().get (position).getFlag ();
+        if (flag == 1) {
+            holder.permissions_imageview.setImageResource (R.mipmap.icon_comic_pay);
+        } else if (flag == 3) {
+            holder.permissions_imageview.setImageResource (R.mipmap.icon_comic_vip);
+        } else {
+            holder.permissions_imageview.setImageResource (R.mipmap.icon_game_dot_selected);
+        }
+        switch (position){
+            case 0:
+                holder.ranking_ImageView.setImageResource (R.mipmap.icon_ranking_first);
+                break;
+            case 1:
+                holder.ranking_ImageView.setImageResource (R.mipmap.icon_ranking_second);
+                break;
+            case 2:
+                holder.ranking_ImageView.setImageResource (R.mipmap.icon_ranking_third);
+                break;
+            default:
+                holder.ranking_ImageView.setImageResource (R.mipmap.icon_game_dot_selected);
+                break;
+        }
+//    }
         return convertView;
     }
 
     class ViewHolder {
-        private ImageView Sentiment_imageview;
+        private ImageView Sentiment_imageview,permissions_imageview,ranking_ImageView;
         private TextView Sentiment_name, Sentiment_type, Sentiment_author, Sentiment_Introduction, ClickOnTheQuantity,
                 Click_on_quantity, Ten_thousand;
 
@@ -121,7 +145,8 @@ public class SearchHottestAdapter extends BaseAdapter {
             ClickOnTheQuantity = (TextView) view.findViewById (R.id.ClickOnTheQuantity);
             Click_on_quantity = (TextView) view.findViewById (R.id.Click_on_quantity);
             Ten_thousand = (TextView) view.findViewById (R.id.Ten_thousand);
-
+            permissions_imageview= (ImageView) view.findViewById (R.id.permissions_imageview);
+            ranking_ImageView= (ImageView) view.findViewById (R.id.ranking_ImageView);
         }
     }
 }

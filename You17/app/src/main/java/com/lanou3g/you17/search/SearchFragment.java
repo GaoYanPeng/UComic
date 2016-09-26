@@ -103,14 +103,16 @@ public class SearchFragment extends BaseFragment implements OnClickListener {
                     @Override
                     public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
                         Intent intent = new Intent (getActivity (),SearchTypeDetailsActivity.class);
+                        //标题获取
                         String type = response.getData ().getReturnData ().getRankingList ().get (position).getSortName ();
                         intent.putExtra ("type", type);
                         //下层GridView-详情拼接前半段
                         String classificationargValue=response.getData ().getReturnData ().getRankingList ().get (position).getArgValue ()+"";
                         intent.putExtra ("classificationargValue",classificationargValue);
                         //下层GridView-详情拼接后半段
-                        String classificationargCon=response.getData ().getReturnData ().getRankingList ().get (position).getArgCon ()+"";
-                        intent.putExtra ("classificationargCon",classificationargCon);
+                        // (原项目始终argCon=2,所以这里获取argCon方法暂时注掉,在拼接字符中写死,argCon=2)
+//                        String classificationargCon=response.getData ().getReturnData ().getRankingList ().get (position).getArgCon ()+"";
+//                        intent.putExtra ("classificationargCon",classificationargCon);
                         //下层GridView-拼接网址中一个特殊的字段argName
                         String classificationargName=response.getData ().getReturnData ().getRankingList ().get (position).getArgName ();
                         intent.putExtra ("classificationargName",classificationargName);

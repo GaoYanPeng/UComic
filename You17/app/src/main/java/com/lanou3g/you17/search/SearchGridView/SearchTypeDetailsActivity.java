@@ -47,9 +47,10 @@ public class SearchTypeDetailsActivity extends BaseActivity implements OnClickLi
     protected void initData () {
         Intent intent=getIntent ();
         String classificationargValue=intent.getStringExtra ("classificationargValue");
-        String classificationargCon=intent.getStringExtra ("classificationargCon");
+//        String classificationargCon=intent.getStringExtra ("classificationargCon");
+//        String classificationargCon=2+"";
         String classificationargName=intent.getStringExtra ("classificationargName");
-        String Url=API.ClassificationargValue+classificationargValue+API.ClassificationArgName+classificationargName+API.ClassificationargCon+classificationargCon+API.Classification;
+        String Url=API.ClassificationargValue+classificationargValue+API.ClassificationArgName+classificationargName+API.Classification;
 
         NetTool.getInstance ().startRequest (Url, SearchTypeDetailsBean.class, new onHttpCallBack<SearchTypeDetailsBean> () {
             @Override

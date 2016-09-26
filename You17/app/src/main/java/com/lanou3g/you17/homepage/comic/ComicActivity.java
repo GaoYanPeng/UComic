@@ -1,6 +1,9 @@
 package com.lanou3g.you17.homepage.comic;
 
 import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -15,10 +18,11 @@ import com.lanou3g.you17.tools.API;
 /**
  * Created by 高延鹏.on 16/9/21.
  */
-public class ComicActivity extends BaseActivity {
+public class ComicActivity extends BaseActivity implements OnClickListener{
     private ListView comicList;
     private StrongAdapter mComicAdapter;
     private TextView titleType;
+    private ImageView search_details_back;
     @Override
     protected int getLayout() {
         return R.layout.atrong_activity;
@@ -29,6 +33,7 @@ public class ComicActivity extends BaseActivity {
         comicList = findView(R.id.atrong_lst_view);
         mComicAdapter = new StrongAdapter(this);
         titleType = findView(R.id.title_type);
+        search_details_back=findView (R.id.search_details_back);
     }
 
     @Override
@@ -52,5 +57,15 @@ public class ComicActivity extends BaseActivity {
 
 
 
+    }
+
+
+    @Override
+    public void onClick (View view) {
+        switch (view.getId ()){
+            case R.id.search_details_back:
+                finish ();
+                break;
+        }
     }
 }

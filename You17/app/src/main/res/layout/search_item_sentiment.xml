@@ -18,6 +18,14 @@
         android:layout_toRightOf="@+id/Sentiment_imageview"
         android:text="tears of the devil"/>
 
+    <ImageView
+        android:id="@+id/permissions_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Sentiment_name"
+        android:layout_marginLeft="@dimen/homeFive"
+        android:layout_toRightOf="@+id/Sentiment_name"/>
+
     <TextView
         android:id="@+id/Sentiment_type"
         android:layout_width="wrap_content"
@@ -62,36 +70,57 @@
         android:text="选择,决定最终命运"
         android:textSize="13sp"/>
 
-    <TextView
-        android:id="@+id/Click_on_quantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Sentiment_Introduction"
-        android:layout_marginTop="10sp"
+    <LinearLayout
         android:layout_toRightOf="@+id/Sentiment_imageview"
-        android:ellipsize="end"
-        android:maxLines="2"
-        android:textSize="10sp"/>
+        android:layout_below="@+id/Sentiment_Introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/ClickOnTheQuantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/Click_on_quantity"
-        android:layout_marginLeft="2sp"
-        android:layout_marginRight="2sp"
-        android:layout_toRightOf="@+id/Click_on_quantity"
-        android:text="30.44"
-        android:textColor="#9DABAC"
-        android:textSize="13sp"/>
+        <RelativeLayout
+            android:layout_width="0sp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Click_on_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="10sp"/>
 
-    <TextView
-        android:id="@+id/Ten_thousand"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/homeTen"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ClickOnTheQuantity"
-        android:layout_toRightOf="@+id/ClickOnTheQuantity"/>
+
+        <TextView
+            android:id="@+id/ClickOnTheQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_alignBottom="@+id/Click_on_quantity"
+            android:layout_toRightOf="@+id/Click_on_quantity"
+            android:textColor="#9DABAC"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/Ten_thousand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ClickOnTheQuantity"
+            android:layout_toRightOf="@+id/ClickOnTheQuantity"
+            android:textSize="@dimen/homeTen"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ranking_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>

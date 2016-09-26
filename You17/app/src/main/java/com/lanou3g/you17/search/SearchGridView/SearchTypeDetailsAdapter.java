@@ -29,6 +29,7 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
 
     public void setBean (SearchTypeDetailsBean bean) {
         this.bean = bean;
+        notifyDataSetChanged ();
     }
 
     @Override
@@ -49,6 +50,7 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
     @Override
     public View getView (int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
+        int flag;
         if (convertView == null) {
             convertView = LayoutInflater.from (context).inflate (R.layout.search_item_type_details, null);
             holder = new ViewHolder (convertView);
@@ -61,11 +63,19 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
         holder.details_author.setText (bean.getData ().getReturnData ().getComics ().get (position).getAuthor ());
         holder.details_Introduction.setText (bean.getData ().getReturnData ().getComics ().get (position).getDescription ());
         Glide.with (context).load (bean.getData ().getReturnData ().getComics ().get (position).getCover ()).thumbnail (0.5f).into (holder.details_imageview);
+        flag=bean.getData ().getReturnData ().getComics ().get (position).getFlag ();
+        if (flag==1){
+            holder.details_permissions_imageview.setImageResource (R.mipmap.icon_comic_pay);
+        }else if (flag==3){
+            holder.details_permissions_imageview.setImageResource (R.mipmap.icon_comic_vip);
+        }else {
+            holder.details_permissions_imageview.setImageResource (R.mipmap.icon_game_dot_selected);
+        }
         return convertView;
     }
 
     class ViewHolder {
-        private ImageView details_imageview;
+        private ImageView details_imageview,details_permissions_imageview;
         private TextView details_name, details_type, details_author, details_Introduction;
 
         private ViewHolder (View view) {
@@ -75,6 +85,7 @@ public class SearchTypeDetailsAdapter extends BaseAdapter {
             details_type = (TextView) view.findViewById (R.id.details_type);
             details_author = (TextView) view.findViewById (R.id.details_author);
             details_Introduction = (TextView) view.findViewById (R.id.details_Introduction);
+            details_permissions_imageview= (ImageView) view.findViewById (R.id.details_permissions_imageview);
         }
     }
 }
