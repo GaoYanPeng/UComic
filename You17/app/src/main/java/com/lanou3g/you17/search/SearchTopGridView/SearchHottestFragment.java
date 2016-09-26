@@ -41,7 +41,6 @@ public class SearchHottestFragment extends BaseFragment {
     private SearchHottestAdapter adapter;
     private ListView listView;
     private TextView ClickOnTheQuantity;
-    private int title,t;
 
     @Override
     protected int initLayout () {

@@ -35,7 +35,6 @@ import java.util.List;
 public class SearchRecommendedEntity {
 
     private String title;
-    private String type;
     private Fragment fragment;
     private SearchGridViewBean bean;
 
@@ -53,6 +52,7 @@ public class SearchRecommendedEntity {
     public Fragment getFragment () {
         return fragment;
     }
+
 
     public static List<SearchRecommendedEntity> getSearchRecommendedEntity () {
         List<SearchRecommendedEntity> searchRecommendedEntities = new ArrayList<> ();
